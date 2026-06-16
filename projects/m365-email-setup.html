@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="page-about">
+
+  <div class="page-background">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+    </div>
+
+    <!-- VOEG DIT TOE: De hamburger-knop -->
+    <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+      <i class="fa-solid fa-bars icon-burger"></i>
+      <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+    </button>
+
+    <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+      <a href="../index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+      <a href="../about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+      <a href="../projects.html" class="active" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+      <a href="../lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+      <a href="../journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+      <a href="../cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+      <a href="../contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <!-- LANGUAGE SWITCH -->
+      <div class="lang-dropdown">
+        <button class="lang-btn" id="lang-btn-text">
+          NL
+          <span class="chevron">▾</span>
+        </button>
+
+        <div class="lang-menu" id="lang-menu">
+          <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+            Nederlands
+          </button>
+
+          <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+            English
+          </button>
+        </div>
+      </div>
+
+      <!-- THEME TOGGLE -->
+      <div class="theme-switch-container">
+        <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+        <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+          <span class="theme-ball">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </span>
+        </label>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- PAGINA TITEL -->
+  <div class="page-title" style="text-align:center; margin: 40px 0;">
+    <h1>Microsoft 365 & Azure DNS Setup</h1>
+    <p data-lang-nl="Professionele e-mail & domeinbeheer met Microsoft-technologieën"
+      data-lang-en="Professional email & domain management with Microsoft technologies">
+      Professionele e-mail & domeinbeheer met Microsoft-technologieën
+    </p>
+  </div>
+
+  <main class="section">
+
+    <!-- OVER DIT PROJECT -->
+    <div class="card reveal">
+      <h2 data-lang-nl="Over dit project" data-lang-en="About this Project">
+        Over dit project
+      </h2>
+
+      <p data-lang-nl="In dit infrastructuurproject zette ik mijn eigen domeinnaam <strong>svenitguy.be</strong> professioneel op voor gebruik met Microsoft 365 Business Basic. Dit omvatte het volledige traject van domeinaankoop tot DNS-configuratie en e-mailrouting via Microsoft Exchange Online."
+        data-lang-en="In this infrastructure project, I professionally configured my own domain <strong>svenitguy.be</strong> for use with Microsoft 365 Business Basic. This included the full process from domain purchase to DNS configuration and email routing via Microsoft Exchange Online.">
+      </p>
+    </div>
+
+    <!-- DOEL -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Doel van dit project" data-lang-en="Project Goal">
+        Doel van dit project
+      </h2>
+
+      <p data-lang-nl="Mijn doel was om een professioneel zakelijk communicatieplatform op te zetten met Microsoft cloudtechnologieën en veilige, betrouwbare e-maildiensten. Deze configuratie dient als basis voor toekomstige uitbreidingen zoals Intune en SharePoint."
+        data-lang-en="My goal was to set up a professional business communication platform using Microsoft cloud technologies and secure, reliable email services. This setup serves as a foundation for future expansions such as Intune and SharePoint.">
+      </p>
+    </div>
+
+    <!-- TECHNOLOGIEËN -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Gebruikte technologieën" data-lang-en="Technologies Used">
+        Gebruikte technologieën
+      </h2>
+
+      <div class="tech-icons" style="margin-top:14px;">
+        <img src="../icons/azure-icon.svg" alt="Microsoft Azure" title="Microsoft Azure">
+        <img src="../icons/microsoft-365.svg" alt="Microsoft 365" title="Microsoft 365">
+        <img src="../icons/azure-dns-zones.svg" alt="Azure DNS" title="Azure DNS">
+        <img src="../icons/microsoft-exchange.svg" alt="Exchange Online" title="Exchange Online">
+        <img src="../icons/outlook-icon.svg" alt="Outlook" title="Outlook">
+        <img src="../icons/microsoft-entra-id.svg" alt="Microsoft Entra ID" title="Microsoft Entra ID">
+      </div>
+    </div>
+
+    <!-- WAT IK GEDAAN HEB -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Wat ik gedaan heb" data-lang-en="What I Did">
+        Wat ik gedaan heb
+      </h2>
+
+      <ul style="margin-top:12px; padding-left:18px;">
+        <li data-lang-nl="Domeinnaam aangekocht via Combell" data-lang-en="Purchased domain via Combell"></li>
+
+        <li data-lang-nl="DNS-records beheerd via Azure DNS (A, CNAME, MX, SPF, DKIM)"
+          data-lang-en="Managed DNS records via Azure DNS (A, CNAME, MX, SPF, DKIM)"></li>
+
+        <li data-lang-nl="Microsoft 365 Business Basic geconfigureerd"
+          data-lang-en="Configured Microsoft 365 Business Basic"></li>
+
+        <li data-lang-nl="Exchange Online ingesteld voor e-mailverkeer"
+          data-lang-en="Set up Exchange Online for email traffic"></li>
+
+        <li data-lang-nl="Microsoft Entra ID geactiveerd voor identiteitsbeheer"
+          data-lang-en="Activated Microsoft Entra ID for identity management"></li>
+
+        <li data-lang-nl="E-mailverificatie ingesteld voor betere deliverability"
+          data-lang-en="Configured email authentication for better deliverability"></li>
+      </ul>
+    </div>
+
+    <!-- WAT IK GELEERD HEB -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Wat ik geleerd heb" data-lang-en="What I Learned">
+        Wat ik geleerd heb
+      </h2>
+
+      <ul style="margin-top:12px; padding-left:18px;">
+        <li data-lang-nl="Domein koppelen aan Microsoft 365" data-lang-en="Connecting a domain to Microsoft 365"></li>
+
+        <li data-lang-nl="DNS configuratie (MX, TXT, CNAME, SPF, DKIM, DMARC)"
+          data-lang-en="DNS configuration (MX, TXT, CNAME, SPF, DKIM, DMARC)"></li>
+
+        <li data-lang-nl="Basis van Exchange Online en e-mailrouting"
+          data-lang-en="Basics of Exchange Online and email routing"></li>
+
+        <li data-lang-nl="Gebruik van Microsoft Entra ID" data-lang-en="Using Microsoft Entra ID"></li>
+
+        <li data-lang-nl="Voorbereiding op Intune, Teams en SharePoint integratie"
+          data-lang-en="Preparation for Intune, Teams and SharePoint integration"></li>
+      </ul>
+    </div>
+
+    <!-- OPMERKINGEN -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Opmerkingen" data-lang-en="Remarks">
+        Opmerkingen
+      </h2>
+
+      <p data-lang-nl="Omdat dit project een infrastructuurproject is, is er geen publieke demo beschikbaar. De impact ervan is zichtbaar in het professioneel beheer van mijn e-mail via svenitguy.be en vormt de basis voor verdere IT-projecten."
+        data-lang-en="Since this is an infrastructure project, there is no public demo available. Its impact is visible in the professional email setup via svenitguy.be and forms the foundation for future IT projects.">
+      </p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-socials">
+
+      <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+
+    <p>© 2026 SvenITGuy</p>
+
+    <div class="footer-links">
+
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+        Privacybeleid
+      </a>
+
+      <span>|</span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+        Gebruiksvoorwaarden
+      </a>
+
+      <span>|</span>
+
+      <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+        data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+        Cookie-instellingen
+      </a>
+
+    </div>
+
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+
+    <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+      data-lang-en="This site uses cookies to improve your experience.">
+      Deze site gebruikt cookies om je ervaring te verbeteren.
+    </p>
+
+    <div class="cookie-links">
+      <a href="../privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+      <span> & </span>
+
+      <a href="../voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+        data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+    </div>
+
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+        Akkoord
+      </button>
+
+      <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+        Weiger
+      </button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="../script.js"></script>
+  <script src="../cookie-banner.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="page-about">
+
+    <div class="page-background">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+        </div>
+
+        <!-- VOEG DIT TOE: De hamburger-knop -->
+        <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+            <i class="fa-solid fa-bars icon-burger"></i>
+            <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+            <a href="../index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+            <a href="../about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+            <a href="../projects.html" class="active" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+            <a href="../lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+            <a href="../journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+            <a href="../cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+            <a href="../contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <!-- LANGUAGE SWITCH -->
+            <div class="lang-dropdown">
+                <button class="lang-btn" id="lang-btn-text">
+                    NL
+                    <span class="chevron">▾</span>
+                </button>
+
+                <div class="lang-menu" id="lang-menu">
+                    <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+                        Nederlands
+                    </button>
+
+                    <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+                        English
+                    </button>
+                </div>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-switch-container">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+                <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+                    <span class="theme-ball">
+                        <i class="fa-solid fa-moon icon-moon"></i>
+                        <i class="fa-solid fa-sun icon-sun"></i>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- PAGINA TITEL -->
+    <div class="page-title" style="text-align:center; margin: 40px 0;">
+        <h1 data-lang-nl="Portfolio Website" data-lang-en="Portfolio Website">
+            Portfolio Website
+        </h1>
+        <p data-lang-nl="Mijn persoonlijke IT-portfolio met projecten en vaardigheden"
+            data-lang-en="My personal IT portfolio with projects and skills">
+            Mijn persoonlijke IT-portfolio met projecten en vaardigheden
+        </p>
+    </div>
+
+    <main class="section">
+
+        <!-- OVER DIT PROJECT -->
+        <div class="card reveal">
+            <h2 data-lang-nl="Over dit project" data-lang-en="About this Project">
+                Over dit project
+            </h2>
+
+            <p data-lang-nl="Deze portfolio-website is volledig zelf gebouwd in HTML en CSS. De site toont wie ik ben, welke IT-vaardigheden ik bezit, en welke projecten ik gerealiseerd heb tijdens mijn opleiding tot systeembeheerder."
+                data-lang-en="This portfolio website was fully built by myself using HTML and CSS. The site shows who I am, which IT skills I have, and which projects I completed during my studies as a system administrator.">
+                Deze portfolio-website is volledig zelf gebouwd in HTML en CSS. De site toont wie ik ben,
+                welke IT-vaardigheden ik bezit, en welke projecten ik gerealiseerd heb tijdens mijn opleiding tot
+                systeembeheerder.
+            </p>
+        </div>
+
+        <!-- DOEL -->
+        <div class="card reveal" style="margin-top:22px;">
+            <h2 data-lang-nl="Doel van dit project" data-lang-en="Project Goal">
+                Doel van dit project
+            </h2>
+
+            <p data-lang-nl="Een professionele online aanwezigheid creëren waarmee ik mezelf kan voorstellen aan IT-recruiters en werkgevers. Ik wilde een centraal punt waar alles samenkomt: projecten, skills, CV en contactinfo."
+                data-lang-en="To create a professional online presence that allows me to present myself to IT recruiters and employers. I wanted a central place where everything comes together: projects, skills, CV and contact information.">
+                Een professionele online aanwezigheid creëren waarmee ik mezelf kan voorstellen aan IT-recruiters en
+                werkgevers.
+                Ik wilde een centraal punt waar alles samenkomt: projecten, skills, CV en contactinfo.
+            </p>
+        </div>
+
+        <!-- TECHNOLOGIEËN -->
+        <div class="card reveal" style="margin-top:22px;">
+            <h2 data-lang-nl="Gebruikte technologieën" data-lang-en="Technologies Used">
+                Gebruikte technologieën
+            </h2>
+
+            <div class="tech-icons">
+                <img src="../icons/html5.svg" alt="HTML5" title="HTML5">
+                <img src="../icons/css3.svg" alt="CSS3" title="CSS3">
+                <img src="../icons/javascript.svg" alt="JavaScript" title="JavaScript">
+                <img src="../icons/azure-static-web-apps.svg" alt="Azure Static Web Apps" title="Azure Static Web Apps">
+                <img src="../icons/azure-dns-zones.svg" alt="Azure DNS Zones" title="Azure DNS Zones">
+                <img src="../icons/azure-devops.svg" alt="Azure DevOps" title="Azure DevOps">
+                <img src="../icons/vscode.svg" alt="Visual Studio Code" title="Visual Studio Code">
+            </div>
+        </div>
+
+        <!-- WAT IK GELEERD HEB -->
+        <div class="card reveal" style="margin-top:22px;">
+            <h2 data-lang-nl="Wat ik geleerd heb" data-lang-en="What I Learned">
+                Wat ik geleerd heb
+            </h2>
+
+            <ul style="padding-left:18px; margin-top:12px;" data-lang-nl="" data-lang-en="">
+                <li data-lang-nl="Semantische HTML en gestructureerde CSS"
+                    data-lang-en="Semantic HTML and structured CSS">
+                    Semantische HTML en gestructureerde CSS
+                </li>
+
+                <li data-lang-nl="Azure Static Web Apps deployment" data-lang-en="Azure Static Web Apps deployment">
+                    Azure Static Web Apps deployment
+                </li>
+
+                <li data-lang-nl="CI/CD pipelines via Azure DevOps" data-lang-en="CI/CD pipelines using Azure DevOps">
+                    CI/CD pipelines via Azure DevOps
+                </li>
+
+                <li data-lang-nl="Branches gebruiken (test → main workflow)"
+                    data-lang-en="Using branches (test → main workflow)">
+                    Branches gebruiken (test → main workflow)
+                </li>
+
+                <li data-lang-nl="DNS koppeling via Azure DNS Zones + domein van Combell"
+                    data-lang-en="DNS configuration via Azure DNS Zones + domain from Combell">
+                    DNS koppeling via Azure DNS Zones + domein van Combell
+                </li>
+            </ul>
+        </div>
+
+        <!-- LIVE SITE -->
+        <div class="card reveal" style="margin-top:22px; text-align:center;">
+            <h2 data-lang-nl="Bekijk live site" data-lang-en="View Live Site">
+                Bekijk live site
+            </h2>
+
+            <p data-lang-nl="Je kan mijn volledige portfolio live bekijken:"
+                data-lang-en="You can view my full portfolio live:">
+                Je kan mijn volledige portfolio live bekijken:
+            </p>
+
+            <div style="text-align:center;">
+                <a class="btn primary btn-lg" href="https://www.svenitguy.be" target="_blank" rel="noopener noreferrer"
+                    data-lang-nl="Bekijk portfolio →" data-lang-en="View portfolio →">
+                    Bekijk portfolio →
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-socials">
+
+            <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 SvenITGuy</p>
+
+        <div class="footer-links">
+
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+                Privacybeleid
+            </a>
+
+            <span>|</span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+                Gebruiksvoorwaarden
+            </a>
+
+            <span>|</span>
+
+            <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+                data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+                Cookie-instellingen
+            </a>
+
+        </div>
+
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+
+        <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+            data-lang-en="This site uses cookies to improve your experience.">
+            Deze site gebruikt cookies om je ervaring te verbeteren.
+        </p>
+
+        <div class="cookie-links">
+            <a href="../privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+            <span> & </span>
+
+            <a href="../voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+                data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+        </div>
+
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+                Akkoord
+            </button>
+
+            <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+                Weiger
+            </button>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="../script.js"></script>
+    <script src="../cookie-banner.js"></script>
+
+</body>
+
+</html>

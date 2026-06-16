@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-lab">
+
+  <div class="page-background">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+    </div>
+
+    <!-- VOEG DIT TOE: De hamburger-knop -->
+    <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+      <i class="fa-solid fa-bars icon-burger"></i>
+      <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+    </button>
+
+    <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+      <a href="index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+      <a href="about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+      <a href="projects.html" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+      <a href="lab.html" class="active" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+      <a href="journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+      <a href="cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+      <a href="contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <!-- LANGUAGE SWITCH -->
+      <div class="lang-dropdown">
+        <button class="lang-btn" id="lang-btn-text">
+          NL
+          <span class="chevron">▾</span>
+        </button>
+
+        <div class="lang-menu" id="lang-menu">
+          <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+            Nederlands
+          </button>
+
+          <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+            English
+          </button>
+        </div>
+      </div>
+
+      <!-- THEME TOGGLE -->
+      <div class="theme-switch-container">
+        <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+        <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+          <span class="theme-ball">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </span>
+        </label>
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="section">
+
+    <h2 class="reveal" data-lang-nl="Mijn IT Lab" data-lang-en="My IT Lab">
+      Mijn IT Lab
+    </h2>
+
+    <p class="reveal"
+      data-lang-nl="Een volledig zelfgebouwde IT-omgeving met networking, servers, virtualisatie en cloud automatisatie. Dit lab simuleert een echte enterprise infrastructuur."
+      data-lang-en="A fully self-built IT environment with networking, servers, virtualization and cloud automation. This lab simulates a real enterprise infrastructure.">
+      Een volledig zelfgebouwde IT-omgeving met networking, servers, virtualisatie en cloud automatisatie. Dit lab
+      simuleert een echte enterprise infrastructuur.
+    </p>
+
+  </section>
+
+  <section class="section">
+
+    <h2 class="reveal" data-lang-nl="Lab infrastructuur" data-lang-en="Lab infrastructure">
+      Lab infrastructuur
+    </h2>
+
+    <div class="card reveal lab-infra">
+
+      <p data-lang-nl="Mijn lab bestaat uit een volledig gerackte 18U infrastructuur met networking, servers, storage, virtualisatie en camera segmentatie."
+        data-lang-en="My lab consists of a fully racked 18U infrastructure with networking, servers, storage, virtualization and camera segmentation.">
+      </p>
+
+      <ul class="lab-list">
+
+        <li><i class="fa-solid fa-network-wired"></i> 1x TP-Link TL-ER6120 Router</li>
+        <li><i class="fa-solid fa-diagram-project"></i> 1x TP-Link T2600G-28TS (Layer 3 Core Switch)</li>
+
+        <li><i class="fa-solid fa-network-wired"></i> L2 Switches:
+          T1500G-10MPS, Cisco SG300-20, TL-SG1016DE, Cisco SG350-10MP
+        </li>
+
+        <li><i class="fa-solid fa-wifi"></i> WiFi: 2x TP-Link EAP225 + Omada OC200</li>
+
+        <li><i class="fa-solid fa-video"></i> IP Camera’s: Reolink RLC-423 + RLC-420</li>
+
+        <li><i class="fa-solid fa-hard-drive"></i> NAS:
+          QNAP TS-431XeU (CCTV),
+          QNAP TS-832XU (lab),
+          QNAP TS-469L (backup)
+        </li>
+
+        <li><i class="fa-solid fa-server"></i> Servers:
+          Supermicro 5018A-TN4 (Windows Server + Hyper-V),
+          Custom i7-2600K ESXi host
+        </li>
+
+        <li><i class="fa-solid fa-desktop"></i> Workstations: 4 desktops + 3 laptops</li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section class="section">
+
+    <h2 class="reveal" data-lang-nl="Netwerkdiagram" data-lang-en="Network Diagram">
+      Netwerkdiagram
+    </h2>
+
+    <div class="card reveal" style="text-align:center;">
+
+      <p data-lang-nl="Overzicht van mijn volledige thuislab infrastructuur inclusief VLAN segmentatie, servers en netwerkapparatuur."
+        data-lang-en="Overview of my full home lab infrastructure including VLAN segmentation, servers and networking equipment.">
+      </p>
+
+      <a href="images/mijn-homenetwerk.drawio.png" target="_blank">
+        <img src="images/mijn-homenetwerk.drawio.png" alt="Network diagram"
+          style="width:100%; border-radius:12px; margin-top:10px;">
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- LAB OVERVIEW -->
+  <section class="section">
+
+    <div class="grid-2">
+
+      <!-- NETWORK -->
+      <div class="card reveal-left lab-netwerk">
+
+        <h3>
+          <i class="fa-solid fa-network-wired"></i>
+          <span data-lang-nl="Netwerk & Infrastructuur" data-lang-en="Network & Infrastructure"></span>
+        </h3>
+
+        <p data-lang-nl="Mijn netwerk is opgebouwd als een gesegmenteerde omgeving met VLANs, routing en switching binnen een 18U rack."
+          data-lang-en="My network is built as a segmented environment with VLANs, routing and switching inside a 18U rack.">
+          Mijn netwerk is opgebouwd als een gesegmenteerde omgeving met VLANs, routing en switching binnen een 18U rack.
+        </p>
+
+        <ul class="lab-list">
+
+          <li>
+            <i class="fa-solid fa-diagram-project"></i>
+            <span data-lang-nl="VLAN-segmentatie en netwerkarchitectuur"
+              data-lang-en="VLAN segmentation and network architecture">
+              VLAN-segmentatie en netwerkarchitectuur
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-network-wired"></i>
+            <span data-lang-nl="Inter-VLAN routing via L3 core switch"
+              data-lang-en="Inter-VLAN routing via L3 core switch">
+              Inter-VLAN routing via L3 core switch
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-shield"></i>
+            <span data-lang-nl="Netwerksegmentatie (CCTV vs lab vs home)"
+              data-lang-en="Network segmentation (CCTV vs lab vs home)">
+              Netwerksegmentatie (CCTV vs lab vs home)
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- SERVERS -->
+      <div class="card reveal-right lab-servers">
+
+        <h3>
+          <i class="fa-solid fa-server"></i>
+          <span data-lang-nl="Servers & Virtualisatie" data-lang-en="Servers & Virtualization"></span>
+        </h3>
+
+        <p data-lang-nl="Ik gebruik meerdere fysieke servers en desktops om virtualisatie en testomgevingen te draaien."
+          data-lang-en="I use multiple physical servers and desktops to run virtualization and test environments.">
+        </p>
+
+        <ul class="lab-list">
+          <li>
+            <i class="fa-solid fa-server"></i>
+            <span data-lang-nl="Virtualisatie met VMware ESXi en Hyper-V"
+              data-lang-en="Virtualization with VMware ESXi and Hyper-V">
+              Virtualisatie met VMware ESXi en Hyper-V
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-desktop"></i>
+            <span data-lang-nl="Nested labomgevingen op workstation"
+              data-lang-en="Nested lab environments on workstation">
+              Nested labomgevingen op workstation
+            </span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-gears"></i>
+            <span data-lang-nl="Testomgevingen voor Windows Server en automatisatie"
+              data-lang-en="Test environments for Windows Server and automation">
+              Testomgevingen voor Windows Server en automatisatie
+            </span>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CLOUD -->
+  <section class="section cloud-section">
+
+    <div class="card reveal lab-cloud">
+
+      <h3>
+        <i class="fa-solid fa-cloud"></i>
+        <span data-lang-nl="Cloud & Automatisatie" data-lang-en="Cloud & Automation"></span>
+      </h3>
+
+      <p data-lang-nl="Naast mijn fysieke lab werk ik actief met Azure en automatisatie om enterprise cloud skills op te bouwen."
+        data-lang-en="Besides my physical lab I actively work with Azure and automation to build enterprise cloud skills.">
+      </p>
+
+      <ul class="lab-list">
+
+        <li>
+          <i class="fa-solid fa-cloud"></i>
+          <span data-lang-nl="Microsoft Azure (Static Web Apps, DNS, Functions, Cosmos DB)"
+            data-lang-en="Microsoft Azure (Static Web Apps, DNS, Functions, Cosmos DB)">
+          </span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-terminal"></i>
+          <span data-lang-nl="Terraform (Infrastructure as Code)" data-lang-en="Terraform (Infrastructure as Code)">
+          </span>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <span data-lang-nl="GitHub Actions CI/CD pipelines" data-lang-en="GitHub Actions CI/CD pipelines">
+          </span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-code"></i>
+          <span data-lang-nl="PowerShell & Linux automation scripts"
+            data-lang-en="PowerShell & Linux automation scripts">
+          </span>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- LAB PROJECTS -->
+ <!-- <section class="section">
+
+    <h2 class="reveal" data-lang-nl="Lab Projecten" data-lang-en="Lab Projects">
+      Lab Projecten
+    </h2>
+
+    <div class="grid-3">
+
+      <div class="card reveal-left">
+
+        <div class="lab-project-icon">
+          <i class="fa-solid fa-diagram-project"></i>
+        </div>
+
+        <h3>
+          <span data-lang-nl="Netwerkontwerp" data-lang-en="Network Design">
+          </span>
+        </h3>
+
+        <p data-lang-nl="VLAN structuur en routing ontwerp van mijn home lab."
+          data-lang-en="VLAN structure and routing design of my home lab.">
+        </p>
+
+      </div>
+
+      <div class="card reveal">
+
+        <div class="lab-project-icon">
+          <i class="fa-solid fa-server"></i>
+        </div>
+
+        <h3>
+          <span data-lang-nl="Virtualisatie omgeving" data-lang-en="Virtualization Environment">
+          </span>
+        </h3>
+
+        <p data-lang-nl="ESXi en Hyper-V testomgeving met meerdere virtuele machines."
+          data-lang-en="ESXi and Hyper-V test environment with multiple virtual machines.">
+        </p>
+
+      </div>
+
+      <div class="card reveal-right">
+
+        <div class="lab-project-icon">
+          <i class="fa-solid fa-cloud"></i>
+        </div>
+
+        <h3>
+          <span data-lang-nl="Cloud experimenten" data-lang-en="Cloud Experiments">
+          </span>
+        </h3>
+
+        <p data-lang-nl="Azure resources, automation en deployment pipelines."
+          data-lang-en="Azure resources, automation and deployment pipelines.">
+        </p>
+
+      </div>
+
+    </div>
+  </section> -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-socials">
+
+      <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+
+    <p>© 2026 SvenITGuy</p>
+
+    <div class="footer-links">
+
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+        Privacybeleid
+      </a>
+
+      <span>|</span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+        Gebruiksvoorwaarden
+      </a>
+
+      <span>|</span>
+
+      <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+        data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+        Cookie-instellingen
+      </a>
+
+    </div>
+
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+
+    <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+      data-lang-en="This site uses cookies to improve your experience.">
+      Deze site gebruikt cookies om je ervaring te verbeteren.
+    </p>
+
+    <div class="cookie-links">
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+      <span> & </span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+        data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+    </div>
+
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+        Akkoord
+      </button>
+
+      <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+        Weiger
+      </button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="script.js"></script>
+  <script src="cookie-banner.js"></script>
+
+</body>
+
+</html>

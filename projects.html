@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-projects">
+
+  <div class="page-background">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+    </div>
+
+    <!-- VOEG DIT TOE: De hamburger-knop -->
+    <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+      <i class="fa-solid fa-bars icon-burger"></i>
+      <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+    </button>
+
+    <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+      <a href="index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+      <a href="about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+      <a href="projects.html" class="active" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+      <a href="lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+      <a href="journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+      <a href="cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+      <a href="contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <!-- LANGUAGE SWITCH -->
+      <div class="lang-dropdown">
+        <button class="lang-btn" id="lang-btn-text">
+          NL
+          <span class="chevron">▾</span>
+        </button>
+
+        <div class="lang-menu" id="lang-menu">
+          <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+            Nederlands
+          </button>
+
+          <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+            English
+          </button>
+        </div>
+      </div>
+
+      <!-- THEME TOGGLE -->
+      <div class="theme-switch-container">
+        <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+        <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+          <span class="theme-ball">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </span>
+        </label>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- HEADER -->
+  <section class="section">
+
+    <h2 class="reveal" data-lang-nl="Projecten" data-lang-en="Projects">
+      Projecten
+    </h2>
+
+    <p class="reveal"
+      data-lang-nl="Een selectie van persoonlijke projecten waarmee ik praktijkervaring opbouw in cloud, infrastructuur, Microsoft 365 en webontwikkeling."
+      data-lang-en="A selection of personal projects through which I build hands-on experience in cloud, infrastructure, Microsoft 365 and web development.">
+      Een selectie van persoonlijke projecten waarmee ik praktijkervaring opbouw in cloud, infrastructuur, Microsoft 365
+      en webontwikkeling.
+    </p>
+
+  </section>
+
+  <!-- PROJECT GRID -->
+  <section class="section">
+
+    <div class="grid-3">
+
+      <!-- PROJECT 1 -->
+      <div class="card reveal-left" style="--i:1; display:flex; flex-direction:column;">
+
+        <h3 data-lang-nl="AZ-900 Quiz" data-lang-en="AZ-900 Quiz">
+          AZ-900 Quiz
+        </h3>
+
+        <p data-lang-nl="Interactieve Microsoft Azure Fundamentals quiz met vragen uit Azure Blob Storage."
+          data-lang-en="Interactive Microsoft Azure Fundamentals quiz with questions loaded from Azure Blob Storage.">
+          Interactieve Microsoft Azure Fundamentals quiz met vragen uit Azure Blob Storage.
+        </p>
+
+        <p style="margin-top:10px; color: var(--muted);">
+          Stack: Azure Blob Storage, JavaScript, HTML, CSS
+        </p>
+
+        <!-- <div class="hero-buttons" style="margin-top:auto; justify-content:flex-start;">
+
+          <a href="projects/az-900-quiz.html" class="btn secondary" data-lang-nl="Bekijk details" data-lang-en="View details">
+            Bekijk Details
+          </a>
+
+          <a href="projects/az-900-quiz/index.html" class="btn primary" target="_blank" rel="noopener noreferrer"
+            data-lang-nl="Probeer demo" data-lang-en="Try demo">
+            Probeer demo
+          </a>
+
+        </div> -->
+
+        <div class="project-actions">
+
+          <a href="projects/az-900-quiz.html" class="btn secondary" data-lang-nl="Bekijk details →"
+            data-lang-en="View details →">
+            Bekijk Details
+          </a>
+
+          <a href="https://www.svenitguy.be/az-900-quiz/index.html" class="btn primary" target="_blank"
+            rel="noopener noreferrer" data-lang-nl="Probeer demo →" data-lang-en="Try demo →">
+            Probeer demo
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="card reveal-center" style="--i:2; display:flex; flex-direction:column;">
+
+        <h3 data-lang-nl="Azure Function Demo" data-lang-en="Azure Function Demo">
+          Azure Function Demo
+        </h3>
+
+        <p data-lang-nl="Serverless Azure Function die gepersonaliseerde berichten retourneert via HTTP."
+          data-lang-en="Serverless Azure Function returning personalized messages via HTTP.">
+          Serverless Azure Function returning personalized messages via HTTP.
+        </p>
+
+        <p style="margin-top:10px; color: var(--muted);">
+          Stack: Azure Functions, Azure Static Web Apps, JavaScript, HTML, CSS
+        </p>
+
+        <!-- <div class="hero-buttons" style="margin-top:auto; justify-content:flex-start;"> -->
+
+        <div class="project-actions">
+
+          <a href="projects/azure-function-demo.html" class="btn secondary" data-lang-nl="Bekijk details →"
+            data-lang-en="View details →">
+            Bekijk details
+          </a>
+
+          <a href="projects/azure-function-demo.html#live-demo" class="btn primary" target="_blank"
+            rel="noopener noreferrer" data-lang-nl="Probeer demo →" data-lang-en="Try demo →">
+            Probeer
+          </a>
+        </div>
+      </div>
+
+      <!-- </div> -->
+
+      <!-- PROJECT 3 -->
+      <div class="card reveal-right" style="--i:3; display:flex; flex-direction:column;">
+
+        <h3 data-lang-nl="Microsoft 365 Setup" data-lang-en="Microsoft 365 Setup">
+          Microsoft 365 Setup
+        </h3>
+
+        <p data-lang-nl="DNS, e-mail en identity configuratie met Entra ID en Exchange Online."
+          data-lang-en="DNS, email and identity management using Microsoft Entra ID and Exchange Online.">
+          DNS, e-mail en identity configuratie met Entra ID en Exchange Online.
+        </p>
+
+        <p style="margin-top:10px; color: var(--muted);">
+          Stack: Microsoft 365, DNS, Entra ID, Exchange Online
+        </p>
+
+        <div class="hero-buttons" style="margin-top:auto; justify-content:flex-start;">
+
+          <a href="projects/m365-email-setup.html" class="btn secondary" data-lang-nl="Bekijk details →"
+            data-lang-en="View details →">
+            Bekijk details
+          </a>
+
+        </div>
+
+
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="card reveal-left" style="--i:4; display:flex; flex-direction:column;">
+
+        <h3 data-lang-nl="Memory Game" data-lang-en="Memory Game">
+          Memory Game
+        </h3>
+
+        <p data-lang-nl="Interactieve memory game met cloudscorebeheer via Azure Functions, Cosmos DB en Azure Storage."
+          data-lang-en="Interactive memory game with cloud score management using Azure Function Apps, Cosmos DB, and Azure Storage.">
+          Interactieve memory game met cloudscorebeheer via Azure.
+        </p>
+
+        <p style="margin-top:10px; color: var(--muted);">
+          Stack: JavaScript, HTML, CSS, Azure Functions, Cosmos DB, Azure Storage
+        </p>
+
+        <!-- <div class="hero-buttons" style="margin-top:auto; justify-content:flex-start;"> -->
+        <div class="project-actions">
+
+          <a href="projects/memory-game.html" class="btn secondary" data-lang-nl="Bekijk details →"
+            data-lang-en="View details →">
+            Bekijk details
+          </a>
+
+          <a href="https://www.svenitguy.be/memory-game/index.html" class="btn primary" target="_blank"
+            rel="noopener noreferrer" data-lang-nl="Speel spel →" data-lang-en="Play game →">
+            Speel spel
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="card reveal-center" style="--i:5; display:flex; flex-direction:column;">
+
+        <h3 data-lang-nl="Portfolio Website" data-lang-en="Portfolio Website">
+          Portfolio Website
+        </h3>
+
+        <p data-lang-nl="Volledig zelfgebouwde portfolio website in HTML en CSS om projecten en vaardigheden te tonen."
+          data-lang-en="Fully custom-built portfolio website developed in HTML, CSS and JavaScript to showcase projects, skills and hands-on experience.">
+          Volledig zelfgebouwde portfolio website in HTML en CSS om projecten en vaardigheden te tonen.
+        </p>
+
+        <p style="margin-top:10px; color: var(--muted);">
+          Stack: HTML, CSS, JavaScript
+        </p>
+
+        <div class="hero-buttons" style="margin-top:auto; justify-content:flex-start;">
+
+          <a href="projects/portfolio-site.html" class="btn secondary" data-lang-nl="Bekijk details →"
+            data-lang-en="View details →">
+            Bekijk details
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-socials">
+
+      <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+
+    <p>© 2026 SvenITGuy</p>
+
+    <div class="footer-links">
+
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+        Privacybeleid
+      </a>
+
+      <span>|</span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+        Gebruiksvoorwaarden
+      </a>
+
+      <span>|</span>
+
+      <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+        data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+        Cookie-instellingen
+      </a>
+
+    </div>
+
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+
+    <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+      data-lang-en="This site uses cookies to improve your experience.">
+      Deze site gebruikt cookies om je ervaring te verbeteren.
+    </p>
+
+    <div class="cookie-links">
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+      <span> & </span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+        data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+    </div>
+
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+        Akkoord
+      </button>
+
+      <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+        Weiger
+      </button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="script.js"></script>
+  <script src="cookie-banner.js"></script>
+
+</body>
+
+</html>

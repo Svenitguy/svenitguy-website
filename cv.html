@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-cv">
+
+    <div class="page-background">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+        </div>
+
+        <!-- VOEG DIT TOE: De hamburger-knop -->
+        <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+            <i class="fa-solid fa-bars icon-burger"></i>
+            <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+            <a href="index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+            <a href="about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+            <a href="projects.html" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+            <a href="lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+            <a href="journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+            <a href="cv.html" class="active" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+            <a href="contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <!-- LANGUAGE SWITCH -->
+            <div class="lang-dropdown">
+                <button class="lang-btn" id="lang-btn-text">
+                    NL
+                    <span class="chevron">▾</span>
+                </button>
+
+                <div class="lang-menu" id="lang-menu">
+                    <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+                        Nederlands
+                    </button>
+
+                    <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+                        English
+                    </button>
+                </div>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-switch-container">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+                <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+                    <span class="theme-ball">
+                        <i class="fa-solid fa-moon icon-moon"></i>
+                        <i class="fa-solid fa-sun icon-sun"></i>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="resume-page">
+
+        <!-- HERO -->
+
+        <section class="hero-small">
+
+            <div class="hero-content">
+
+                <h1 data-lang-nl="Sven Velleman" data-lang-en="Sven Velleman">
+                    Sven Velleman
+                </h1>
+
+                <h2 class="role" data-lang-nl="Junior Systeembeheerder" data-lang-en="Junior System Administrator">
+                    Junior System Administrator
+                </h2>
+
+                <p class="subtitle"
+                    data-lang-nl="Windows Server • Active Directory • Microsoft 365 • Azure • Networking • Virtualization"
+                    data-lang-en="Windows Server • Active Directory • Microsoft 365 • Azure • Networking • Virtualization">
+                    Windows Server • Active Directory • Microsoft 365 • Azure • Networking • Virtualization
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="files/Sven_Velleman_CV.pdf" class="btn primary">
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span data-lang-nl="Bekijk CV →" data-lang-en="View CV →">
+                            Bekijk CV
+                        </span>
+                    </a>
+                    <a href="contact.html" class="btn secondary btn-contact">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <span data-lang-nl="Contact opnemen →" data-lang-en="Get in touch →">
+                            Contact opnemen
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROFIEL -->
+
+        <section class="section">
+
+            <h2 data-lang-nl="Professioneel profiel" data-lang-en="Professional profile">
+                Professioneel profiel
+            </h2>
+            <div class="card reveal">
+                <p data-lang-nl="Ik ben een junior IT professional met een sterke interesse in system administration, IT-infrastructuur en cloudtechnologie. Tijdens mijn opleiding Junior Systeembeheerder en via mijn eigen homelab heb ik praktijkervaring opgebouwd met Windows Server, Active Directory, Microsoft 365, virtualisatie en networking."
+                    data-lang-en="I am a junior IT professional with a strong interest in system administration, IT infrastructure and cloud technologies. During my training as a Junior System Administrator and through my own homelab, I gained hands-on experience with Windows Server, Active Directory, Microsoft 365, virtualization and networking.">
+                    Ik ben een junior IT professional ...
+                </p>
+
+                <p data-lang-nl="Ik ben momenteel op zoek naar een eerste functie binnen IT support, system administration of infrastructuurbeheer, met groeimogelijkheden richting cloud engineering en automatisatie."
+                    data-lang-en="I am currently looking for an entry-level role in IT support, system administration or infrastructure management, with growth opportunities towards cloud engineering and automation.">
+                    Ik ben momenteel op zoek ...
+                </p>
+            </div>
+
+
+        </section>
+
+        <!-- SKILLS -->
+
+        <section class="section">
+
+            <h2 data-lang-nl="Technische vaardigheden" data-lang-en="Technical skills">
+                Technische vaardigheden
+            </h2>
+
+            <div class="card reveal">
+
+
+                <div class="tags">
+
+                    <span class="reveal">Windows Server 2019/2022</span>
+                    <span class="reveal">Active Directory</span>
+                    <span class="reveal">DNS</span>
+                    <span class="reveal">DHCP</span>
+                    <span class="reveal">Group Policy</span>
+                    <span class="reveal">Microsoft 365</span>
+                    <span class="reveal">Entra ID</span>
+                    <span class="reveal">Azure</span>
+                    <span class="reveal">VMware ESXi</span>
+                    <span class="reveal">Hyper-V</span>
+                    <span class="reveal">TCP/IP</span>
+                    <span class="reveal">Networking</span>
+                    <span class="reveal">VLANs</span>
+                    <span class="reveal">PowerShell</span>
+                    <span class="reveal">Git</span>
+                    <span class="reveal">GitHub</span>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- OPLEIDING -->
+
+        <section class="section">
+
+            <h2 data-lang-nl="Opleiding" data-lang-en="Education">
+                Opleiding
+            </h2>
+
+            <div class="card reveal">
+
+                <h3 data-lang-nl="VDAB IT1 – Junior Systeembeheerder"
+                    data-lang-en="VDAB IT1 – Junior System Administrator">
+                    VDAB IT1 – Junior System Administrator
+                </h3>
+
+                <p>2024 – 2025</p>
+
+                <p data-lang-nl="Praktijkgerichte opleiding in systeembeheer, netwerkbeheer, virtualisatie en cloud fundamentals."
+                    data-lang-en="Hands-on training in system administration, network management, virtualization and cloud fundamentals.">
+                    Praktijkgerichte opleiding ...
+                </p>
+                <ul>
+
+                    <li>Windows Server 2019/2022</li>
+
+                    <li>Active Directory, DNS, DHCP</li>
+
+                    <li>Networking & Troubleshooting</li>
+
+                    <li>Microsoft 365 & Azure Fundamentals</li>
+
+                    <li>VMware & Hyper-V</li>
+
+                    <li>PowerShell Fundamentals</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- PRAKTIJKERVARING -->
+
+        <section class="section">
+
+            <h2 data-lang-nl="Praktijkervaring" data-lang-en="Practical experience">
+                Praktijkervaring
+            </h2>
+
+            <div class="grid-3">
+
+                <div class="card reveal-left">
+
+                    <h3 data-lang-nl="Enterprise Netwerkproject" data-lang-en="Enterprise Network Project">Enterprise
+                        Netwerkproject</h3>
+
+                    <p data-lang-nl="Volledige bedrijfsinfrastructuur gebouwd met hoofdkantoor en twee bijkantoren."
+                        data-lang-en="Full enterprise infrastructure built with headquarters and two branch offices.">
+                        Volledige bedrijfsinfrastructuur...
+                    </p>
+
+                    <a href="projects.html" data-lang-nl="Meer bekijken →" data-lang-en="View more →">
+                        Meer bekijken →
+                    </a>
+
+                </div>
+
+                <div class="card reveal-center">
+
+                    <h3 data-lang-nl="Homelab Infrastructuur" data-lang-en="Homelab Infrastructure">
+                        Homelab Infrastructuur
+                    </h3>
+
+
+                    <p data-lang-nl="Enterprise labomgeving met VMware, Hyper-V, Active Directory en networking."
+                        data-lang-en="Enterprise lab environment with VMware, Hyper-V, Active Directory and networking.">
+                        Enterprise labomgeving met VMware,
+                        Hyper-V, Active Directory en networking.
+                    </p>
+
+                    <a href="lab.html" data-lang-nl="Meer bekijken →" data-lang-en="View more →">
+                        Meer bekijken →
+                    </a>
+
+
+                </div>
+
+                <div class="card reveal-right">
+
+                    <h3 data-lang-nl="Azure & Microsoft 365" data-lang-en="Azure & Microsoft 365">
+                        Azure & Microsoft 365
+                    </h3>
+
+                    <p data-lang-nl="Cloudprojecten rond Azure, Microsoft 365 en automatisatie."
+                        data-lang-en="Cloud projects using Azure, Microsoft 365 and automation.">
+                        Cloudprojecten rond Azure,
+                        Microsoft 365 en automatisatie.
+                    </p>
+
+                    <a href="projects.html" data-lang-nl="Meer bekijken →" data-lang-en="View more →">
+                        Meer bekijken →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- WERKERVARING -->
+        <section class="section">
+
+            <h2 data-lang-nl="Werkervaring" data-lang-en="Work experience">
+                Werkervaring
+            </h2>
+
+            <!-- JOB 1 -->
+            <div class="card reveal-left">
+
+                <h3 data-lang-nl="Zelfstandige E-commerce" data-lang-en="Independent E-commerce">
+                    Zelfstandige E-commerce
+                </h3>
+
+                <p>2021 – 2024</p>
+
+                <ul>
+                    <li data-lang-nl="Zelfstandig beheer van webshop, klantenservice en dagelijkse operaties."
+                        data-lang-en="Independent management of webshop, customer service and daily operations.">
+                        Zelfstandig beheer van webshop, klantenservice en dagelijkse operaties.
+                    </li>
+
+                    <li data-lang-nl="Verantwoordelijk voor voorraadbeheer, planning en orderverwerking."
+                        data-lang-en="Responsible for inventory management, planning and order processing.">
+                        Verantwoordelijk voor voorraadbeheer, planning en orderverwerking.
+                    </li>
+
+                    <li data-lang-nl="Sterke focus op probleemoplossing en zelfstandig werken."
+                        data-lang-en="Strong focus on problem solving and independent work.">
+                        Sterke focus op probleemoplossing en zelfstandig werken.
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- JOB 2 -->
+            <div class="card reveal-right">
+
+                <h3 data-lang-nl="Magazijnier" data-lang-en="Warehouse Worker">
+                    Magazijnier
+                </h3>
+
+                <p>1999 – 2021</p>
+
+                <ul>
+                    <li data-lang-nl="Logistiek en voorraadbeheer binnen een industriële omgeving."
+                        data-lang-en="Logistics and inventory management in an industrial environment.">
+                        Logistiek en voorraadbeheer binnen industriële omgeving.
+                    </li>
+
+                    <li data-lang-nl="Nauwkeurig werken met verantwoordelijkheid voor correcte uitvoering van taken."
+                        data-lang-en="Precise work with responsibility for accurate task execution.">
+                        Nauwkeurig werken met verantwoordelijkheid.
+                    </li>
+
+                    <li data-lang-nl="Teamwork in een professionele en gestructureerde omgeving."
+                        data-lang-en="Teamwork in a professional and structured environment.">
+                        Teamwork in een professionele omgeving.
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- TALEN -->
+
+        <section class="section">
+
+            <h2 data-lang-nl="Talen" data-lang-en="Languages">
+                Talen
+            </h2>
+
+            <div class="card reveal">
+
+                <div class="tags">
+
+                    <span class="reveal" data-lang-nl="Nederlands (Moedertaal)" data-lang-en="Dutch (Native)">Nederlands
+                        (Moedertaal)</span>
+                    <span class="reveal" data-lang-nl="Engels (Goed)" data-lang-en="English (Good)">Engels (Goed)</span>
+                    <span class="reveal" data-lang-nl="Frans (Basis)" data-lang-en="French (Basic)">Frans (Basis)</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LINKS -->
+
+        <section class="section">
+
+            <h2 data-lang-nl="Meer informatie" data-lang-en="More information">
+                Meer informatie
+            </h2>
+
+            <div class="grid-3">
+
+                <a href="about.html" class="card project-card-link reveal-left">
+
+                    <h3 data-lang-nl="Over mij" data-lang-en="About me">
+                        Over mij
+                    </h3>
+
+                    <p data-lang-nl="Mijn achtergrond en omscholing naar IT."
+                        data-lang-en="My background and career transition into IT.">
+                        Mijn achtergrond en omscholing naar IT.
+                    </p>
+
+                </a>
+
+                <a href="projects.html" class="card project-card-link reveal-center">
+
+                    <h3 data-lang-nl="Projecten" data-lang-en="Projects">
+                        Projecten
+                    </h3>
+
+                    <p data-lang-nl="Technische projecten en documentatie."
+                        data-lang-en="Technical projects and documentation.">
+                        Technische projecten en documentatie.
+                    </p>
+                </a>
+
+                <a href="lab.html" class="card project-card-link reveal-right">
+
+                    <h3 data-lang-nl="Homelab" data-lang-en="Homelab">
+                        Homelab
+                    </h3>
+
+                    <p data-lang-nl="Mijn infrastructuur en praktijkomgeving."
+                        data-lang-en="My infrastructure and hands-on lab environment.">
+                        Mijn infrastructuur en praktijkomgeving.
+                    </p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="section highlight">
+
+            <div class="card reveal cv-job" style="text-align:center; padding: 40px;">
+
+                <h2 data-lang-nl="Beschikbaar voor een junior IT functie"
+                    data-lang-en="Available for a junior IT position">
+                    Beschikbaar voor een junior IT functie
+                </h2>
+
+                <p data-lang-nl="Op zoek naar een gemotiveerde junior System Administrator met een hands-on mentaliteit en een passie voor IT?"
+                    data-lang-en="Looking for a motivated Junior System Administrator with a hands-on mindset and a passion for IT?">
+                    Op zoek naar een gemotiveerde junior System Administrator...
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="contact.html" class="btn primary" data-lang-nl="Contact opnemen →"
+                        data-lang-en="Get in touch →">
+                        Contact opnemen
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-socials">
+
+            <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 SvenITGuy</p>
+
+        <div class="footer-links">
+
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+                Privacybeleid
+            </a>
+
+            <span>|</span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+                Gebruiksvoorwaarden
+            </a>
+
+            <span>|</span>
+
+            <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+                data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+                Cookie-instellingen
+            </a>
+
+        </div>
+
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+
+        <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+            data-lang-en="This site uses cookies to improve your experience.">
+            Deze site gebruikt cookies om je ervaring te verbeteren.
+        </p>
+
+        <div class="cookie-links">
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+            <span> & </span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+                data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+        </div>
+
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+                Akkoord
+            </button>
+
+            <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+                Weiger
+            </button>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="script.js"></script>
+    <script src="cookie-banner.js"></script>
+
+</body>
+
+</html>

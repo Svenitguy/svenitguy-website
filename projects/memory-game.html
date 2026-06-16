@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="page-about">
+
+  <div class="page-background">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+    </div>
+
+    <!-- VOEG DIT TOE: De hamburger-knop -->
+    <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+      <i class="fa-solid fa-bars icon-burger"></i>
+      <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+    </button>
+
+    <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+      <a href="../index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+      <a href="../about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+      <a href="../projects.html" class="active" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+      <a href="../lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+      <a href="../journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+      <a href="../cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+      <a href="../contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <!-- LANGUAGE SWITCH -->
+      <div class="lang-dropdown">
+        <button class="lang-btn" id="lang-btn-text">
+          NL
+          <span class="chevron">▾</span>
+        </button>
+
+        <div class="lang-menu" id="lang-menu">
+          <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+            Nederlands
+          </button>
+
+          <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+            English
+          </button>
+        </div>
+      </div>
+
+      <!-- THEME TOGGLE -->
+      <div class="theme-switch-container">
+        <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+        <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+          <span class="theme-ball">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </span>
+        </label>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- PAGINA TITEL -->
+  <div class="page-title" style="text-align:center; margin: 40px 0;">
+    <h1>Memory Game</h1>
+    <p data-lang-nl="Speel het klassieke memory spel met cloudopslag en ranking"
+      data-lang-en="Play the classic memory game with cloud storage and leaderboard">
+      Speel het klassieke memory spel met cloudopslag en ranking
+    </p>
+  </div>
+
+  <main class="section">
+
+    <!-- OVER DIT PROJECT -->
+    <div class="card reveal">
+      <h2 data-lang-nl="Over dit project" data-lang-en="About this Project">
+        Over dit project
+      </h2>
+
+      <p data-lang-nl="Deze memory game is ontwikkeld met HTML, CSS en JavaScript en maakt gebruik van Azure Function Apps, Azure Storage en Azure Cosmos DB om scores op te slaan en een ranking bij te houden."
+        data-lang-en="This memory game is built with HTML, CSS and JavaScript and uses Azure Function Apps, Azure Storage and Azure Cosmos DB to store scores and maintain a leaderboard.">
+      </p>
+    </div>
+
+    <!-- DOEL -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Doel van dit project" data-lang-en="Project Goal">
+        Doel van dit project
+      </h2>
+
+      <p data-lang-nl="Het doel was om ervaring op te doen met het bouwen van een interactieve webapplicatie gekoppeld aan cloud resources zoals Azure Functions en Cosmos DB, inclusief DevOps integratie voor deployment."
+        data-lang-en="The goal was to gain experience building an interactive web application connected to cloud resources such as Azure Functions and Cosmos DB, including DevOps integration for deployment.">
+      </p>
+    </div>
+
+    <!-- TECHNOLOGIEËN -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Gebruikte technologieën" data-lang-en="Technologies Used">
+        Gebruikte technologieën
+      </h2>
+
+      <div class="tech-icons" style="margin-top:14px;">
+        <img src="../icons/html5.svg" alt="HTML5" title="HTML5">
+        <img src="../icons/css3.svg" alt="CSS3" title="CSS3">
+        <img src="../icons/javascript.svg" alt="JavaScript" title="JavaScript">
+        <img src="../icons/azure-functions.svg" alt="Azure Functions" title="Azure Functions">
+        <img src="../icons/azure-storage-account.svg" alt="Azure Storage" title="Azure Storage">
+        <img src="../icons/azure-cosmos-db.svg" alt="Azure Cosmos DB" title="Azure Cosmos DB">
+        <img src="../icons/azure-devops.svg" alt="Azure DevOps" title="Azure DevOps">
+        <img src="../icons/vscode.svg" alt="VS Code" title="VS Code">
+      </div>
+    </div>
+
+    <!-- WAT IK GELEERD HEB -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Wat ik geleerd heb" data-lang-en="What I Learned">
+        Wat ik geleerd heb
+      </h2>
+
+      <ul style="margin-top:12px; padding-left:18px;">
+        <li data-lang-nl="Interactie en state management in JavaScript voor een memory game."
+          data-lang-en="Interaction and state management in JavaScript for a memory game."></li>
+
+        <li data-lang-nl="Azure Function Apps gebruiken voor backend logica en scorebeheer."
+          data-lang-en="Using Azure Function Apps for backend logic and score management."></li>
+
+        <li data-lang-nl="Data opslaan en ophalen uit Azure Cosmos DB voor leaderboard functionaliteit."
+          data-lang-en="Storing and retrieving data from Azure Cosmos DB for leaderboard functionality."></li>
+
+        <li data-lang-nl="Azure Storage gebruiken voor statische assets."
+          data-lang-en="Using Azure Storage for static assets."></li>
+
+        <li data-lang-nl="CI/CD pipelines via Azure DevOps." data-lang-en="CI/CD pipelines using Azure DevOps."></li>
+      </ul>
+    </div>
+
+    <!-- GAME + RANKING -->
+    <div class="card reveal" style="margin-top:22px; text-align:center;">
+      <h2 data-lang-nl="Speel de game en bekijk de ranking" data-lang-en="Play the Game and View the Leaderboard">
+        Speel de game en bekijk de ranking
+      </h2>
+
+      <p data-lang-nl="Speel de memory game hieronder. Scores worden opgeslagen in de cloud en je kan de beste scores terugvinden in de ranking."
+        data-lang-en="Play the memory game below. Scores are stored in the cloud and you can view the best scores in the leaderboard.">
+      </p>
+      <div>
+        <a href="https://www.svenitguy.be/memory-game/index.html" class="btn primary btn-lg" target="_blank"
+          rel="noopener noreferrer" style="margin-top:14px;">
+          Speel het spel
+        </a>
+      </div>
+      <section id="ranking-section" class="ranking-section" style="margin-top:30px;">
+        <h2 data-lang-nl="🏆 Highscores" data-lang-en="🏆 Highscores">
+          🏆 Highscores
+        </h2>
+
+        <ul id="ranking-list" class="ranking-list"></ul>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-socials">
+
+      <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+
+    <p>© 2026 SvenITGuy</p>
+
+    <div class="footer-links">
+
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+        Privacybeleid
+      </a>
+
+      <span>|</span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+        Gebruiksvoorwaarden
+      </a>
+
+      <span>|</span>
+
+      <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+        data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+        Cookie-instellingen
+      </a>
+
+    </div>
+
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+
+    <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+      data-lang-en="This site uses cookies to improve your experience.">
+      Deze site gebruikt cookies om je ervaring te verbeteren.
+    </p>
+
+    <div class="cookie-links">
+      <a href="../privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+      <span> & </span>
+
+      <a href="../voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+        data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+    </div>
+
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+        Akkoord
+      </button>
+
+      <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+        Weiger
+      </button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="../script.js"></script>
+  <script src="../cookie-banner.js"></script>
+
+</body>
+
+</html>
