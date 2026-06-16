@@ -283,11 +283,21 @@ function setupAzureFunctionDemo() {
         resultText.textContent = 'Bezig met laden...';
 
         try {
-            const functionUrl = 'https://svenportfoliofunc-hza4b7fhgcg6d3gd.westeurope-01.azurewebsites.net/api/HttpTrigger1?name=' + encodeURIComponent(name);
-            const response = await fetch(functionUrl);
+            const functionUrl = 'https://svenportfoliofunc-hza4b7fhgcg6d3gd.westeurope-01.azurewebsites.net/api/HttpTrigger1';
+
+            const response = await fetch(functionUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ name })
+            });
+
             if (!response.ok) throw new Error('Status ' + response.status);
+
             const text = await response.text();
             resultText.textContent = text;
+
         } catch (error) {
             console.error('Azure function error:', error);
             resultText.textContent = 'Er is iets misgegaan: ' + error.message;
@@ -303,7 +313,7 @@ function setupRankingList() {
         return;
     }
 
-    const apiUrl = 'https://memorygamefunc-sven-e7abhug3gra6cnfs.westeurope-01.azurewebsites.net/api/getScores?code=YM_K4pwyacs7fw7xe21R4IJwRekNnIjmPcyzeAcCDEFkAzFu_0HXwQ==';
+    const apiUrl = 'https://memorygamefunc-sven-e7abhug3gra6cnfs.westeurope-01.azurewebsites.net/api/getScores';
 
     // Laad placeholder
     rankingList.innerHTML = '<li class="ranking-item"><span class="name">Laden...</span></li>';
