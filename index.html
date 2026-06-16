@@ -1,63 +1,497 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SvenITGuy - Cloud & DevOps Journey</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
+    <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
 
-    .card {
-      max-width: 600px;
-      padding: 30px;
-      border-radius: 12px;
-      background: #1e293b;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    h1 {
-      margin-bottom: 10px;
-      color: #38bdf8;
-    }
-
-    p {
-      line-height: 1.6;
-      color: #cbd5e1;
-    }
-
-    .tag {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 5px 10px;
-      background: #38bdf8;
-      color: #0f172a;
-      border-radius: 6px;
-      font-size: 12px;
-    }
-  </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <div class="card">
-    <h1>Hi, I'm Sven 👋</h1>
-    <p>
-      Welcome to my IT & Cloud journey.<br><br>
-      I’m building skills in Azure, DevOps, Terraform and automation.<br>
-      This site will grow as my portfolio of real-world projects.
-    </p>
+<body class="page-home">
 
-    <div class="tag">Azure • DevOps • Terraform • Cloud</div>
-  </div>
+    <div class="page-background">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+        </div>
+
+        <!-- VOEG DIT TOE: De hamburger-knop -->
+        <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+            <i class="fa-solid fa-bars icon-burger"></i>
+            <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+            <a href="index.html" class="active" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+            <a href="about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+            <a href="projects.html" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+            <a href="lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+            <a href="journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+            <a href="cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+            <a href="contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <!-- LANGUAGE SWITCH -->
+            <div class="lang-dropdown">
+                <button class="lang-btn" id="lang-btn-text">
+                    NL
+                    <span class="chevron">▾</span>
+                </button>
+
+                <div class="lang-menu" id="lang-menu">
+                    <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+                        Nederlands
+                    </button>
+
+                    <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+                        English
+                    </button>
+                </div>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-switch-container">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+                <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+                    <span class="theme-ball">
+                        <i class="fa-solid fa-moon icon-moon"></i>
+                        <i class="fa-solid fa-sun icon-sun"></i>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content reveal">
+
+            <h1 class="hero-name">Sven Velleman</h1>
+
+            <h2 class="role" data-lang-nl="IT Support & System Administration"
+                data-lang-en="IT Support & System Administration">
+                IT Support & System Administration
+            </h2>
+
+            <p class="specialties" data-lang-nl="Windows Infrastructure • Microsoft 365 • Azure"
+                data-lang-en="Windows Infrastructure • Microsoft 365 • Azure">
+                Windows Infrastructure • Microsoft 365 • Azure
+            </p>
+
+            <p class="subtitle"
+                data-lang-nl="Hands-on IT professional met praktijkervaring in <code>Windows Server</code>, <code>Active Directory</code>, <code>Microsoft 365</code> en <code>Azure</code> via enterprise labomgevingen en realistische IT-projecten."
+                data-lang-en="Hands-on IT professional with practical experience in <code>Windows Server</code>, <code>Active Directory</code>, <code>Microsoft 365</code> and <code>Azure</code> through enterprise lab environments and realistic IT projects.">
+
+                Hands-on IT professional met praktijkervaring in
+                <code>Windows Server</code>, <code>Active Directory</code>,
+                <code>Microsoft 365</code> en <code>Azure</code> via enterprise
+                labomgevingen en realistische IT-projecten.
+
+            </p>
+
+            <div class="hero-badges">
+                <span class="badge">Windows Server</span>
+                <span class="badge">Active Directory</span>
+                <span class="badge">DNS & DHCP</span>
+                <span class="badge">PowerShell</span>
+                <span class="badge">Microsoft 365</span>
+                <span class="badge">Azure</span>
+            </div>
+
+            <div class="home-hero-buttons">
+
+                <a href="projects.html" class="btn primary">
+                    <i class="fa-solid fa-folder-open"></i>
+
+                    <span data-lang-nl="Bekijk Projecten →" data-lang-en="View Projects →">
+                        Bekijk Projecten
+                    </span>
+                </a>
+
+                <a href="cv.html" class="btn secondary">
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <span data-lang-nl="Bekijk CV →" data-lang-en="View CV →">
+                        Bekijk CV
+                    </span>
+                </a>
+
+                <a href="contact.html" class="btn secondary btn-contact">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span data-lang-nl="Contact opnemen →" data-lang-en="Get in touch →">
+                        Contact opnemen
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="hero-scroll-indicator">
+
+                <span data-lang-nl="Scroll naar beneden" data-lang-en="Scroll down">
+                    Scroll naar beneden
+                </span>
+
+                <div class="scroll-arrow-container">
+                    <span class="scroll-cap"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section reveal-left">
+        <h2 data-lang-nl="Over mij" data-lang-en="About me">
+            Over mij
+        </h2>
+
+        <div class="card">
+            <h3 data-lang-nl="Van IT-enthousiast naar IT professional"
+                data-lang-en="From IT enthusiast to IT professional">
+                Van IT-enthousiast naar IT professional
+            </h3>
+
+            <p data-lang-nl="Ik ben een junior IT professional met een sterke interesse in systeembeheer, cloud en infrastructuur. Via praktijklabs en eigen projecten bouw ik voortdurend ervaring op met moderne IT-omgevingen."
+                data-lang-en="I am a junior IT professional with a strong interest in systems administration, cloud and infrastructure. Through hands-on labs and personal projects, I continuously build experience with modern IT environments.">
+                Ik ben een junior IT professional met een sterke interesse in systeembeheer, cloud en infrastructuur.
+                Via praktijklabs en eigen projecten bouw ik voortdurend ervaring op met moderne IT-omgevingen.
+            </p>
+
+            <p data-lang-nl="Mijn focus ligt momenteel op Windows Server, Active Directory, Microsoft 365, Azure en networking. Ik leer het liefst door systemen op te bouwen, configureren en problemen op te lossen in realistische scenario’s."
+                data-lang-en="My current focus is on Windows Server, Active Directory, Microsoft 365, Azure and networking. I learn best by building, configuring and troubleshooting systems in realistic scenarios.">
+                Mijn focus ligt momenteel op Windows Server, Active Directory, Microsoft 365, Azure en networking. Ik
+                leer het liefst door systemen op te bouwen, configureren en problemen op te lossen in realistische
+                scenario’s.
+            </p>
+
+            <p data-lang-nl="Ik ben gemotiveerd om mijn eerste professionele IT-rol te starten en mezelf verder te ontwikkelen binnen een echte werkomgeving."
+                data-lang-en="I am motivated to start my first professional IT role and further develop myself in a real work environment.">
+                Ik ben gemotiveerd om mijn eerste professionele IT-rol te starten en mezelf verder te ontwikkelen binnen
+                een echte werkomgeving.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="about.html" class="btn primary" data-lang-nl="Meer over mij →" data-lang-en="More about me →">
+                    Meer over mij →
+                </a>
+
+                <a href="journey.html" class="btn secondary" data-lang-nl="Mijn traject →" data-lang-en="My journey →">
+                    Mijn traject →
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section reveal-right">
+        <div class="section-header">
+            <h2 data-lang-nl="Wat kan ik?" data-lang-en="What can I do?">
+                Wat kan ik?
+            </h2>
+
+            <a href="cv.html" data-lang-nl="Bekijk CV →" data-lang-en="View CV →">
+                Bekijk CV →
+            </a>
+        </div>
+        <div class="card">
+
+            <h3 data-lang-nl="Vaardigheden" data-lang-en="Skills">
+                Vaardigheden
+            </h3>
+
+            <div class="tags">
+                <span class="reveal" data-lang-nl="Troubleshooting"
+                    data-lang-en="Troubleshooting">Troubleshooting</span>
+                <span class="reveal" data-lang-nl="Probleemoplossend denken"
+                    data-lang-en="Problem solving">Probleemoplossend denken</span>
+                <span class="reveal" data-lang-nl="User support" data-lang-en="User support">User support</span>
+                <span class="reveal" data-lang-nl="Netwerk basiskennis" data-lang-en="Networking basics">Netwerk
+                    basiskennis</span>
+                <span class="reveal" data-lang-nl="PowerShell scripting" data-lang-en="PowerShell scripting">PowerShell
+                    scripting</span>
+            </div>
+
+
+            <h3 style="margin-top: 1.5rem;" data-lang-nl="Technologieën & Tools" data-lang-en="Technologies & Tools">
+                Technologieën & Tools
+            </h3>
+
+            <div class="tags">
+                <span class="reveal" data-lang-nl="Windows Server" data-lang-en="Windows Server">Windows
+                    Server</span>
+                <span class="reveal" data-lang-nl="Active Directory" data-lang-en="Active Directory">Active
+                    Directory</span>
+                <span class="reveal" data-lang-nl="DNS & DHCP" data-lang-en="DNS & DHCP">DNS & DHCP</span>
+                <span class="reveal" data-lang-nl="Microsoft 365" data-lang-en="Microsoft 365">Microsoft 365</span>
+                <span class="reveal" data-lang-nl="Azure" data-lang-en="Azure">Azure</span>
+                <span class="reveal" data-lang-nl="VMware" data-lang-en="VMware">VMware</span>
+                <span class="reveal" data-lang-nl="Hyper-V" data-lang-en="Hyper-V">Hyper-V</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section reveal">
+        <div class="section-header">
+            <h2 data-lang-nl="Uitgelichte projecten" data-lang-en="Featured projects">
+                Uitgelichte projecten
+            </h2>
+
+            <a href="projects.html" data-lang-nl="Alles bekijken →" data-lang-en="View all →">
+                Alles bekijken →
+            </a>
+        </div>
+
+        <div class="grid-3">
+
+            <div class="card project-card reveal-left">
+                <h3 data-lang-nl="Azure Function Demo" data-lang-en="Azure Function Demo">
+                    Azure Function Demo
+                </h3>
+
+                <p data-lang-nl="Serverless Azure Function die gepersonaliseerde berichten retourneert via HTTP."
+                    data-lang-en="Serverless Azure Function returning personalized messages via HTTP.">
+                    Serverless Azure Function die gepersonaliseerde berichten retourneert via HTTP.
+                </p>
+
+                <a href="projects/azure-function-demo.html" class="btn secondary" data-lang-nl="Bekijk project →"
+                    data-lang-en="View project →">
+                    Bekijk project →
+                </a>
+            </div>
+
+            <div class="card project-card reveal-center">
+                <h3 data-lang-nl="AZ-900 Quiz" data-lang-en="AZ-900 Quiz">
+                    AZ-900 Quiz
+                </h3>
+
+                <p data-lang-nl="Interactieve Microsoft Azure Fundamentals quiz met vragen uit Azure Blob Storage."
+                    data-lang-en="Interactive Microsoft Azure Fundamentals quiz with questions loaded from Azure Blob Storage.">
+                    Interactieve Microsoft Azure Fundamentals quiz met vragen uit Azure Blob Storage.
+                </p>
+
+                <a href="projects/az-900-quiz.html" class="btn secondary" data-lang-nl="Bekijk project →"
+                    data-lang-en="View project →">
+                    Bekijk project →
+                </a>
+            </div>
+
+            <div class="card project-card reveal-right">
+                <h3 data-lang-nl="Microsoft 365 Setup" data-lang-en="Microsoft 365 Setup">
+                    Microsoft 365 Setup
+                </h3>
+
+                <p data-lang-nl="DNS, e-mail en identity configuratie met Entra ID en Exchange Online."
+                    data-lang-en="DNS, email and identity configuration using Microsoft Entra ID and Exchange Online.">
+                    DNS, e-mail en identity configuratie met Entra ID en Exchange Online.
+                </p>
+
+                <a href="projects/m365-email-setup.html" class="btn secondary" data-lang-nl="Bekijk project →"
+                    data-lang-en="View project →">
+                    Bekijk project →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BESCHIKBAARHEID -->
+    <section class="section availability reveal-left">
+        <h2 class="section-title" data-lang-nl="Beschikbaarheid" data-lang-en="Availability">
+            Beschikbaarheid
+        </h2>
+
+        <div class="card availability-card">
+
+            <h3 class="availability-title">
+                <span class="status-dot" aria-hidden="true"></span>
+
+                <span data-lang-nl="Actief op zoek naar een junior IT functie"
+                    data-lang-en="Actively seeking a junior IT position">
+                    Actief op zoek naar een junior IT functie
+                </span>
+            </h3>
+
+            <p data-lang-nl="Ik ben momenteel beschikbaar voor een junior IT support of system administrator rol en sta open voor mijn eerste professionele uitdaging."
+                data-lang-en="I am currently available for a junior IT support or system administrator role and open to my first professional opportunity.">
+                Ik ben momenteel beschikbaar voor een junior IT support of system administrator rol en sta open voor
+                mijn eerste professionele uitdaging.
+            </p>
+
+            <p data-lang-nl="Interesses: Windows Server, Microsoft 365, Azure en IT-infrastructuur."
+                data-lang-en="Interests: Windows Server, Microsoft 365, Azure and IT infrastructure.">
+                Interesses: Windows Server, Microsoft 365, Azure en IT-infrastructuur.
+            </p>
+
+            <!-- ACTIONS -->
+            <div class="availability-actions">
+
+                <!-- CV DOWNLOAD -->
+                <a href="files/Sven_Velleman_CV.pdf" class="btn secondary" download data-lang-nl="Download CV ↓"
+                    data-lang-en="Download CV ↓">
+                    Download CV
+                </a>
+
+                <!-- CONTACT -->
+                <a href="contact.html" class="btn primary" data-lang-nl="Laten we praten →" data-lang-en="Let's talk →">
+                    Laten we praten
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section contact reveal-right">
+
+        <h2 data-lang-nl="Contact" data-lang-en="Contact">
+            Contact
+        </h2>
+
+        <div class="card">
+
+            <div class="contact-grid">
+
+                <a href="mailto:sven.velleman@svenitguy.be" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span data-lang-nl="E-mail" data-lang-en="Email">E-mail</span>
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/sven-velleman/" class="contact-item" target="_blank"
+                    rel="noopener">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn ↗</span>
+                </a>
+
+                <a href="https://github.com/Svenitguy" class="contact-item" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub ↗</span>
+                </a>
+
+            </div>
+
+            <!-- <class="contact-cta">
+                <a href="contact.html" class="btn primary" data-lang-nl="Contactformulier" data-lang-en="Contact Form">
+                    Contactformulier
+                </a>
+            </div> -->
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-socials">
+
+            <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 SvenITGuy</p>
+
+        <div class="footer-links">
+
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+                Privacybeleid
+            </a>
+
+            <span>|</span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+                Gebruiksvoorwaarden
+            </a>
+
+            <span>|</span>
+
+            <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+                data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+                Cookie-instellingen
+            </a>
+
+        </div>
+
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+
+        <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+            data-lang-en="This site uses cookies to improve your experience.">
+            Deze site gebruikt cookies om je ervaring te verbeteren.
+        </p>
+
+        <div class="cookie-links">
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+            <span> & </span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+                data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+        </div>
+
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+                Akkoord
+            </button>
+
+            <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+                Weiger
+            </button>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="script.js"></script>
+    <script src="cookie-banner.js"></script>
+
 </body>
+
 </html>

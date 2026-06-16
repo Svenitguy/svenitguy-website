@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-about">
+
+  <div class="page-background">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+    </div>
+
+    <!-- VOEG DIT TOE: De hamburger-knop -->
+    <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+      <i class="fa-solid fa-bars icon-burger"></i>
+      <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+    </button>
+
+    <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+      <a href="index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+      <a href="about.html" class="active" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+      <a href="projects.html" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+      <a href="lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+      <a href="journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+      <a href="cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+      <a href="contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <!-- LANGUAGE SWITCH -->
+      <div class="lang-dropdown">
+        <button class="lang-btn" id="lang-btn-text">
+          NL
+          <span class="chevron">▾</span>
+        </button>
+
+        <div class="lang-menu" id="lang-menu">
+          <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+            Nederlands
+          </button>
+
+          <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+            English
+          </button>
+        </div>
+      </div>
+
+      <!-- THEME TOGGLE -->
+      <div class="theme-switch-container">
+        <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+        <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+          <span class="theme-ball">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </span>
+        </label>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section reveal-left about-me">
+
+    <h2 class="reveal" data-lang-nl="Over mij" data-lang-en="About me">
+      Over mij
+    </h2>
+
+    <div class="card reveal-left">
+      <h3 data-lang-nl="Wie ik ben" data-lang-en="Who I am">
+        Wie ik ben
+      </h3>
+
+      <p data-lang-nl="Ik ben Sven, een junior IT professional met een sterke interesse in cloud, infrastructuur en systeembeheer."
+        data-lang-en="I am Sven, a junior IT professional with a strong interest in cloud, infrastructure and systems administration.">
+        Ik ben Sven, een junior IT professional met een sterke interesse in cloud, infrastructuur en systeembeheer.
+      </p>
+
+      <p data-lang-nl="Technologie speelt al sinds mijn jeugd een belangrijke rol in mijn leven. Mijn eerste computerervaringen dateren uit de jaren negentig en doorheen de jaren groeide die interesse uit tot een blijvende passie voor IT."
+        data-lang-en="Technology has been an important part of my life since childhood. My first experiences with computers date back to the 1990s, and over the years that curiosity grew into a lasting passion for IT.">
+        Technologie speelt al sinds mijn jeugd een belangrijke rol in mijn leven. Mijn eerste computerervaringen dateren
+        uit de jaren negentig en doorheen de jaren groeide die interesse uit tot een blijvende passie voor IT.
+      </p>
+
+      <p data-lang-nl="Na meer dan twintig jaar werkervaring buiten de IT besloot ik bewust een carrièreswitch te maken. In 2024 startte ik de voltijdse opleiding Junior Systeembeheerder via VDAB en IT1, die ik succesvol afrondde in augustus 2025."
+        data-lang-en="After more than twenty years of professional experience outside the IT sector, I made a deliberate career change. In 2024, I started the full-time Junior Systems Administrator program through VDAB and IT1, which I successfully completed in August 2025.">
+        Na meer dan twintig jaar werkervaring buiten de IT besloot ik bewust een carrièreswitch te maken. In 2024
+        startte ik de voltijdse opleiding Junior Systeembeheerder via VDAB en IT1, die ik succesvol afrondde in augustus
+        2025.
+      </p>
+
+      <p data-lang-nl="Vandaag blijf ik dagelijks investeren in mijn technische ontwikkeling via homelabs, persoonlijke projecten en zelfstudie. Meer over mijn traject en evolutie in IT vind je op de pagina Mijn Traject."
+        data-lang-en="Today, I continue to invest in my technical development through homelabs, personal projects and self-study. You can read more about my journey and IT evolution on the My Journey page.">
+        Vandaag blijf ik dagelijks investeren in mijn technische ontwikkeling via homelabs, persoonlijke projecten en
+        zelfstudie. Meer over mijn traject en evolutie in IT vind je op de pagina Mijn Traject.
+      </p>
+
+      <!-- NIEUWE PARAGRAAF -->
+      <p data-lang-nl="Ik sta open voor een eerste professionele functie binnen IT support, systeembeheer of infrastructuur. Mijn doel is om praktijkervaring op te bouwen in een echte werkomgeving, mijn technische kennis verder te verdiepen en op termijn door te groeien richting cloud en infrastructuurrollen."
+        data-lang-en="I am open to an entry-level role in IT support, systems administration or infrastructure. My goal is to gain practical experience in a real working environment, further develop my technical skills and eventually grow towards cloud and infrastructure roles.">
+        Ik sta open voor een eerste professionele functie binnen IT support, systeembeheer of infrastructuur. Mijn doel
+        is om praktijkervaring op te bouwen in een echte werkomgeving, mijn technische kennis verder te verdiepen en op
+        termijn door te groeien richting cloud en infrastructuurrollen.
+      </p>
+
+      <div>
+        <a href="journey.html" class="btn primary" data-lang-nl="Bekijk mijn traject →"
+          data-lang-en="View my journey →">
+          Bekijk mijn traject →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section class="section reveal-right how-i-work">
+
+    <h2 data-lang-nl="Hoe ik werk" data-lang-en="How I work">
+      Hoe ik werk
+    </h2>
+
+    <div class="card reveal-right">
+
+      <p data-lang-nl="Ik leer het liefst door systemen daadwerkelijk op te bouwen, configureren en beheren. Hoewel theorie belangrijk is, geloof ik dat echte kennis ontstaat door praktijkervaring."
+        data-lang-en="I learn best by building, configuring and managing systems in practice. While theory is important, I believe real understanding comes from hands-on experience.">
+        Ik leer het liefst door systemen daadwerkelijk op te bouwen, configureren en beheren. Hoewel theorie belangrijk
+        is, geloof ik dat echte kennis ontstaat door praktijkervaring.
+      </p>
+
+      <p data-lang-nl="Daarom werk ik regelmatig met homelabs, Azure-projecten en persoonlijke testomgevingen waarin ik nieuwe technologieën kan verkennen en bestaande kennis kan verdiepen."
+        data-lang-en="That is why I regularly work with homelabs, Azure projects and personal test environments where I can explore new technologies and deepen my existing knowledge.">
+        Daarom werk ik regelmatig met homelabs, Azure-projecten en persoonlijke testomgevingen waarin ik nieuwe
+        technologieën kan verkennen en bestaande kennis kan verdiepen.
+      </p>
+
+      <p data-lang-nl="Mijn interesses liggen voornamelijk bij Windows Server, Microsoft 365, Azure, infrastructuur, automatisering en security. Ik werk graag gestructureerd, documenteer mijn projecten en probeer voortdurend bij te leren."
+        data-lang-en="My main interests include Windows Server, Microsoft 365, Azure, infrastructure, automation and security. I enjoy working in a structured way, documenting projects and continuously expanding my skills.">
+        Mijn interesses liggen voornamelijk bij Windows Server, Microsoft 365, Azure, infrastructuur, automatisering en
+        security. Ik werk graag gestructureerd, documenteer mijn projecten en probeer voortdurend bij te leren.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- MY GOAL -->
+  <section class="section reveal-left my-goal">
+
+    <h2 data-lang-nl="Mijn doel" data-lang-en="My goal">
+      Mijn doel
+    </h2>
+
+    <div class="card reveal-right">
+
+      <p data-lang-nl="Mijn doel is om mijn eerste professionele IT-functie te starten binnen systeembeheer, cloud of infrastructuur."
+        data-lang-en="My goal is to start my first professional role in systems administration, cloud or infrastructure.">
+        Mijn doel is om mijn eerste professionele IT-functie te starten binnen systeembeheer, cloud of infrastructuur.
+      </p>
+
+      <p data-lang-nl="Ik ben op zoek naar een omgeving waar ik mijn kennis verder kan ontwikkelen, praktijkervaring kan opbouwen en kan bijdragen aan betrouwbare en moderne IT-oplossingen."
+        data-lang-en="I am looking for an environment where I can continue developing my skills, gain practical experience and contribute to reliable and modern IT solutions.">
+        Ik ben op zoek naar een omgeving waar ik mijn kennis verder kan ontwikkelen, praktijkervaring kan opbouwen en
+        kan bijdragen aan betrouwbare en moderne IT-oplossingen.
+      </p>
+
+      <p data-lang-nl="Op langere termijn wil ik mij verder specialiseren in cloudtechnologieën, automatisering en infrastructuurbeheer."
+        data-lang-en="In the long term, I aim to further specialize in cloud technologies, automation and infrastructure management.">
+        Op langere termijn wil ik mij verder specialiseren in cloudtechnologieën, automatisering en
+        infrastructuurbeheer.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <!-- <section class="section reveal-right">
+
+    <h2 class="reveal" data-lang-nl="Vaardigheden" data-lang-en="Skills">
+      Vaardigheden
+    </h2>
+
+    <div class="card reveal">
+
+      <p data-lang-nl="Skills zijn wat ik kan toepassen in de praktijk."
+        data-lang-en="These are the skills I apply in hands-on IT environments.">
+      </p>
+
+      <div class="tags">
+        <span class="reveal">Cloud & Infrastructure</span>
+        <span class="reveal">System Administration</span>
+        <span class="reveal">Active Directory</span>
+        <span class="reveal">Networking</span>
+        <span class="reveal">Automation</span>
+        <span class="reveal">PowerShell</span>
+        <span class="reveal">Troubleshooting</span>
+      </div>
+
+    </div>
+
+  </section> -->
+
+  <!-- EXPERIENCE -->
+  <!-- <section class="section reveal-left">
+
+    <h2 class="reveal" data-lang-nl="Praktijkervaring" data-lang-en="Hands-on experience">
+      Praktijkervaring
+    </h2>
+
+    <div class="grid-3">
+
+      <div class="card reveal-left">
+        <h3>IT Support</h3>
+        <p data-lang-nl="Ervaring met Windows Server, AD en M365 via labs."
+          data-lang-en="Hands-on experience with Windows Server, AD and M365 through lab environments.">
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Networking</h3>
+        <p data-lang-nl="Basis netwerkconfiguratie en troubleshooting."
+          data-lang-en="Basic network configuration and troubleshooting.">
+        </p>
+      </div>
+
+      <div class="card reveal-right">
+        <h3>Cloud</h3>
+        <p data-lang-nl="Azure en automation via persoonlijke projecten."
+          data-lang-en="Azure and automation through personal projects.">
+        </p>
+      </div>
+
+    </div>
+
+  </section> -->
+
+  <!-- CONTACT -->
+  <section class="section contact reveal-right">
+
+    <h2 data-lang-nl="Contact" data-lang-en="Contact">
+      Contact
+    </h2>
+
+    <div class="card">
+
+      <div class="contact-grid">
+
+        <a href="mailto:sven.velleman@svenitguy.be" class="contact-item">
+
+          <i class="fa-solid fa-envelope"></i>
+          <span data-lang-nl="E-mail" data-lang-en="Email">
+            E-mail
+          </span>
+
+        </a>
+
+        <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener" class="contact-item">
+
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn ↗</span>
+
+        </a>
+
+        <a href="https://github.com/Svenitguy" target="_blank" rel="noopener" class="contact-item">
+
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub ↗</span>
+
+        </a>
+
+      </div>
+
+      <!-- RIGHT: STATUS / FOCUS -->
+      <!-- <div class="card availability-card reveal-right">
+
+        <span class="status-dot" aria-hidden="true"></span>
+        <h3 class="section-title" data-lang-nl="Beschikbaar voor IT functie"
+          data-lang-en="Available for a Junior IT role">
+          Beschikbaar voor IT functie
+        </h3>
+
+        <p data-lang-nl="Junior IT Support / System Administrator met focus op cloud, Azure en automation."
+          data-lang-en="Junior IT Support / System Administrator focused on cloud, Azure and automation.">
+        </p>
+
+        <a class="btn primary" href="contact.html" data-lang-nl="Contact opnemen" data-lang-en="Get in touch">
+          Contact opnemen
+        </a>
+
+      </div>
+
+    </div> -->
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-socials">
+
+      <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+
+    <p>© 2026 SvenITGuy</p>
+
+    <div class="footer-links">
+
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+        Privacybeleid
+      </a>
+
+      <span>|</span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+        Gebruiksvoorwaarden
+      </a>
+
+      <span>|</span>
+
+      <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+        data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+        Cookie-instellingen
+      </a>
+
+    </div>
+
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+
+    <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+      data-lang-en="This site uses cookies to improve your experience.">
+      Deze site gebruikt cookies om je ervaring te verbeteren.
+    </p>
+
+    <div class="cookie-links">
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+      <span> & </span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+        data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+    </div>
+
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+        Akkoord
+      </button>
+
+      <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+        Weiger
+      </button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="script.js"></script>
+  <script src="cookie-banner.js"></script>
+
+</body>
+
+</html>

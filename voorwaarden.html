@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-terms">
+
+    <div class="page-background">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+        </div>
+
+        <!-- VOEG DIT TOE: De hamburger-knop -->
+        <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+            <i class="fa-solid fa-bars icon-burger"></i>
+            <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+            <a href="index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+            <a href="about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+            <a href="projects.html" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+            <a href="lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+            <a href="journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+            <a href="cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+            <a href="contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <!-- LANGUAGE SWITCH -->
+            <div class="lang-dropdown">
+                <button class="lang-btn" id="lang-btn-text">
+                    NL
+                    <span class="chevron">▾</span>
+                </button>
+
+                <div class="lang-menu" id="lang-menu">
+                    <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+                        Nederlands
+                    </button>
+
+                    <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+                        English
+                    </button>
+                </div>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-switch-container">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+                <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+                    <span class="theme-ball">
+                        <i class="fa-solid fa-moon icon-moon"></i>
+                        <i class="fa-solid fa-sun icon-sun"></i>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">Terms / Conditions</div>
+
+            <h1 class="hero-name" data-lang-nl="Algemene voorwaarden" data-lang-en="Terms & Conditions">
+                Algemene voorwaarden
+            </h1>
+
+            <p class="subtitle" data-lang-nl="Voorwaarden voor het gebruik van deze website"
+                data-lang-en="Terms for using this website">
+                Voorwaarden voor het gebruik van deze website
+            </p>
+
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <main>
+        <section class="section">
+            <div class="card">
+
+                <h2 data-lang-nl="Door deze website te gebruiken ga je akkoord met onderstaande voorwaarden."
+                    data-lang-en="By using this website you agree to the terms below.">
+                </h2>
+
+                <h3 data-lang-nl="1. Gebruik van de website" data-lang-en="1. Use of the website"></h3>
+
+                <p data-lang-nl="De website is enkel bedoeld voor informatieve en persoonlijke doeleinden. Commercieel gebruik zonder toestemming is niet toegestaan."
+                    data-lang-en="This website is for informational and personal use only. Commercial use without permission is not allowed.">
+                </p>
+
+                <h3 data-lang-nl="2. Intellectueel eigendom" data-lang-en="2. Intellectual property"></h3>
+
+                <p data-lang-nl="Alle inhoud op deze website is eigendom van SvenITGuy tenzij anders vermeld."
+                    data-lang-en="All content on this website belongs to SvenITGuy unless stated otherwise.">
+                </p>
+
+                <h3 data-lang-nl="3. Beschikbaarheid" data-lang-en="3. Availability"></h3>
+
+                <p data-lang-nl="We streven naar een stabiele website, maar kunnen geen 100% uptime garanderen."
+                    data-lang-en="We aim for stable availability but cannot guarantee 100% uptime.">
+                </p>
+
+                <h3 data-lang-nl="4. Aansprakelijkheid" data-lang-en="4. Liability"></h3>
+
+                <p data-lang-nl="Gebruik van deze website is op eigen risico. Wij zijn niet aansprakelijk voor schade."
+                    data-lang-en="Use of this website is at your own risk. We are not liable for damages.">
+                </p>
+
+                <h3 data-lang-nl="5. Verboden gebruik" data-lang-en="5. Prohibited use"></h3>
+
+                <p data-lang-nl="Het is verboden om de site te misbruiken, hacken of schadelijke code te plaatsen."
+                    data-lang-en="It is forbidden to misuse, hack, or inject malicious code into the site.">
+                </p>
+
+                <h3 data-lang-nl="6. Externe links" data-lang-en="6. External links"></h3>
+
+                <p data-lang-nl="Wij zijn niet verantwoordelijk voor externe websites."
+                    data-lang-en="We are not responsible for external websites.">
+                </p>
+
+                <h3 data-lang-nl="7. Cookies en toestemming" data-lang-en="7. Cookies and consent"></h3>
+
+                <p data-lang-nl="Deze website maakt gebruik van cookies. Bij je eerste bezoek vragen wij om je toestemming. Je kunt je voorkeuren op elk moment aanpassen via de link “Cookie-instellingen aanpassen” onderaan elke pagina."
+                    data-lang-en="This website uses cookies. On your first visit we ask for your consent. You can change your preferences at any time via the “Cookie settings” link at the bottom of each page.">
+                </p>
+
+                <h3 data-lang-nl="8. Wijzigingen" data-lang-en="8. Changes"></h3>
+
+                <p data-lang-nl="SvenITGuy behoudt zich het recht voor om deze voorwaarden op elk moment te wijzigen. Wij adviseren gebruikers om deze pagina regelmatig te raadplegen voor de meest actuele versie."
+                    data-lang-en="SvenITGuy reserves the right to change these terms at any time. We recommend users check this page regularly for the latest version.">
+                </p>
+
+                <h3 data-lang-nl="9. Contact" data-lang-en="9. Contact"></h3>
+
+                <p data-lang-nl="Heb je vragen of opmerkingen over deze voorwaarden? Neem dan contact op via:"
+                    data-lang-en="Do you have questions or comments about these terms? Contact me via:">
+                </p>
+
+                <p>
+                    <a class="accent-link" href="mailto:sven.velleman@svenitguy.be">
+                        sven.velleman@svenitguy.be
+                    </a>
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-socials">
+
+            <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 SvenITGuy</p>
+
+        <div class="footer-links">
+
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+                Privacybeleid
+            </a>
+
+            <span>|</span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+                Gebruiksvoorwaarden
+            </a>
+
+            <span>|</span>
+
+            <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+                data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+                Cookie-instellingen
+            </a>
+
+        </div>
+
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+
+        <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+            data-lang-en="This site uses cookies to improve your experience.">
+            Deze site gebruikt cookies om je ervaring te verbeteren.
+        </p>
+
+        <div class="cookie-links">
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+            <span> & </span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+                data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+        </div>
+
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+                Akkoord
+            </button>
+
+            <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+                Weiger
+            </button>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="script.js"></script>
+    <script src="cookie-banner.js"></script>
+
+</body>
+
+</html>

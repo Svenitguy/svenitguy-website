@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-home">
+
+    <div class="page-background">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+        </div>
+
+        <!-- VOEG DIT TOE: De hamburger-knop -->
+        <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+            <i class="fa-solid fa-bars icon-burger"></i>
+            <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+            <a href="index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+            <a href="about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+            <a href="projects.html" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+            <a href="lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+            <a href="journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+            <a href="cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+            <a href="contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <!-- LANGUAGE SWITCH -->
+            <div class="lang-dropdown">
+                <button class="lang-btn" id="lang-btn-text">
+                    NL
+                    <span class="chevron">▾</span>
+                </button>
+
+                <div class="lang-menu" id="lang-menu">
+                    <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+                        Nederlands
+                    </button>
+
+                    <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+                        English
+                    </button>
+                </div>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-switch-container">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+                <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+                    <span class="theme-ball">
+                        <i class="fa-solid fa-moon icon-moon"></i>
+                        <i class="fa-solid fa-sun icon-sun"></i>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                Error 404
+            </div>
+
+            <h1 class="hero-name" data-lang-nl="Pagina niet gevonden" data-lang-en="Page not found">
+                Pagina niet gevonden
+            </h1>
+
+            <h2 class="role" data-lang-nl="Oeps..." data-lang-en="Oops...">
+                Oeps...
+            </h2>
+
+            <p class="subtitle"
+                data-lang-nl="De pagina die je probeert te bezoeken bestaat niet, is verplaatst of werd verwijderd."
+                data-lang-en="The page you are trying to visit does not exist, has been moved or has been removed.">
+
+                De pagina die je probeert te bezoeken bestaat niet, is verplaatst of werd verwijderd.
+
+            </p>
+
+            <div class="hero-buttons home-hero-actions">
+
+                <a href="index.html" class="btn primary">
+                    <span data-lang-nl="Terug naar home" data-lang-en="Back to home">
+                        Terug naar home
+                    </span>
+                </a>
+
+                <a href="contact.html" class="btn secondary">
+                    <span data-lang-nl="Contact opnemen" data-lang-en="Contact me">
+                        Contact opnemen
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-socials">
+
+            <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 SvenITGuy</p>
+
+        <div class="footer-links">
+
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+                Privacybeleid
+            </a>
+
+            <span>|</span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+                Gebruiksvoorwaarden
+            </a>
+
+            <span>|</span>
+
+            <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+                data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+                Cookie-instellingen
+            </a>
+
+        </div>
+
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+
+        <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+            data-lang-en="This site uses cookies to improve your experience.">
+            Deze site gebruikt cookies om je ervaring te verbeteren.
+        </p>
+
+        <div class="cookie-links">
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+            <span> & </span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+                data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+        </div>
+
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+                Akkoord
+            </button>
+
+            <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+                Weiger
+            </button>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="script.js"></script>
+    <script src="cookie-banner.js"></script>
+
+</body>
+
+</html>

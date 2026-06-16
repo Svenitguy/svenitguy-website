@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-privacy">
+
+    <div class="page-background">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+        </div>
+
+        <!-- VOEG DIT TOE: De hamburger-knop -->
+        <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+            <i class="fa-solid fa-bars icon-burger"></i>
+            <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+            <a href="index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+            <a href="about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+            <a href="projects.html" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+            <a href="lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+            <a href="journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+            <a href="cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+            <a href="contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <!-- LANGUAGE SWITCH -->
+            <div class="lang-dropdown">
+                <button class="lang-btn" id="lang-btn-text">
+                    NL
+                    <span class="chevron">▾</span>
+                </button>
+
+                <div class="lang-menu" id="lang-menu">
+                    <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+                        Nederlands
+                    </button>
+
+                    <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+                        English
+                    </button>
+                </div>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-switch-container">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+                <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+                    <span class="theme-ball">
+                        <i class="fa-solid fa-moon icon-moon"></i>
+                        <i class="fa-solid fa-sun icon-sun"></i>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">GDPR / AVG</div>
+
+            <h1 class="hero-name" data-lang-nl="Privacy- en Cookiebeleid" data-lang-en="Privacy & Cookie Policy">
+                Privacy- en Cookiebeleid
+            </h1>
+
+            <p class="subtitle" data-lang-nl="Transparantie over welke gegevens worden verzameld en waarom."
+                data-lang-en="Transparency about what data is collected and why.">
+                Transpirantie over welke gegevens worden verzameld en waarom.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <main>
+
+        <section class="section">
+
+            <div class="card">
+
+                <h2 data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">
+                    Privacybeleid
+                </h2>
+
+                <p data-lang-nl="Bij SvenITGuy wordt jouw privacy serieus genomen. We verzamelen enkel gegevens die nodig zijn om de website correct te laten werken en te verbeteren. Alles gebeurt in overeenstemming met de GDPR/AVG-wetgeving."
+                    data-lang-en="At SvenITGuy, your privacy is taken seriously. We only collect data necessary to operate and improve the website. Everything is processed in accordance with GDPR regulations.">
+                </p>
+
+                <h3 data-lang-nl="Welke gegevens verzamelen we?" data-lang-en="What data do we collect?"></h3>
+
+                <ul>
+                    <li data-lang-nl="Geanonimiseerde IP-adressen" data-lang-en="Anonymized IP addresses"></li>
+
+                    <li data-lang-nl="Browser- en apparaatinformatie" data-lang-en="Browser and device information">
+                    </li>
+
+                    <li data-lang-nl="Bezoekgedrag (pagina’s, sessieduur, interacties)"
+                        data-lang-en="Usage behavior (pages, session duration, interactions)"></li>
+
+                    <li data-lang-nl="Formuliergegevens (indien ingevuld)" data-lang-en="Form data (if submitted)"></li>
+                </ul>
+
+                <h3 data-lang-nl="Waarom verzamelen we deze gegevens?" data-lang-en="Why do we collect this data?"></h3>
+
+                <ul>
+                    <li data-lang-nl="Website verbeteren en optimaliseren"
+                        data-lang-en="Improve and optimize the website"></li>
+
+                    <li data-lang-nl="Fouten opsporen en oplossen" data-lang-en="Detect and fix errors"></li>
+
+                    <li data-lang-nl="Algemene statistieken over gebruik" data-lang-en="General usage statistics"></li>
+                </ul>
+
+                <h3>Google Analytics</h3>
+
+                <p data-lang-nl="We gebruiken Google Analytics om geanonimiseerde statistieken te verzamelen. IP-adressen worden gemaskeerd en gegevens worden niet gedeeld met derden."
+                    data-lang-en="We use Google Analytics to collect anonymized statistics. IP addresses are masked and data is not shared with third parties.">
+                </p>
+
+                <h3 data-lang-nl="Cookies" data-lang-en="Cookies"></h3>
+
+                <p data-lang-nl="Deze website gebruikt cookies. Dit zijn kleine bestanden die op je apparaat worden opgeslagen."
+                    data-lang-en="This website uses cookies. These are small files stored on your device.">
+                </p>
+
+                <ul>
+                    <li data-lang-nl="Functionele cookies (noodzakelijk voor de werking van de site)"
+                        data-lang-en="Functional cookies (required for website operation)"></li>
+
+                    <li data-lang-nl="Analytische cookies (enkel met toestemming)"
+                        data-lang-en="Analytics cookies (only with consent)"></li>
+                </ul>
+
+                <h3 data-lang-nl="Cookies van derden" data-lang-en="Third-party cookies"></h3>
+
+                <p data-lang-nl="Sommige diensten zoals Google Analytics kunnen cookies plaatsen zodra je toestemming geeft."
+                    data-lang-en="Some services such as Google Analytics may place cookies once you give consent.">
+                </p>
+
+                <h3 data-lang-nl="Bewaartermijn" data-lang-en="Retention period"></h3>
+
+                <p data-lang-nl="Cookies worden maximaal 26 maanden bewaard, afhankelijk van hun functie. Je kan ze op elk moment verwijderen via je browser."
+                    data-lang-en="Cookies are stored for a maximum of 26 months depending on their purpose. You can delete them at any time via your browser.">
+                </p>
+
+                <h3 data-lang-nl="Toestemming en voorkeuren" data-lang-en="Consent and preferences"></h3>
+
+                <p>
+                    <span
+                        data-lang-nl="Bij je eerste bezoek vragen we expliciet toestemming om cookies te plaatsen. Je keuze wordt lokaal opgeslagen in je browser. Wil je je keuze wijzigen? Klik dan hier:"
+                        data-lang-en="On your first visit we explicitly ask consent for cookies. Your choice is stored locally in your browser. Want to change it? Click here:">
+                    </span>
+
+                    <a href="#" class="accent-link"
+                        onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+                        data-lang-nl="Cookie-instellingen opnieuw instellen" data-lang-en="Reset cookie settings">
+                        Cookie-instellingen opnieuw instellen
+                    </a>.
+                </p>
+
+                <h3 data-lang-nl="Je rechten (GDPR)" data-lang-en="Your rights (GDPR)"></h3>
+
+                <ul>
+                    <li data-lang-nl="Recht op inzage, correctie en verwijdering"
+                        data-lang-en="Right to access, correct and delete your data"></li>
+
+                    <li data-lang-nl="Recht om toestemming in te trekken" data-lang-en="Right to withdraw consent"></li>
+
+                    <li data-lang-nl="Recht om klacht in te dienen bij de Gegevensbeschermingsautoriteit"
+                        data-lang-en="Right to file a complaint with a data protection authority"></li>
+                </ul>
+
+                <h3 data-lang-nl="Contact" data-lang-en="Contact"></h3>
+
+                <p>
+                    <span data-lang-nl="Voor vragen over privacy of gegevensverwerking, mail ons gerust op:"
+                        data-lang-en="For questions about privacy or data processing, feel free to email us at:">
+                    </span>
+
+                    <a href="mailto:sven.velleman@svenitguy.be" class="accent-link">
+                        sven.velleman@svenitguy.be
+                    </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-socials">
+
+            <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 SvenITGuy</p>
+
+        <div class="footer-links">
+
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+                Privacybeleid
+            </a>
+
+            <span>|</span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+                Gebruiksvoorwaarden
+            </a>
+
+            <span>|</span>
+
+            <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+                data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+                Cookie-instellingen
+            </a>
+
+        </div>
+
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+
+        <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+            data-lang-en="This site uses cookies to improve your experience.">
+            Deze site gebruikt cookies om je ervaring te verbeteren.
+        </p>
+
+        <div class="cookie-links">
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+            <span> & </span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+                data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+        </div>
+
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+                Akkoord
+            </button>
+
+            <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+                Weiger
+            </button>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="script.js"></script>
+    <script src="cookie-banner.js"></script>
+
+</body>
+
+</html>

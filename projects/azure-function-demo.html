@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="page-about">
+
+  <div class="page-background">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+    </div>
+
+    <!-- VOEG DIT TOE: De hamburger-knop -->
+    <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+      <i class="fa-solid fa-bars icon-burger"></i>
+      <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+    </button>
+
+    <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+      <a href="../index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+      <a href="../about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+      <a href="../projects.html" class="active" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+      <a href="../lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+      <a href="../journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+      <a href="../cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+      <a href="../contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <!-- LANGUAGE SWITCH -->
+      <div class="lang-dropdown">
+        <button class="lang-btn" id="lang-btn-text">
+          NL
+          <span class="chevron">▾</span>
+        </button>
+
+        <div class="lang-menu" id="lang-menu">
+          <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+            Nederlands
+          </button>
+
+          <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+            English
+          </button>
+        </div>
+      </div>
+
+      <!-- THEME TOGGLE -->
+      <div class="theme-switch-container">
+        <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+        <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+          <span class="theme-ball">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </span>
+        </label>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- PAGINA TITEL -->
+  <div class="page-title" style="text-align:center; margin: 40px 0;">
+    <h1 data-lang-nl="Azure Function Demo" data-lang-en="Azure Function Demo">
+      Azure Function Demo
+    </h1>
+
+    <p data-lang-nl="Serverless JavaScript in de Azure Cloud" data-lang-en="Serverless JavaScript in the Azure Cloud">
+      Serverless JavaScript in de Azure Cloud
+    </p>
+  </div>
+
+  <main class="section">
+
+    <!-- OVER DIT PROJECT -->
+    <div class="card reveal">
+      <h2 data-lang-nl="Over dit project" data-lang-en="About this Project">
+        Over dit project
+      </h2>
+
+      <p data-lang-nl="Deze Azure Function draait volledig serverless. Wanneer een gebruiker een naam invoert via een HTTP-request, retourneert de functie een gepersonaliseerde welkomstboodschap in JSON-formaat. De oplossing is geïntegreerd met mijn portfolio en gehost via Azure."
+        data-lang-en="This Azure Function runs completely serverless. When a user enters a name via an HTTP request, the function returns a personalized welcome message in JSON format. The solution is integrated into my portfolio and hosted on Azure.">
+      </p>
+    </div>
+
+    <!-- DOEL -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Doel van dit project" data-lang-en="Project Goal">
+        Doel van dit project
+      </h2>
+
+      <p data-lang-nl="Met dit project wilde ik praktijkervaring opdoen met serverless computing, Azure Functions en geautomatiseerde deployments via Azure DevOps. Daarnaast wilde ik begrijpen hoe API's kunnen functioneren zonder traditionele servers."
+        data-lang-en="The goal of this project was to gain hands-on experience with serverless computing, Azure Functions and automated deployments using Azure DevOps. It also helped me understand how APIs can work without traditional servers.">
+      </p>
+    </div>
+
+    <!-- TECHNOLOGIEËN -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Gebruikte technologieën" data-lang-en="Technologies Used">
+        Gebruikte technologieën
+      </h2>
+
+      <div class="tech-icons" style="margin-top:14px;">
+        <img src="../icons/azure-functions.svg" alt="Azure Functions" title="Azure Functions">
+        <img src="../icons/azure-static-web-apps.svg" alt="Azure Static Web Apps" title="Azure Static Web Apps">
+        <img src="../icons/html5.svg" alt="HTML5" title="HTML5">
+        <img src="../icons/css3.svg" alt="CSS3" title="CSS3">
+        <img src="../icons/javascript.svg" alt="JavaScript" title="JavaScript">
+        <img src="../icons/azure-devops.svg" alt="Azure DevOps" title="Azure DevOps">
+        <img src="../icons/vscode.svg" alt="Visual Studio Code" title="VS Code">
+      </div>
+    </div>
+
+    <!-- WAT IK GELEERD HEB -->
+    <div class="card reveal" style="margin-top:22px;">
+      <h2 data-lang-nl="Wat ik geleerd heb" data-lang-en="What I Learned">
+        Wat ik geleerd heb
+      </h2>
+
+      <ul style="margin-top:12px; padding-left:18px;">
+
+        <li data-lang-nl="Azure Functions ontwikkelen en testen via HTTP-triggers."
+          data-lang-en="Developing and testing Azure Functions using HTTP triggers.">
+        </li>
+
+        <li data-lang-nl="Werken met serverless architecturen in Azure."
+          data-lang-en="Working with serverless architectures in Azure.">
+        </li>
+
+        <li data-lang-nl="CI/CD pipelines opzetten met Azure DevOps."
+          data-lang-en="Setting up CI/CD pipelines using Azure DevOps.">
+        </li>
+
+        <li data-lang-nl="Integratie van backend API-functionaliteit in een statische webapplicatie."
+          data-lang-en="Integrating backend API functionality into a static web application.">
+        </li>
+
+        <li data-lang-nl="Inzicht krijgen in schaalbaarheid, kostenoptimalisatie en beheer van serverless oplossingen."
+          data-lang-en="Understanding scalability, cost optimization and management of serverless solutions.">
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- DEMO -->
+    <section id="live-demo">
+      <div class="card reveal" style="margin-top:22px;">
+        <h2 data-lang-nl="Live demo" data-lang-en="Live Demo">
+          Live demo
+        </h2>
+
+        <p data-lang-nl="Voer hieronder je naam in en laat de Azure Function een gepersonaliseerd bericht genereren."
+          data-lang-en="Enter your name below and let the Azure Function generate a personalized message.">
+        </p>
+
+        <div
+          style="margin-top:20px; display:flex; flex-direction:column; align-items:flex-start; gap:12px; max-width:400px;">
+
+          <input type="text" id="nameInput" data-lang-nl-placeholder="Typ je naam"
+            data-lang-en-placeholder="Type your name" placeholder="Typ je naam" style="
+                 width:100%;
+                 padding:10px;
+                 border-radius:8px;
+                 border:1px solid var(--btn-secondary-bg);
+                 background:var(--text-main);
+                 color:var(--bg-color);
+               ">
+
+          <button id="callFunctionBtn" class="btn primary" data-lang-nl="Test Azure Function"
+            data-lang-en="Test Azure Function">
+            Test Azure Function
+          </button>
+
+          <p id="resultText" style="margin-top:10px;"></p>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-socials">
+
+      <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+
+    <p>© 2026 SvenITGuy</p>
+
+    <div class="footer-links">
+
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+        Privacybeleid
+      </a>
+
+      <span>|</span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+        Gebruiksvoorwaarden
+      </a>
+
+      <span>|</span>
+
+      <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+        data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+        Cookie-instellingen
+      </a>
+
+    </div>
+
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+
+    <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+      data-lang-en="This site uses cookies to improve your experience.">
+      Deze site gebruikt cookies om je ervaring te verbeteren.
+    </p>
+
+    <div class="cookie-links">
+      <a href="../privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+      <span> & </span>
+
+      <a href="../voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+        data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+    </div>
+
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+        Akkoord
+      </button>
+
+      <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+        Weiger
+      </button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="../script.js"></script>
+  <script src="../cookie-banner.js"></script>
+
+</body>
+
+</html>

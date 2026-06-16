@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-journey">
+
+    <div class="page-background">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+        </div>
+
+        <!-- VOEG DIT TOE: De hamburger-knop -->
+        <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+            <i class="fa-solid fa-bars icon-burger"></i>
+            <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+            <a href="index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+            <a href="about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+            <a href="projects.html" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+            <a href="lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+            <a href="journey.html" class="active" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+            <a href="cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+            <a href="contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <!-- LANGUAGE SWITCH -->
+            <div class="lang-dropdown">
+                <button class="lang-btn" id="lang-btn-text">
+                    NL
+                    <span class="chevron">▾</span>
+                </button>
+
+                <div class="lang-menu" id="lang-menu">
+                    <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+                        Nederlands
+                    </button>
+
+                    <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+                        English
+                    </button>
+                </div>
+            </div>
+
+            <!-- THEME TOGGLE -->
+            <div class="theme-switch-container">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+                <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+                    <span class="theme-ball">
+                        <i class="fa-solid fa-moon icon-moon"></i>
+                        <i class="fa-solid fa-sun icon-sun"></i>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="section reveal">
+
+        <h2 data-lang-nl="Mijn IT-traject" data-lang-en="My IT Journey">
+            Mijn IT-traject
+        </h2>
+
+        <p class="section-intro"
+            data-lang-nl="Van MS-DOS en dial-up internet tot Azure, automatisatie en cloud infrastructuur. Technologie is al meer dan 35 jaar een belangrijke rode draad in mijn leven."
+            data-lang-en="From MS-DOS and dial-up internet to Azure, automation and cloud infrastructure. Technology has been an important part of my life for more than 35 years.">
+        </p>
+
+    </section>
+
+    <section class="journey-stats reveal">
+
+        <div class="stat-card" data-type="passion">
+            <span class="stat-number" data-target="35">35+</span>
+            <span class="stat-label" data-lang-nl="35+ jaar passie voor technologie"
+                data-lang-en="35+ years of passion for technology">
+                35+ Jaar passie voor technologie
+            </span>
+        </div>
+
+        <div class="stat-card" data-type="servers">
+            <span class="stat-number" data-target="15">15+</span>
+            <span class="stat-label" data-lang-nl="15+ jaar servers & hosting"
+                data-lang-en="15+ years of servers & hosting">
+                15+ Jaar servers & hosting
+            </span>
+        </div>
+
+        <div class="stat-card" data-type="homelab">
+            <span class="stat-number" data-target="10">10+</span>
+            <span class="stat-label" data-lang-nl="10+ jaar homelab ervaring"
+                data-lang-en="10+ years of homelab experience">
+                10+ Jaar homelab ervaring
+            </span>
+        </div>
+
+        <div class="stat-card" data-type="learning">
+            <span class="stat-number" data-infinite="true">0</span>
+            <span class="stat-label" data-lang-nl="Zelfstudie, labs & praktijkervaring in IT"
+                data-lang-en="Self-study, labs & hands-on IT experience">
+                Zelfstudie, labs & praktijkervaring in IT
+            </span>
+        </div>
+
+    </section>
+
+    <div class="timeline">
+
+        <div class="timeline-item left reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="1986">
+                <h3><i class="fa-solid fa-gamepad"></i><span class="year">1986</span></h3>
+                <p data-lang-nl="Nintendo Game & Watch en later de Nintendo NES."
+                    data-lang-en="Nintendo Game & Watch and later the Nintendo NES."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="1990">
+                <h3><i class="fa-solid fa-floppy-disk"></i><span class="year">1990</span></h3>
+                <p data-lang-nl="Mijn eerste computer zonder harde schijf. Werken met MS-DOS en diskettes."
+                    data-lang-en="My first computer without a hard drive. Working with MS-DOS and floppy disks."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="1992">
+                <h3><i class="fa-brands fa-windows"></i><span class="year">1992</span></h3>
+                <p data-lang-nl="Eerste ervaring met Windows 3.1 op een nieuwe pc. De overgang van DOS naar een grafische interface."
+                    data-lang-en="First experience with Windows 3.1 on a new PC. The transition from DOS to a graphical interface.">
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="1995">
+                <h3><i class="fa-solid fa-globe"></i><span class="year">1995</span></h3>
+                <p data-lang-nl="Eerste internet via Belgacom dial-up modem."
+                    data-lang-en="First internet through a Belgacom dial-up modem."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card" data-id="1997">
+                <h3>
+                    <i class="fa-solid fa-desktop"></i>
+                    <span class="year">1997</span>
+                </h3>
+
+                <p data-lang-nl="Eerste eigen desktop-pc: Compaq met Intel Pentium II. Toegang tot Windows 95/98 en klassieke DOS-games."
+                    data-lang-en="First personal desktop PC: Compaq with Intel Pentium II. Access to Windows 95/98 and classic DOS games.">
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2000">
+                <h3><i class="fa-solid fa-bolt"></i><span class="year">2000</span></h3>
+                <p data-lang-nl="ADSL komt op en altijd online internet verandert alles. Eerste serieuze hardware upgrades en interesse in pc’s en systemen."
+                    data-lang-en="ADSL arrives and always-on internet changes everything. First serious hardware upgrades and growing interest in PCs and systems.">
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2002">
+                <h3><i class="fa-brands fa-windows"></i><span class="year">2002</span></h3>
+                <p data-lang-nl="Windows XP wordt mijn hoofd-OS. Veel gaming, hardware upgraden en intensief gebruik van internet met downloads via Kazaa."
+                    data-lang-en="Windows XP becomes my main OS. Heavy gaming, hardware upgrades and intensive internet use with downloads via Kazaa.">
+                </p>
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2006">
+                <h3><i class="fa-solid fa-earth-europe"></i><span class="year">2006</span></h3>
+                <p data-lang-nl="Windows Server 2003 en eigen webserver."
+                    data-lang-en="Windows Server 2003 and self-hosted web server."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2007">
+                <h3><i class="fa-solid fa-tv"></i><span class="year">2007</span></h3>
+                <p data-lang-nl="HP Media Center PC met Intel Core 2 Duo en Windows Vista. Focus op multimedia, tv-opnames en thuisgebruik."
+                    data-lang-en="HP Media Center PC with Intel Core 2 Duo and Windows Vista. Focus on multimedia, TV recording and home entertainment.">
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2010">
+                <h3><i class="fa-brands fa-windows"></i><span class="year">2010</span></h3>
+                <p data-lang-nl="Fujitsu Siemens desktop met Intel Core 2 Quad en Windows 7. Stabiliteit en moderne gebruikerservaring."
+                    data-lang-en="Fujitsu Siemens desktop with Intel Core 2 Quad and Windows 7. Stability and modern user experience.">
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2012">
+                <h3><i class="fa-solid fa-gamepad"></i><span class="year">2012</span></h3>
+                <p data-lang-nl="Twee high-end gaming systems, opgebouwd met zorgvuldig gekozen hardware en volledige controle over assemblage, airflow en compatibiliteit."
+                    data-lang-en="Two high-end gaming systems, built with carefully selected hardware and full control over assembly, airflow and component compatibility.">
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2013">
+                <h3><i class="fa-solid fa-hard-drive"></i><span class="year">2013</span></h3>
+                <p data-lang-nl="Eerste QNAP NAS en RAID-opslag." data-lang-en="First QNAP NAS and RAID storage."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2014">
+                <h3><i class="fa-solid fa-network-wired"></i><span class="year">2014</span></h3>
+                <p data-lang-nl="Windows Server 2012, Hyper-V en eerste home lab."
+                    data-lang-en="Windows Server 2012, Hyper-V and first home lab."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2018">
+                <h3><i class="fa-solid fa-server"></i><span class="year">2018</span></h3>
+                <p data-lang-nl="Professionele 18U rackkast." data-lang-en="Professional 18U rack cabinet."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2020">
+                <h3><i class="fa-solid fa-diagram-project"></i><span class="year">2020</span></h3>
+                <p data-lang-nl="VLAN’s, Layer 3 switching, NAS en IP-camera’s."
+                    data-lang-en="VLANs, Layer 3 switching, NAS and IP cameras."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2021">
+                <h3><i class="fa-solid fa-cubes"></i><span class="year">2021</span></h3>
+                <p data-lang-nl="VMware ESXi virtualisatie." data-lang-en="VMware ESXi virtualization."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2024">
+                <h3><i class="fa-solid fa-graduation-cap"></i><span class="year">2024</span></h3>
+                <p data-lang-nl="VDAB opleiding systeembeheerder." data-lang-en="VDAB System Administrator training.">
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2025">
+                <h3><i class="fa-solid fa-cloud"></i><span class="year">2025</span></h3>
+                <p data-lang-nl="Azure, Terraform, Microsoft 365 en svenitguy.be."
+                    data-lang-en="Azure, Terraform, Microsoft 365 and svenitguy.be."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2026">
+                <h3><i class="fa-solid fa-briefcase"></i><span class="year">2026</span></h3>
+                <p data-lang-nl="Op zoek naar mijn eerste IT-job." data-lang-en="Looking for my first IT job."></p>
+            </div>
+        </div>
+
+        <div class="timeline-item left reveal-left future">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card" data-id="2027">
+                <h3><i class="fa-solid fa-rocket"></i><span class="year">2027</span></h3>
+                <p data-lang-nl="De toekomst is in opbouw..." data-lang-en="The future is under construction...">
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CTA -->
+    <section class="section reveal">
+
+        <div class="card" style="text-align:center; padding:40px;">
+
+            <h2 data-lang-nl="Klaar voor de volgende stap" data-lang-en="Ready for the next step">
+                Klaar voor de volgende stap
+            </h2>
+
+            <p style="color: var(--muted); margin: 15px 0;"
+                data-lang-nl="Na tientallen jaren passie voor technologie, een intensieve opleiding systeembeheer en een uitgebreid homelab ben ik klaar voor mijn eerste professionele IT-uitdaging."
+                data-lang-en="After years of passion for technology, an intensive system administration course and an extensive homelab, I am ready for my first professional IT challenge.">
+                Na tientallen jaren passie voor technologie, een intensieve opleiding
+                systeembeheer en een uitgebreid homelab ben ik klaar voor mijn eerste
+                professionele IT-uitdaging.
+            </p>
+            <div>
+                <a href="contact.html" class="btn primary" data-lang-nl="Contacteer mij →" data-lang-en="Contact me →">
+                    Contacteer mij
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- OVERLAYS (onderaan page) -->
+
+    <div id="overlay-1986" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('1986')">X</button>
+
+            <h2 data-lang-nl="1986 - Nintendo Game & Watch en later de Nintendo NES"
+                data-lang-en="1986 - Nintendo Game & Watch and later the Nintendo NES.">
+                1986 - Nintendo Game & Watch en later de Nintendo NES
+            </h2>
+
+            <p data-lang-nl="Eerste kennismaking met technologie via Nintendo Game & Watch en later de Nintendo Entertainment System (NES). Mijn interesse in technologie begon al op jonge leeftijd."
+                data-lang-en="First introduction to technology through Nintendo Game & Watch and later the Nintendo Entertainment System (NES). My interest in technology started at a young age.">
+                Eerste kennismaking met technologie via Nintendo Game & Watch en later de Nintendo Entertainment System
+                (NES). Mijn interesse in technologie begon al op jonge leeftijd.
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-1990" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('1990')">X</button>
+
+            <h2 data-lang-nl="1990 - Mijn eerste computer" data-lang-en="1990 - My first computer">
+                1990 - Mijn eerste computer
+            </h2>
+
+            <p data-lang-nl="Mijn eerste pc had geen harde schijf. Ik startte MS-DOS vanaf diskettes en maakte later kennis met Windows 3.1. Hier begon mijn fascinatie voor computers en technologie."
+                data-lang-en="My first PC had no hard drive. I booted MS-DOS from floppy disks and later discovered Windows 3.1. This is where my fascination with computers and technology began.">
+                Mijn eerste pc had geen harde schijf...
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-1992" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('1992')">X</button>
+
+            <h2 data-lang-nl="1992 - Eerste ervaring met Windows 3.1"
+                data-lang-en="1992 - First experience with Windows 3.1">
+                1992 - Eerste ervaring met Windows 3.1
+            </h2>
+
+            <p data-lang-nl="Na mijn eerste ervaringen met MS-DOS maakte ik kennis met Windows 3.1. Voor het eerst werkte ik met een grafische gebruikersinterface in plaats van uitsluitend tekstcommando's."
+                data-lang-en="After my first experiences with MS-DOS, I discovered Windows 3.1. For the first time I worked with a graphical user interface instead of relying solely on text commands.">
+                Na mijn eerste ervaringen met MS-DOS maakte ik kennis met Windows 3.1. Voor het eerst werkte ik met een
+                grafische gebruikersinterface in plaats van uitsluitend tekstcommando's.
+            </p>
+
+            <p data-lang-nl="Deze overgang maakte computers toegankelijker en wakkerde mijn interesse in software en technologie verder aan."
+                data-lang-en="This transition made computers more accessible and further fueled my interest in software and technology.">
+                Deze overgang maakte computers toegankelijker...
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-1995" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('1995')">X</button>
+
+            <h2 data-lang-nl="1995 - Eerste internet via Belgacom dial-up modem"
+                data-lang-en="1995 - First internet through a Belgacom dial-up modem">
+                1995 - Eerste internet via Belgacom dial-up modem
+            </h2>
+
+            <p data-lang-nl="Eerste internetervaring via een Belgacom dial-up modem. Verbinding maken via de telefoonlijn en de typische modemgeluiden zijn een herinnering die ik nooit vergeet."
+                data-lang-en="First internet experience through a Belgacom dial-up modem. Connecting through the phone line and hearing the iconic modem sounds remains a memorable experience.">
+                Eerste internetervaring via een Belgacom dial-up modem. Verbinding maken via de telefoonlijn en de
+                typische modemgeluiden zijn een herinnering die ik nooit vergeet.
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-1997" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('1997')">X</button>
+
+            <h2 data-lang-nl="1997 - Eerste eigen desktop-pc" data-lang-en="1997 - First personal desktop PC">
+                1997 - Eerste eigen desktop-pc
+            </h2>
+
+            <p data-lang-nl="In 1997 kreeg ik mijn eerste eigen desktopcomputer: een Compaq met Intel Pentium II-processor. Dit was mijn eerste computer waar ik zelfstandig mee kon experimenteren en leren."
+                data-lang-en="In 1997 I got my first personal desktop computer: a Compaq powered by an Intel Pentium II processor. It was the first computer I could freely explore and learn from on my own.">
+                In 1997 kreeg ik mijn eerste eigen desktopcomputer...
+            </p>
+
+            <p data-lang-nl="Ik maakte kennis met Windows 95 en later Windows 98, installeerde software, loste problemen op en bracht vele uren door met het ontdekken van de mogelijkheden van computers."
+                data-lang-en="I discovered Windows 95 and later Windows 98, installed software, solved problems and spent many hours exploring what computers could do.">
+                Ik maakte kennis met Windows 95 en later Windows 98...
+            </p>
+
+            <p data-lang-nl="Naast schoolwerk en klassieke DOS-games groeide hier mijn interesse in hardware, besturingssystemen en technologie verder uit."
+                data-lang-en="Besides schoolwork and classic DOS games, this period further developed my interest in hardware, operating systems and technology.">
+                Naast schoolwerk en klassieke DOS-games...
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-2000" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2000')">X</button>
+
+            <h2 data-lang-nl="2000 - Altijd online" data-lang-en="2000 - Always online">
+                2000 - Altijd online
+            </h2>
+
+            <p data-lang-nl="De overstap van dial-up naar ADSL betekende een grote verandering. Voor het eerst was er een permanente internetverbinding beschikbaar zonder de telefoonlijn te blokkeren."
+                data-lang-en="The transition from dial-up to ADSL was a major change. For the first time, a permanent internet connection was available without occupying the phone line.">
+                De overstap van dial-up naar ADSL betekende een grote verandering...
+            </p>
+
+            <p data-lang-nl="In dezelfde periode begon ik me meer te verdiepen in pc-hardware, upgrades en het installeren van besturingssystemen. Mijn interesse verschoof van gebruiker naar iemand die wilde begrijpen hoe computers werkelijk werken."
+                data-lang-en="During the same period I became increasingly interested in PC hardware, upgrades and operating system installations. My interest shifted from simply using computers to understanding how they actually work.">
+                In dezelfde periode begon ik me meer te verdiepen...
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-2002" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2002')">X</button>
+
+            <h2 data-lang-nl="2002 - Windows XP" data-lang-en="2002 - Windows XP">
+                2002 - Windows XP
+            </h2>
+
+            <p data-lang-nl="Met Windows XP kreeg ik een stabiel en gebruiksvriendelijk besturingssysteem dat jarenlang het middelpunt van mijn computerervaring zou blijven."
+                data-lang-en="With Windows XP, I gained a stable and user-friendly operating system that would remain at the center of my computing experience for many years.">
+                Met Windows XP kreeg ik een stabiel en gebruiksvriendelijk besturingssysteem...
+            </p>
+
+            <p data-lang-nl="Ik experimenteerde regelmatig met hardware-upgrades, software-installaties en probleemoplossing. Hierdoor groeide mijn technische kennis stap voor stap verder."
+                data-lang-en="I regularly experimented with hardware upgrades, software installations and troubleshooting. This gradually expanded my technical knowledge and experience.">
+                Ik experimenteerde regelmatig met hardware-upgrades...
+            </p>
+
+
+        </div>
+    </div>
+
+    <div id="overlay-2006" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2006')">X</button>
+
+            <h2 data-lang-nl="2006 - Windows Server 2003 en eigen webserver"
+                data-lang-en="2006 - Windows Server 2003 and self-hosted web server.">
+                2006 - Windows Server 2003 en eigen webserver
+            </h2>
+
+            <p data-lang-nl="Mijn eerste echte serverproject. Ik installeerde Windows Server 2003, werkte met RAID-opslag en hostte mijn eigen website vanuit huis. Hierdoor maakte ik kennis met servers, DNS en netwerkbeheer."
+                data-lang-en="My first real server project. I installed Windows Server 2003, configured RAID storage and hosted my own website from home. This introduced me to servers, DNS and network management.">
+                Mijn eerste echte serverproject. Ik installeerde Windows Server 2003, werkte met RAID-opslag en hostte
+                mijn eigen website vanuit huis. Hierdoor maakte ik kennis met servers, DNS en netwerkbeheer.
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-2007" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2007')">X</button>
+
+            <h2 data-lang-nl="2007 - Multimedia en thuisnetwerken" data-lang-en="2007 - Multimedia and Home Networking">
+                2007 - Multimedia en thuisnetwerken
+            </h2>
+
+            <p data-lang-nl="Aankoop van een HP Media Center PC met Intel Core 2 Duo en Windows Vista. Dit systeem werd gebruikt als centraal multimedia- en entertainmentplatform voor muziek, video's en tv-opnames."
+                data-lang-en="Purchased an HP Media Center PC with an Intel Core 2 Duo and Windows Vista. The system was used as a central multimedia and entertainment platform for music, videos and TV recordings.">
+                Aankoop van een HP Media Center PC...
+            </p>
+
+            <p data-lang-nl="Via Windows Media Center maakte ik kennis met digitale media, tv-kaarten, opslagbeheer en het organiseren van multimedia binnen een thuisnetwerk."
+                data-lang-en="Through Windows Media Center I gained experience with digital media, TV tuner cards, storage management and organizing multimedia across a home network.">
+                Via Windows Media Center...
+            </p>
+
+            <p data-lang-nl="Deze periode versterkte mijn interesse in hardware, besturingssystemen en thuisinfrastructuur, wat later de basis vormde voor mijn verdere groei richting systeembeheer."
+                data-lang-en="This period strengthened my interest in hardware, operating systems and home infrastructure, which later became the foundation for my growth towards system administration.">
+                Deze periode versterkte mijn interesse...
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-2010" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2010')">X</button>
+
+            <h2 data-lang-nl="2010 - Windows 7 en moderne pc's" data-lang-en="2010 - Windows 7 and Modern PCs">
+                2010 - Windows 7 en moderne pc's
+            </h2>
+
+            <p data-lang-nl="In 2010 stapte ik over naar een Fujitsu Siemens desktop met een Intel Core 2 Quad processor en Windows 7. Deze combinatie bood een merkbare verbetering in prestaties, stabiliteit en gebruikservaring."
+                data-lang-en="In 2010 I upgraded to a Fujitsu Siemens desktop with an Intel Core 2 Quad processor and Windows 7. This combination provided a significant improvement in performance, stability and overall user experience.">
+                In 2010 stapte ik over...
+            </p>
+
+            <p data-lang-nl="Tijdens deze periode groeide mijn interesse verder in computerhardware, systeemonderhoud en het optimaliseren van prestaties. Ik voerde zelf upgrades uit en leerde meer over componenten, drivers en besturingssystemen."
+                data-lang-en="During this period my interest in computer hardware, system maintenance and performance optimization continued to grow. I performed upgrades myself and learned more about components, drivers and operating systems.">
+                Tijdens deze periode groeide...
+            </p>
+
+            <p data-lang-nl="Windows 7 werd voor mij een van de meest stabiele en gebruiksvriendelijke besturingssystemen uit die periode en vormde jarenlang de basis van mijn dagelijkse computergebruik."
+                data-lang-en="Windows 7 became one of the most stable and user-friendly operating systems of that era and remained the foundation of my daily computing for many years.">
+                Windows 7 werd voor mij...
+            </p>
+
+
+        </div>
+    </div>
+
+    <div id="overlay-2012" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2012')">X</button>
+
+            <h2 data-lang-nl="2012 - Zelfgebouwde gaming-pc's" data-lang-en="2012 - Custom-Built Gaming PCs">
+                2012 - Zelfgebouwde gaming-pc's
+            </h2>
+
+            <p data-lang-nl="In 2012 bouwde ik twee krachtige gaming-pc's volledig zelf samen. Hierbij selecteerde ik alle componenten op basis van prestaties, compatibiliteit en betrouwbaarheid."
+                data-lang-en="In 2012 I built two powerful gaming PCs entirely from scratch. All components were carefully selected based on performance, compatibility and reliability.">
+            </p>
+
+            <p data-lang-nl="De systemen waren uitgerust met Intel Core i7-processoren, Asus-moederborden, 16 GB RAM, SSD-opslag en MSI GTX 560 Ti grafische kaarten. Dit waren voor die periode high-end configuraties."
+                data-lang-en="The systems featured Intel Core i7 processors, Asus motherboards, 16 GB RAM, SSD storage and MSI GTX 560 Ti graphics cards. These were considered high-end configurations for their time.">
+            </p>
+
+            <p data-lang-nl="Door deze systemen zelf te assembleren deed ik praktijkervaring op met hardware-installatie, BIOS-configuratie, koeling, airflow-optimalisatie, driverbeheer en systeemstabiliteit."
+                data-lang-en="Building these systems provided hands-on experience with hardware installation, BIOS configuration, cooling, airflow optimization, driver management and system stability.">
+            </p>
+
+            <p data-lang-nl="Deze projecten vormden een belangrijke stap in mijn technische ontwikkeling en versterkten mijn interesse in infrastructuur, troubleshooting en systeembeheer."
+                data-lang-en="These projects marked an important step in my technical development and strengthened my interest in infrastructure, troubleshooting and system administration.">
+            </p>
+
+
+        </div>
+    </div>
+
+    <div id="overlay-2013" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2013')">X</button>
+
+            <h2 data-lang-nl="2013 - Eerste NAS en centrale opslag"
+                data-lang-en="2013 - First NAS and Centralized Storage">
+                2013 - Eerste NAS en centrale opslag
+            </h2>
+
+            <p data-lang-nl="In 2013 kocht ik mijn eerste NAS: een QNAP TS-469L uitgerust met vier 3TB harde schijven in RAID 5. Dit leverde ongeveer 9TB bruikbare opslagcapaciteit op."
+                data-lang-en="In 2013 I purchased my first NAS: a QNAP TS-469L equipped with four 3TB hard drives in RAID 5, providing approximately 9TB of usable storage capacity.">
+            </p>
+
+            <p data-lang-nl="Voor het eerst werkte ik met gecentraliseerde opslag voor bestanden, back-ups en media binnen mijn thuisnetwerk. Hierdoor kreeg ik inzicht in RAID-configuraties, opslagbeheer en gegevensbescherming."
+                data-lang-en="For the first time I worked with centralized storage for files, backups and media within my home network. This provided hands-on experience with RAID configurations, storage management and data protection.">
+            </p>
+
+            <p data-lang-nl="Daarnaast leerde ik werken met netwerkshares, gebruikersrechten en toegangsbeheer, wat mijn interesse in infrastructuur en systeembeheer verder versterkte."
+                data-lang-en="I also gained experience with network shares, user permissions and access management, further strengthening my interest in infrastructure and system administration.">
+            </p>
+
+
+        </div>
+    </div>
+
+    <div id="overlay-2014" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2014')">X</button>
+
+            <h2 data-lang-nl="2014 - Eerste homelab en serverinfrastructuur"
+                data-lang-en="2014 - First Home Lab and Server Infrastructure">
+                2014 - Eerste homelab en serverinfrastructuur
+            </h2>
+
+            <p data-lang-nl="In 2014 stelde ik mijn eerste echte thuislab samen met een Supermicro rackserver met 32 GB RAM en SSD-opslag. Dit was mijn eerste stap richting servergebaseerde infrastructuur."
+                data-lang-en="In 2014 I built my first real home lab using a Supermicro rack server with 32 GB of RAM and SSD storage. This was my first step into server-based infrastructure.">
+            </p>
+
+            <p data-lang-nl="Ik installeerde Windows Server 2012 en begon te experimenteren met Hyper-V. Hierdoor leerde ik werken met virtuele machines, virtuele switches en serverbeheer in een gecontroleerde omgeving."
+                data-lang-en="I installed Windows Server 2012 and started experimenting with Hyper-V. This introduced me to virtual machines, virtual switches and server management in a controlled environment.">
+            </p>
+
+            <p data-lang-nl="Daarnaast voegde ik een Cisco managed switch toe en begon ik met basis netwerkbeheer en segmentatie binnen mijn thuisnetwerk."
+                data-lang-en="I also added a Cisco managed switch and started learning basic network management and segmentation within my home network.">
+            </p>
+
+            <p data-lang-nl="Dit project was een belangrijke stap richting mijn interesse in systeembeheer, virtualisatie en enterprise-achtige IT-omgevingen."
+                data-lang-en="This project was a key step toward my interest in system administration, virtualization and enterprise-style IT environments.">
+            </p>
+        </div>
+    </div>
+
+    <div id="overlay-2018" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2018')">X</button>
+
+            <h2 data-lang-nl="2018 - Eerste rackinfrastructuur" data-lang-en="2018 - First Rack Infrastructure">
+                2018 - Eerste rackinfrastructuur
+            </h2>
+
+            <p data-lang-nl="Eind 2018 installeerde ik een 18U patchkast in mijn thuisomgeving. Dit was een belangrijke stap richting een gestructureerde en gecentraliseerde IT-infrastructuur."
+                data-lang-en="At the end of 2018 I installed an 18U rack cabinet in my home environment. This was an important step toward a structured and centralized IT infrastructure.">
+            </p>
+
+            <p data-lang-nl="Alle bestaande systemen werden hierin samengebracht, waaronder mijn NAS, rackserver en managed switch. Hierdoor ontstond een overzichtelijke en professioneel opgebouwde omgeving."
+                data-lang-en="All existing systems were consolidated, including my NAS, rack server and managed switch, creating a clean and professionally organized environment.">
+            </p>
+
+            <p data-lang-nl="Deze opstelling vormde de basis voor verdere uitbreiding richting netwerksegmentatie, redundantie en meer geavanceerde thuislab-architecturen."
+                data-lang-en="This setup became the foundation for further expansion into network segmentation, redundancy and more advanced home lab architectures.">
+            </p>
+
+            <p data-lang-nl="Vanaf dit moment begon mijn infrastructuur steeds meer te lijken op een kleine enterprise-omgeving in plaats van een hobbyproject."
+                data-lang-en="From this point on, my infrastructure increasingly resembled a small enterprise environment rather than a hobby project.">
+            </p>
+
+
+        </div>
+    </div>
+
+    <div id="overlay-2020" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2020')">X</button>
+
+            <h2 data-lang-nl="2020 - Geavanceerd thuisnetwerk en segmentatie"
+                data-lang-en="2020 - Advanced Home Network and Segmentation">
+                2020 - Geavanceerd thuisnetwerk en segmentatie
+            </h2>
+
+            <p data-lang-nl="In 2020 breidde ik mijn thuisnetwerk aanzienlijk uit met focus op stabiliteit, segmentatie en betrouwbaarheid. Dit markeerde de overgang naar een meer enterprise-achtige netwerkstructuur."
+                data-lang-en="In 2020 I significantly expanded my home network with a focus on stability, segmentation and reliability. This marked the transition toward a more enterprise-like network structure.">
+            </p>
+
+            <p data-lang-nl="Ik implementeerde VLAN-segmentatie en gebruikte een Layer 3 managed switch als centrale netwerkcomponent. Hierdoor kon ik verschillende netwerkzones logisch van elkaar scheiden, zoals productie, IoT en gastnetwerk."
+                data-lang-en="I implemented VLAN segmentation and used a Layer 3 managed switch as the central network component. This allowed me to logically separate different network zones such as production, IoT and guest networks.">
+            </p>
+
+            <p data-lang-nl="Daarnaast installeerde ik access points met gecentraliseerd beheer, waardoor ik een stabiel en gescheiden draadloos netwerk kon opzetten."
+                data-lang-en="I also deployed access points with centralized management, allowing me to build a stable and segmented wireless network.">
+            </p>
+
+            <p data-lang-nl="Ook mijn storage-infrastructuur werd uitgebreid met nieuwe NAS-systemen, caching en verbeterde back-upstrategieën. Dit zorgde voor meer performantie en dataveiligheid."
+                data-lang-en="My storage infrastructure was also expanded with new NAS systems, caching and improved backup strategies, resulting in better performance and data safety.">
+            </p>
+
+            <p data-lang-nl="Deze fase vormde een belangrijk leermoment in netwerkdesign, infrastructuurbeheer en het denken in schaalbare IT-omgevingen."
+                data-lang-en="This phase was a key learning moment in network design, infrastructure management and thinking in scalable IT environments.">
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-2021" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2021')">X</button>
+
+            <h2 data-lang-nl="2021 - Virtualisatie en ondernemerschap"
+                data-lang-en="2021 - Virtualization and Entrepreneurship">
+                2021 - Virtualisatie en ondernemerschap
+            </h2>
+
+            <p data-lang-nl="In 2021 bouwde ik mijn eerste serieuze virtualisatie-omgeving met VMware ESXi op een hergebruikte server. Dit was mijn eerste stap richting een echte datacenter-achtige setup in een thuisomgeving."
+                data-lang-en="In 2021 I built my first serious virtualization environment using VMware ESXi on a repurposed server. This was my first step toward a real datacenter-like setup in a home environment.">
+            </p>
+
+            <p data-lang-nl="Ik leerde werken met virtuele machines, resource management en serverconsolidatie. Dit gaf mij praktische ervaring met het beheren van meerdere systemen binnen één fysieke host."
+                data-lang-en="I learned to work with virtual machines, resource management and server consolidation. This gave me hands-on experience managing multiple systems on a single physical host.">
+            </p>
+
+            <p data-lang-nl="Daarnaast startte ik in 2021 mijn eigen onderneming, waarbij ik verantwoordelijk was voor voorraadbeheer, klantbeheer, orderverwerking en operationele IT-processen."
+                data-lang-en="In 2021 I also started my own business, where I was responsible for inventory management, customer management, order processing and operational IT processes.">
+            </p>
+
+            <p data-lang-nl="Deze combinatie van virtualisatie en ondernemerschap versterkte mijn probleemoplossend vermogen en mijn inzicht in gestructureerde IT-omgevingen."
+                data-lang-en="This combination of virtualization and entrepreneurship strengthened my problem-solving skills and my understanding of structured IT environments.">
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-2024" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2024')">X</button>
+
+            <h2 data-lang-nl="2024 - Start van mijn IT-opleiding en carrièreswitch"
+                data-lang-en="2024 - Start of IT education and career switch">
+                2024 - Start van mijn IT-opleiding en carrièreswitch
+            </h2>
+
+            <p data-lang-nl="In 2024 nam ik de definitieve beslissing om mijn carrière volledig richting IT te sturen. Ik maakte de overstap van mijn vorige activiteiten naar een toekomst in systeem- en netwerkbeheer."
+                data-lang-en="In 2024 I made the definitive decision to fully redirect my career toward IT. I transitioned from my previous activities to a future in system and network administration.">
+            </p>
+
+            <p data-lang-nl="In oktober 2024 startte ik met een voltijdse opleiding tot Junior Systeembeheerder via VDAB (IT1), die liep tot augustus 2025."
+                data-lang-en="In October 2024 I started a full-time Junior System Administrator program through VDAB (IT1), which ran until August 2025.">
+            </p>
+
+            <p data-lang-nl="Tijdens deze opleiding verdiepte ik mij in Windows Server, Active Directory, networking, virtualisatie, Microsoft 365 en cloud fundamentals met Azure."
+                data-lang-en="During this program I gained in-depth knowledge of Windows Server, Active Directory, networking, virtualization, Microsoft 365 and cloud fundamentals with Azure.">
+            </p>
+
+            <p data-lang-nl="Deze periode vormde de brug tussen mijn praktijkervaring in mijn homelab en een gestructureerde professionele IT-opleiding."
+                data-lang-en="This period formed the bridge between my practical homelab experience and a structured professional IT education.">
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-2025" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2025')">X</button>
+
+            <h2 data-lang-nl="2025 - Azure, Terraform, Microsoft 365 en svenitguy.be"
+                data-lang-en="2025 - Azure, Terraform, Microsoft 365 and svenitguy.be">
+                2025 - Azure, Terraform, Microsoft 365 en svenitguy.be
+            </h2>
+
+            <p data-lang-nl="In augustus 2025 rondde ik succesvol mijn voltijdse opleiding Junior Systeembeheerder af en startte ik mijn zoektocht naar een eerste IT-job. Ik kocht mijn domein svenitguy.be en zette een professioneel Microsoft 365 Business Basic account op met eigen e-mailadressen."
+                data-lang-en="In August 2025 I successfully completed my full-time Junior System Administrator training and started looking for my first IT job. I registered the domain svenitguy.be and set up a professional Microsoft 365 Business Basic tenant with custom email addresses.">
+                Opleiding afgerond en IT-carrière gestart...
+            </p>
+
+            <p data-lang-nl="Ik bouwde een Azure-portfolio met Static Web Apps, Azure DNS en Azure DevOps CI/CD. Daarnaast volgde ik een AZ-104 cursus via Udemy en startte ik met TryHackMe en Codecademy om mijn cloud- en securityskills verder te ontwikkelen."
+                data-lang-en="I built an Azure portfolio using Static Web Apps, Azure DNS and Azure DevOps CI/CD. I also started AZ-104 training on Udemy and subscribed to TryHackMe and Codecademy to further develop my cloud and security skills.">
+                Azure portfolio en verdere studies...
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-2026" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2026')">X</button>
+
+            <h2 data-lang-nl="2026 - Actieve jobzoektocht, IaC, Linux en security verdieping"
+                data-lang-en="2026 - Active job search, IaC, Linux and security deep dive">
+                2026 - Actieve jobzoektocht, IaC, Linux en security verdieping
+            </h2>
+
+            <p data-lang-nl="In 2026 ben ik actief bezig met het zoeken naar mijn eerste IT-job in system administration en cloud. Ik werk dagelijks aan sollicitaties en blijf mijn technische vaardigheden verder ontwikkelen via praktijkgerichte learning en projecten."
+                data-lang-en="In 2026 I am actively searching for my first IT job in system administration and cloud. I work daily on job applications while continuously improving my technical skills through hands-on learning and projects.">
+                Actieve jobzoektocht en continue groei...
+            </p>
+
+            <p data-lang-nl="Ik verdiep mij verder in Infrastructure as Code met Terraform en Linux via Udemy, en bouw mijn vaardigheden rond cloud, automation en security verder uit. Daarnaast gebruik ik GitHub actief om alles wat ik leer in praktijk te brengen in echte projecten."
+                data-lang-en="I am deepening my knowledge of Infrastructure as Code with Terraform and Linux via Udemy, while expanding my skills in cloud, automation and security. I also actively use GitHub to apply everything I learn in real projects.">
+                Focus op IaC, Linux en cloud automation...
+            </p>
+
+            <p data-lang-nl="Naast cloud en infrastructuur besteed ik ook aandacht aan security en AI in IT-workflows, omdat ik geloof dat deze technologieën een belangrijke rol spelen in de toekomst van system administration."
+                data-lang-en="In addition to cloud and infrastructure, I also focus on security and AI in IT workflows, as I believe these technologies play a key role in the future of system administration.">
+                Security, AI en toekomstgerichte skills...
+            </p>
+
+        </div>
+    </div>
+
+    <div id="overlay-2027" class="timeline-overlay">
+        <div class="overlay-box">
+
+            <button onclick="closeTimeline('2027')">X</button>
+
+            <h2 data-lang-nl="2027 - De toekomst" data-lang-en="2027 - The future">
+                2027 - De toekomst
+            </h2>
+
+            <p data-lang-nl="Mijn IT-verhaal is nog lang niet geschreven. Nieuwe technologieën, certificeringen, projecten en professionele uitdagingen zullen hier hun plaats krijgen."
+                data-lang-en="My IT story is far from finished. New technologies, certifications, projects and professional challenges will take place here.">
+                Mijn IT-verhaal is nog lang niet geschreven. Nieuwe technologieën, certificeringen, projecten en
+                professionele uitdagingen zullen hier hun plaats krijgen.
+            </p>
+
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-socials">
+
+            <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 SvenITGuy</p>
+
+        <div class="footer-links">
+
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+                Privacybeleid
+            </a>
+
+            <span>|</span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+                Gebruiksvoorwaarden
+            </a>
+
+            <span>|</span>
+
+            <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+                data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+                Cookie-instellingen
+            </a>
+
+        </div>
+
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+
+        <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+            data-lang-en="This site uses cookies to improve your experience.">
+            Deze site gebruikt cookies om je ervaring te verbeteren.
+        </p>
+
+        <div class="cookie-links">
+            <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+            <span> & </span>
+
+            <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+                data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+        </div>
+
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+                Akkoord
+            </button>
+
+            <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+                Weiger
+            </button>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="script.js"></script>
+    <script src="cookie-banner.js"></script>
+
+</body>
+
+</html>

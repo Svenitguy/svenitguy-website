@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sven Velleman | SvenITGuy - Junior IT Support & Systems Administrator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="page-about">
+
+  <div class="page-background">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="logo">
+      <a href="index.html">Sven<span class="logo-accent">ITGuy</span></a>
+    </div>
+
+    <!-- VOEG DIT TOE: De hamburger-knop -->
+    <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Menu openen" aria-expanded="false">
+      <i class="fa-solid fa-bars icon-burger"></i>
+      <i class="fa-solid fa-xmark icon-close" style="display: none;"></i>
+    </button>
+
+    <nav class="nav-links" id="nav-menu" aria-label="Hoofdnavigatie">
+      <a href="../index.html" data-lang-nl="Home" data-lang-en="Home">Home</a>
+
+      <a href="../about.html" data-lang-nl="Over mij" data-lang-en="About me">Over mij</a>
+
+      <a href="../projects.html" class="active" data-lang-nl="Projecten" data-lang-en="Projects">Projecten</a>
+
+      <a href="../lab.html" data-lang-nl="Lab" data-lang-en="Lab">Lab</a>
+
+      <a href="../journey.html" data-lang-nl="Mijn traject" data-lang-en="My journey">Mijn traject</a>
+
+      <a href="../cv.html" data-lang-nl="CV" data-lang-en="CV">CV</a>
+
+      <a href="../contact.html" data-lang-nl="Contact" data-lang-en="Contact">Contact</a>
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <!-- LANGUAGE SWITCH -->
+      <div class="lang-dropdown">
+        <button class="lang-btn" id="lang-btn-text">
+          NL
+          <span class="chevron">▾</span>
+        </button>
+
+        <div class="lang-menu" id="lang-menu">
+          <button data-lang-nl="Nederlands" data-lang-en="Dutch" onclick="setLang('nl')">
+            Nederlands
+          </button>
+
+          <button data-lang-nl="Engels" data-lang-en="English" onclick="setLang('en')">
+            English
+          </button>
+        </div>
+      </div>
+
+      <!-- THEME TOGGLE -->
+      <div class="theme-switch-container">
+        <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+
+        <label for="theme-toggle" class="theme-label" aria-label="Schakel tussen licht en donker thema">
+          <span class="theme-ball">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </span>
+        </label>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- PAGINA TITEL -->
+  <div class="page-title" style="text-align:center; margin: 40px 0;">
+    <h1 data-lang-nl="AZ-900 Quiz" data-lang-en="AZ-900 Quiz">AZ-900 Quiz</h1>
+
+    <p data-lang-nl="Test je kennis over Microsoft Azure Fundamentals"
+      data-lang-en="Test your knowledge of Microsoft Azure Fundamentals">
+      Test je kennis over Microsoft Azure Fundamentals
+    </p>
+  </div>
+
+  <main class="section">
+
+    <!-- OVER DIT PROJECT -->
+    <div class="card reveal">
+      <h2 data-lang-nl="Over dit project" data-lang-en="About this Project">
+        Over dit project
+      </h2>
+
+      <p data-lang-nl="Deze interactieve quiz test je kennis over Microsoft Azure Fundamentals (AZ-900). De vragen worden opgehaald vanuit een JSON-bestand dat opgeslagen is in een Azure Blob Container. Elke vraag heeft meerdere antwoordopties en een uitleg bij het juiste antwoord."
+        data-lang-en="This interactive quiz tests your knowledge of Microsoft Azure Fundamentals (AZ-900). Questions are fetched from a JSON file stored in an Azure Blob Container. Each question includes multiple answer options and an explanation for the correct answer.">
+      </p>
+    </div>
+
+    <!-- DOEL -->
+    <div class="card reveal" style="margin-top: 22px;">
+      <h2 data-lang-nl="Doel van dit project" data-lang-en="Project Goal">
+        Doel van dit project
+      </h2>
+
+      <p data-lang-nl="Mijn doel was om een dynamische webapplicatie te bouwen die real-time data ophaalt uit Azure Storage en de gebruiker een leerzame ervaring biedt rond de AZ-900 examendoelen."
+        data-lang-en="The goal was to build a dynamic web application that fetches real-time data from Azure Storage and provides an educational experience around the AZ-900 exam objectives.">
+      </p>
+    </div>
+
+    <!-- TECHNOLOGIEËN -->
+    <div class="card reveal" style="margin-top: 22px;">
+      <h2 data-lang-nl="Gebruikte technologieën" data-lang-en="Technologies Used">
+        Gebruikte technologieën
+      </h2>
+
+      <div class="tech-icons" style="margin-top: 14px;">
+        <img src="../icons/html5.svg" alt="HTML5" title="HTML5">
+        <img src="../icons/css3.svg" alt="CSS3" title="CSS3">
+        <img src="../icons/javascript.svg" alt="JavaScript" title="JavaScript">
+        <img src="../icons/azure-blob-storage.svg" alt="Azure Storage" title="Azure Blob Storage">
+        <img src="../icons/azure-static-web-apps.svg" alt="Azure Static Web Apps" title="Azure Static Web Apps">
+        <img src="../icons/azure-devops.svg" alt="Azure DevOps" title="Azure DevOps">
+        <img src="../icons/vscode.svg" alt="Visual Studio Code" title="VS Code">
+      </div>
+    </div>
+
+    <!-- WAT IK GELEERD HEB -->
+    <div class="card reveal" style="margin-top: 22px;">
+      <h2 data-lang-nl="Wat ik geleerd heb" data-lang-en="What I Learned">
+        Wat ik geleerd heb
+      </h2>
+
+      <ul style="margin-top: 12px; padding-left: 18px;">
+
+        <li data-lang-nl="Data ophalen via fetch uit een externe JSON-bron in Azure Blob Storage."
+          data-lang-en="Fetching data via fetch from an external JSON source in Azure Blob Storage.">
+        </li>
+
+        <li data-lang-nl="Quizlogica met scoretracking en uitleg per antwoord."
+          data-lang-en="Quiz logic with score tracking and explanations per answer.">
+        </li>
+
+        <li data-lang-nl="CI/CD workflows via Azure DevOps." data-lang-en="CI/CD workflows using Azure DevOps.">
+        </li>
+
+        <li data-lang-nl="Deployment via Azure Static Web Apps." data-lang-en="Deployment using Azure Static Web Apps.">
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- START QUIZ -->
+    <div class="card reveal" style="margin-top: 22px; text-align:center;">
+      <h2 data-lang-nl="Start de quiz" data-lang-en="Launch the Quiz">
+        Start de quiz
+      </h2>
+
+      <p data-lang-nl="Klaar om je kennis te testen? Klik hieronder om de quiz te starten."
+        data-lang-en="Ready to test your knowledge? Click below to start the quiz.">
+      </p>
+      <div>
+        <a href="https://www.svenitguy.be/az-900-quiz/index.html" target="_blank" rel="noopener noreferrer"
+          class="btn primary btn-lg" style="margin-top: 14px;" data-lang-nl="Start AZ-900 Quiz →"
+          data-lang-en="Start AZ-900 Quiz →">
+          Start AZ-900 Quiz →
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-socials">
+
+      <a href="mailto:sven.velleman@svenitguy.be" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sven-velleman/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Svenitguy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+
+    <p>© 2026 SvenITGuy</p>
+
+    <div class="footer-links">
+
+      <a href="privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy policy">
+        Privacybeleid
+      </a>
+
+      <span>|</span>
+
+      <a href="voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden" data-lang-en="Terms">
+        Gebruiksvoorwaarden
+      </a>
+
+      <span>|</span>
+
+      <a href="#" onclick="localStorage.removeItem('cookieConsent'); location.reload(); return false;"
+        data-lang-nl="Cookie-instellingen" data-lang-en="Cookie settings">
+        Cookie-instellingen
+      </a>
+
+    </div>
+
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+
+    <p data-lang-nl="Deze site gebruikt cookies om je ervaring te verbeteren."
+      data-lang-en="This site uses cookies to improve your experience.">
+      Deze site gebruikt cookies om je ervaring te verbeteren.
+    </p>
+
+    <div class="cookie-links">
+      <a href="../privacy.html" data-lang-nl="Privacybeleid" data-lang-en="Privacy Policy">Privacybeleid</a>
+
+      <span> & </span>
+
+      <a href="../voorwaarden.html" data-lang-nl="Gebruiksvoorwaarden"
+        data-lang-en="Terms of Service">Gebruiksvoorwaarden</a>
+    </div>
+
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="btn primary" data-lang-nl="Akkoord" data-lang-en="Accept">
+        Akkoord
+      </button>
+
+      <button id="reject-cookies" class="btn secondary" data-lang-nl="Weiger" data-lang-en="Decline">
+        Weiger
+      </button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+
+  <script src="../script.js"></script>
+  <script src="../cookie-banner.js"></script>
+
+</body>
+
+</html>
