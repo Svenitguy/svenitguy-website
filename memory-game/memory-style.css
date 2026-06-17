@@ -37,6 +37,7 @@ h1 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  -webkit-user-select: none;
   user-select: none;
   transition: all 0.3s ease;
   box-shadow: 0 0 8px rgba(230, 167, 67, 0.7);
