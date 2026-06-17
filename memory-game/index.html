@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memory Game – Sven</title>
+
+  <!-- Externe stylesheets (CDN’s, Google Fonts, eigen CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="memory-style.css" />
+  <link rel="stylesheet" href="../cookie-banner.css" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+  <style>
+    /* Toegevoegd voor centrering van specifieke regels in overlay */
+    .center-line {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      margin: 0.3em 0;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Memory Game</h1>
+
+    <!-- Overlay voor start en einde -->
+    <div id="overlay" class="overlay active">
+      <div class="overlay-content">
+        <h2 id="overlay-title">Welkom bij Memory!</h2>
+        <p id="overlay-description">
+          Test je geheugen in dit eenvoudige memory&shy;-spel. Klik op de kaarten om paren te vinden. Elk paar dat je
+          vindt blijft zichtbaar. Vul je naam in om je score op te slaan in de highscorelijst.
+        </p>
+
+        <input type="text" id="playerName" maxlength="8" placeholder="Je naam (max 8 tekens)" />
+        <div class="button-row">
+          <button id="startBtn">Start spel</button>
+          <button id="exitBtn">Stoppen</button>
+        </div>
+
+        <h3>Highscores</h3>
+        <table id="highscoreTable">
+          <thead>
+            <tr>
+              <th>Rang</th>
+              <th>Naam</th>
+              <th>Beurten</th>
+              <th>Datum</th>
+            </tr>
+          </thead>
+          <tbody id="highscoreBody">
+            <!-- Scores komen hier -->
+          </tbody>
+        </table>
+
+        <!-- Hier komt de highlight voor jouw score als je niet in de top 5 staat -->
+        <div id="playerScoreHighlight" style="margin-top: 1em; font-weight: bold;"></div>
+      </div>
+    </div>
+
+    <!-- Gameboard -->
+    <div id="game-board" class="board"></div>
+    <p>Beurten: <span id="turns">0</span></p>
+
+    <!-- Geluiden -->
+    <audio id="matchSound" src="sounds/match.mp3" preload="auto"></audio>
+    <audio id="winSound" src="sounds/win.mp3" preload="auto"></audio>
+    <audio id="failSound" src="sounds/error.mp3" preload="auto"></audio>
+  </main>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    Deze site gebruikt cookies om je ervaring te verbeteren.
+    <a href="privacy.html">Privacybeleid</a> en
+    <a href="voorwaarden.html">Gebruiksvoorwaarden</a>.
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="cookie-btn">Akkoord</button>
+      <button id="reject-cookies" class="cookie-btn secondary">Weiger</button>
+    </div>
+  </div>
+
+  <script src="memory-script.js"></script>
+  <script src="../cookie-banner.js"></script>
+</body>
+
+</html>

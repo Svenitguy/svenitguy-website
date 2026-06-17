@@ -1,0 +1,31 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/images/*",
+      "/css/*",
+      "/js/*",
+      "/*.png",
+      "/*.jpg",
+      "/*.jpeg",
+      "/*.svg",
+      "/*.ico",
+      "/*.webp",
+      "/files/*"
+    ]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    },
+    "403": {
+      "rewrite": "/403.html"
+    }
+  },
+  "globalHeaders": {
+    "cache-control": "public, max-age=86400",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  }
+}
