@@ -1,0 +1,1091 @@
+[
+  {
+    "vraag": "Wat betekent IaaS in Azure?",
+    "opties": [
+      "Infrastructuur die je kunt beheren en aanpassen via de cloud.",
+      "Software die volledig beheerd wordt door Azure zonder eigen onderhoud.",
+      "Een platform om applicaties te bouwen en te beheren.",
+      "Een service voor automatische back-ups en herstel."
+    ],
+    "correct": 0,
+    "uitleg": "IaaS betekent dat je infrastructuur via de cloud gebruikt, zoals virtuele machines en opslag."
+  },
+  {
+    "vraag": "Wat is een Resource Group in Azure?",
+    "opties": [
+      "Een container waarin gerelateerde Azure resources worden beheerd.",
+      "Een fysieke server waarop je applicaties draait.",
+      "Een netwerk van verbonden gebruikers en apparaten.",
+      "Een verzameling van beveiligingsregels voor toegang."
+    ],
+    "correct": 0,
+    "uitleg": "Resource Groups helpen je resources te organiseren en beheren."
+  },
+  {
+    "vraag": "Wat is Azure Blob Storage?",
+    "opties": [
+      "Een service om ongestructureerde data in de cloud op te slaan.",
+      "Een database service voor relationele data.",
+      "Een platform voor het uitvoeren van virtuele machines.",
+      "Een netwerkbeveiligingsfunctie voor virtuele netwerken."
+    ],
+    "correct": 0,
+    "uitleg": "Blob Storage wordt gebruikt voor grote hoeveelheden ongestructureerde data zoals bestanden."
+  },
+  {
+    "vraag": "Wat is het doel van Azure Active Directory?",
+    "opties": [
+      "Het beheren van identiteiten en toegangscontrole in de cloud.",
+      "Het opslaan van data in relationele tabellen.",
+      "Het uitvoeren van containerapplicaties.",
+      "Het monitoren van netwerken en verkeer."
+    ],
+    "correct": 0,
+    "uitleg": "Azure AD verzorgt authenticatie en autorisatie voor gebruikers en applicaties."
+  },
+  {
+    "vraag": "Wat is een Virtual Network (VNet) in Azure?",
+    "opties": [
+      "Een privé netwerk dat Azure resources met elkaar verbindt.",
+      "Een dienst om databases te beheren.",
+      "Een virtuele machine met meerdere netwerkaansluitingen.",
+      "Een service voor load balancing van applicaties."
+    ],
+    "correct": 0,
+    "uitleg": "VNet biedt een geïsoleerd netwerk voor communicatie tussen Azure resources."
+  },
+  {
+    "vraag": "Wat is het belangrijkste voordeel van Azure Functions?",
+    "opties": [
+      "Serverless uitvoering van code op aanvraag zonder beheer.",
+      "Volledig beheerde virtuele machines voor applicaties.",
+      "Een platform om databases te schalen.",
+      "Een dienst om data te analyseren in real-time."
+    ],
+    "correct": 0,
+    "uitleg": "Azure Functions stelt je in staat om kleine code stukjes te draaien zonder infrastructuur te beheren."
+  },
+  {
+    "vraag": "Wat is Azure SQL Database?",
+    "opties": [
+      "Een volledig beheerde relationele database service in de cloud.",
+      "Een tool om data te visualiseren.",
+      "Een dienst voor data opslag in ongestructureerde vorm.",
+      "Een netwerkservice voor beveiliging."
+    ],
+    "correct": 0,
+    "uitleg": "Azure SQL is een relationele database die je niet zelf hoeft te beheren."
+  },
+  {
+    "vraag": "Wat doet een Network Security Group (NSG)?",
+    "opties": [
+      "Regels toepassen voor netwerkverkeer binnen Azure netwerken.",
+      "Beheer van gebruikersrechten in Azure Active Directory.",
+      "Monitoren van netwerkprestaties en bandbreedte.",
+      "Opslaan van beveiligingscertificaten voor applicaties."
+    ],
+    "correct": 0,
+    "uitleg": "NSG’s filteren inkomend en uitgaand verkeer op basis van regels."
+  },
+  {
+    "vraag": "Wat is Azure Monitor?",
+    "opties": [
+      "Een platform voor het verzamelen en analyseren van telemetrie data.",
+      "Een tool om virtuele machines te maken.",
+      "Een dienst om automatisch backups uit te voeren.",
+      "Een oplossing voor netwerkverbindingen."
+    ],
+    "correct": 0,
+    "uitleg": "Azure Monitor helpt je inzicht te krijgen in de prestaties van resources."
+  },
+  {
+    "vraag": "Wat betekent PaaS in Azure?",
+    "opties": [
+      "Een platform om applicaties te ontwikkelen en te beheren zonder infrastructuurbeheer.",
+      "Een dienst voor het opslaan van bestanden in de cloud.",
+      "Een service voor het beveiligen van netwerktoegang.",
+      "Een tool om virtuele machines te automatiseren."
+    ],
+    "correct": 0,
+    "uitleg": "Platform as a Service biedt ontwikkeltools en runtime om applicaties te draaien."
+  },
+  {
+    "vraag": "Wat is Azure Kubernetes Service (AKS)?",
+    "opties": [
+      "Een beheerde Kubernetes container orchestratie service.",
+      "Een dienst voor het opslaan van objecten.",
+      "Een monitoring oplossing voor cloud resources.",
+      "Een virtueel netwerk voor container communicatie."
+    ],
+    "correct": 0,
+    "uitleg": "AKS maakt het eenvoudig om containers te beheren en schalen."
+  },
+  {
+    "vraag": "Wat is Azure DevOps?",
+    "opties": [
+      "Een set tools voor ontwikkelaars om software te bouwen en te deployen.",
+      "Een database service voor grote datasets.",
+      "Een beveiligingsdienst voor authenticatie.",
+      "Een cloud opslag voor statische bestanden."
+    ],
+    "correct": 0,
+    "uitleg": "DevOps helpt teams bij planning, versiebeheer en continue integratie."
+  },
+  {
+    "vraag": "Wat is Azure Cognitive Services?",
+    "opties": [
+      "API’s die AI-functionaliteiten zoals taal en gezichtsherkenning bieden.",
+      "Een platform voor het hosten van webapplicaties.",
+      "Een tool voor data-analyse en rapportage.",
+      "Een dienst voor het beveiligen van API’s."
+    ],
+    "correct": 0,
+    "uitleg": "Cognitive Services stelt ontwikkelaars in staat AI toe te voegen zonder AI-expertise."
+  },
+  {
+    "vraag": "Wat is Azure Policy?",
+    "opties": [
+      "Een dienst om regels en standaarden af te dwingen binnen Azure resources.",
+      "Een tool om virtuele netwerken te configureren.",
+      "Een service om gebruikers te authenticeren.",
+      "Een platform voor applicatie hosting."
+    ],
+    "correct": 0,
+    "uitleg": "Azure Policy helpt je compliance en governance te waarborgen."
+  },
+  {
+    "vraag": "Wat is Azure Logic Apps?",
+    "opties": [
+      "Een dienst voor het automatiseren van workflows en integraties.",
+      "Een database voor relationele data.",
+      "Een opslagservice voor grote bestanden.",
+      "Een tool voor het maken van virtuele machines."
+    ],
+    "correct": 0,
+    "uitleg": "Logic Apps helpen processen te automatiseren zonder code te schrijven."
+  },
+  {
+    "vraag": "Wat is het voordeel van Availability Zones in Azure?",
+    "opties": [
+      "Bescherming tegen datacenter storingen door geografische spreiding.",
+      "Automatische backup van data naar de cloud.",
+      "Een virtueel netwerk voor beveiligde verbindingen.",
+      "Het automatisch schalen van applicaties bij belasting."
+    ],
+    "correct": 0,
+    "uitleg": "Availability Zones vergroten de beschikbaarheid door redundantie."
+  },
+  {
+    "vraag": "Wat is Azure Virtual Machines?",
+    "opties": [
+      "Computing resources die je kunt configureren en beheren in de cloud.",
+      "Een beheerde database service.",
+      "Een dienst voor netwerkbeveiliging.",
+      "Een platform om applicaties te bouwen."
+    ],
+    "correct": 0,
+    "uitleg": "Virtuele machines zijn basis compute resources in Azure."
+  },
+  {
+    "vraag": "Wat doet Azure Firewall?",
+    "opties": [
+      "Een netwerkbeveiligingsservice die verkeer filtert en controleert.",
+      "Een identity management service.",
+      "Een tool voor data-analyse.",
+      "Een platform voor applicatieontwikkeling."
+    ],
+    "correct": 0,
+    "uitleg": "Azure Firewall beschermt netwerken tegen ongewenst verkeer."
+  },
+  {
+    "vraag": "Wat is Azure ExpressRoute?",
+    "opties": [
+      "Een privé verbinding tussen on-premises netwerken en Azure.",
+      "Een dienst voor het beheren van gebruikersaccounts.",
+      "Een opslagservice voor back-ups.",
+      "Een monitoring tool voor netwerken."
+    ],
+    "correct": 0,
+    "uitleg": "ExpressRoute biedt veilige, snelle verbindingen zonder internet."
+  },
+  {
+    "vraag": "Wat is Azure Service Bus?",
+    "opties": [
+      "Een messaging platform voor communicatie tussen applicaties.",
+      "Een tool om data te visualiseren.",
+      "Een virtueel netwerk voor resource verbindingen.",
+      "Een dienst voor automatische schaling van virtuele machines."
+    ],
+    "correct": 0,
+    "uitleg": "Service Bus faciliteert betrouwbare berichtuitwisseling tussen systemen."
+  },
+  {
+    "vraag": "Wat is het doel van Azure Backup?",
+    "opties": [
+      "Het veiligstellen van data en herstel in geval van verlies.",
+      "Het beheren van identiteiten en toegang.",
+      "Het analyseren van cloud resource prestaties.",
+      "Het automatiseren van applicatie deployment."
+    ],
+    "correct": 0,
+    "uitleg": "Backup zorgt dat je data beschermd is tegen corruptie of verwijdering."
+  },
+  {
+    "vraag": "Wat is Azure Blob Lifecycle Management?",
+    "opties": [
+      "Automatisch verplaatsen of verwijderen van data op basis van regels.",
+      "Een dienst om gebruikers te beheren.",
+      "Een tool voor data encryptie.",
+      "Een platform om applicaties te ontwikkelen."
+    ],
+    "correct": 0,
+    "uitleg": "Lifecycle Management helpt kosten te besparen door data te optimaliseren."
+  },
+  {
+    "vraag": "Wat is Azure Traffic Manager?",
+    "opties": [
+      "Een DNS-gebaseerde load balancer voor het routeren van gebruikersverkeer.",
+      "Een dienst voor het beheren van virtuele machines.",
+      "Een netwerkbeveiligingsoplossing.",
+      "Een opslagservice voor grote bestanden."
+    ],
+    "correct": 0,
+    "uitleg": "Traffic Manager verdeelt verkeer over meerdere locaties voor betere beschikbaarheid."
+  },
+  {
+    "vraag": "Wat is Azure Key Vault?",
+    "opties": [
+      "Een beveiligde opslag voor sleutels, geheimen en certificaten.",
+      "Een dienst voor data-analyse.",
+      "Een platform voor webhosting.",
+      "Een netwerkservice voor firewall beheer."
+    ],
+    "correct": 0,
+    "uitleg": "Key Vault beschermt cryptografische sleutels en geheimen."
+  },
+  {
+    "vraag": "Wat is een Azure Availability Set?",
+    "opties": [
+      "Een configuratie om virtuele machines te spreiden over hardware om downtime te voorkomen.",
+      "Een set van netwerkregels voor beveiliging.",
+      "Een groep van databases met replica’s.",
+      "Een opslagaccount met meerdere containers."
+    ],
+    "correct": 0,
+    "uitleg": "Availability Sets verminderen de impact van hardware storingen."
+  },
+  {
+    "vraag": "Wat is Azure Sentinel?",
+    "opties": [
+      "Een cloud-native SIEM voor beveiligingsinformatie en events.",
+      "Een monitoring tool voor virtuele machines.",
+      "Een dienst voor data backup.",
+      "Een platform voor applicatieontwikkeling."
+    ],
+    "correct": 0,
+    "uitleg": "Sentinel helpt bij het detecteren en reageren op beveiligingsincidenten."
+  },
+  {
+    "vraag": "Wat is Azure App Service?",
+    "opties": [
+      "Een platform om webapplicaties en API’s te hosten zonder serverbeheer.",
+      "Een dienst voor het opslaan van grote hoeveelheden data.",
+      "Een netwerkcomponent voor het beheren van verkeer.",
+      "Een tool voor het configureren van virtuele machines."
+    ],
+    "correct": 0,
+    "uitleg": "App Service maakt het gemakkelijk om webapps te bouwen en te schalen."
+  },
+  {
+    "vraag": "Wat is Azure Cosmos DB?",
+    "opties": [
+      "Een wereldwijd verspreide multi-model database service.",
+      "Een tool voor het analyseren van big data.",
+      "Een virtuele machine voor databasebeheer.",
+      "Een platform voor het hosten van webservices."
+    ],
+    "correct": 0,
+    "uitleg": "Cosmos DB biedt lage latentie en hoge beschikbaarheid wereldwijd."
+  },
+  {
+    "vraag": "Wat doet Azure Load Balancer?",
+    "opties": [
+      "Verdeelt netwerkverkeer over meerdere virtuele machines.",
+      "Biedt identity management voor gebruikers.",
+      "Verzamelt en analyseert loggegevens van applicaties.",
+      "Beschermt netwerken met firewallregels."
+    ],
+    "correct": 0,
+    "uitleg": "Load Balancer zorgt voor betere prestaties door verkeer te verdelen."
+  },
+  {
+    "vraag": "Wat is Azure Logic Apps?",
+    "opties": [
+      "Een service om workflows en processen te automatiseren zonder code.",
+      "Een opslagdienst voor ongestructureerde data.",
+      "Een dienst om virtuele netwerken te beheren.",
+      "Een platform voor het hosten van databases."
+    ],
+    "correct": 0,
+    "uitleg": "Logic Apps koppelen diensten en applicaties door automatisering."
+  },
+  {
+    "vraag": "Wat is Azure ExpressRoute?",
+    "opties": [
+      "Een privé netwerkverbinding tussen on-premises en Azure.",
+      "Een cloud-gebaseerde opslagdienst.",
+      "Een dienst voor automatische schaalvergroting.",
+      "Een platform voor applicatieontwikkeling."
+    ],
+    "correct": 0,
+    "uitleg": "ExpressRoute verbindt netwerken direct zonder het internet te gebruiken."
+  },
+  {
+    "vraag": "Wat is een Azure Availability Zone?",
+    "opties": [
+      "Een fysieke locatie binnen een regio om hoge beschikbaarheid te bieden.",
+      "Een virtueel netwerk om resources te verbinden.",
+      "Een dienst voor automatische data backups.",
+      "Een configuratie voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "Availability Zones beschermen tegen datacenterstoringen."
+  },
+  {
+    "vraag": "Wat is Azure Container Instances?",
+    "opties": [
+      "Een service om containers snel en zonder VM’s te draaien.",
+      "Een platform voor het beheren van databases.",
+      "Een netwerkcomponent voor beveiliging.",
+      "Een tool voor het analyseren van applicatielogs."
+    ],
+    "correct": 0,
+    "uitleg": "Container Instances laten je containers draaien zonder infrastructuur."
+  },
+  {
+    "vraag": "Wat is Azure DevTest Labs?",
+    "opties": [
+      "Een omgeving om snel test- en ontwikkelresources te maken en beheren.",
+      "Een platform voor het hosten van applicaties.",
+      "Een dienst voor het beheren van gebruikersaccounts.",
+      "Een tool voor het automatiseren van workflows."
+    ],
+    "correct": 0,
+    "uitleg": "DevTest Labs helpt ontwikkelaars efficiënter te werken."
+  },
+  {
+    "vraag": "Wat is Azure Firewall Manager?",
+    "opties": [
+      "Een centrale beheeroplossing voor meerdere Azure Firewalls.",
+      "Een tool om virtuele machines te maken en beheren.",
+      "Een dienst voor het monitoren van netwerkverkeer.",
+      "Een platform voor identity en toegangsbeheer."
+    ],
+    "correct": 0,
+    "uitleg": "Firewall Manager vereenvoudigt het beheer van beveiligingsregels."
+  },
+  {
+    "vraag": "Wat is Azure Sentinel?",
+    "opties": [
+      "Een cloudgebaseerde beveiligingsinformatie en eventmanagement dienst.",
+      "Een service voor dataopslag in de cloud.",
+      "Een platform voor het schalen van virtuele machines.",
+      "Een netwerkservice voor verkeersbeheer."
+    ],
+    "correct": 0,
+    "uitleg": "Sentinel helpt bij detectie en reactie op beveiligingsincidenten."
+  },
+  {
+    "vraag": "Wat is Azure Data Factory?",
+    "opties": [
+      "Een service om data pipelines te bouwen en te beheren.",
+      "Een tool voor het monitoren van netwerkprestaties.",
+      "Een platform om containers te orkestreren.",
+      "Een dienst voor het beveiligen van databases."
+    ],
+    "correct": 0,
+    "uitleg": "Data Factory automatiseert data integratieprocessen."
+  },
+  {
+    "vraag": "Wat is Azure Application Gateway?",
+    "opties": [
+      "Een webverkeersloadbalancer met beveiligingsfuncties.",
+      "Een dienst voor het beheren van gebruikersrechten.",
+      "Een platform om virtuele machines te creëren.",
+      "Een tool voor data-analyse en rapportage."
+    ],
+    "correct": 0,
+    "uitleg": "Application Gateway optimaliseert en beschermt webverkeer."
+  },
+  {
+    "vraag": "Wat is Azure Site Recovery?",
+    "opties": [
+      "Een dienst om workloads te repliceren en herstellen bij uitval.",
+      "Een platform voor het hosten van applicaties.",
+      "Een dienst voor identity management.",
+      "Een tool voor het analyseren van logs."
+    ],
+    "correct": 0,
+    "uitleg": "Site Recovery zorgt voor business continuity bij storingen."
+  },
+  {
+    "vraag": "Wat is Azure Blob Storage?",
+    "opties": [
+      "Een opslagdienst voor ongestructureerde data zoals bestanden.",
+      "Een relationele database service.",
+      "Een virtuele machine voor compute workloads.",
+      "Een netwerkbeveiligingsdienst."
+    ],
+    "correct": 0,
+    "uitleg": "Blob Storage is geschikt voor grote hoeveelheden data zonder vaste structuur."
+  },
+  {
+    "vraag": "Wat doet Azure Active Directory B2C?",
+    "opties": [
+      "Beheer van klantidentiteiten en toegangscontrole voor apps.",
+      "Het opslaan van relationele data in de cloud.",
+      "Het hosten van virtuele machines voor gebruikers.",
+      "Het analyseren van netwerkverkeer en prestaties."
+    ],
+    "correct": 0,
+    "uitleg": "AD B2C richt zich op identiteiten van externe klanten."
+  },
+  {
+    "vraag": "Wat is Azure Bastion?",
+    "opties": [
+      "Een beheerde dienst voor veilige RDP- en SSH-toegang tot virtuele machines.",
+      "Een platform voor het bouwen van apps.",
+      "Een opslagoplossing voor ongestructureerde data.",
+      "Een netwerkcomponent voor load balancing."
+    ],
+    "correct": 0,
+    "uitleg": "Bastion voorkomt dat je VM’s direct via het internet toegankelijk zijn."
+  },
+  {
+    "vraag": "Wat is Azure Automation?",
+    "opties": [
+      "Een dienst om repetitieve taken en processen te automatiseren.",
+      "Een tool om data te analyseren.",
+      "Een dienst voor het beheren van virtuele netwerken.",
+      "Een platform om applicaties te hosten."
+    ],
+    "correct": 0,
+    "uitleg": "Automation helpt beheertaken efficiënter uit te voeren."
+  },
+  {
+    "vraag": "Wat is Azure Key Vault?",
+    "opties": [
+      "Een beveiligde opslagplaats voor sleutels, geheimen en certificaten.",
+      "Een platform voor applicatieontwikkeling.",
+      "Een tool voor het monitoren van netwerkverkeer.",
+      "Een dienst voor dataopslag."
+    ],
+    "correct": 0,
+    "uitleg": "Key Vault beschermt cryptografische materialen in de cloud."
+  },
+  {
+    "vraag": "Wat is Azure API Management?",
+    "opties": [
+      "Een dienst om API’s te publiceren, beveiligen en beheren.",
+      "Een opslagdienst voor grote bestanden.",
+      "Een tool om virtuele machines te monitoren.",
+      "Een platform voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "API Management maakt API’s toegankelijk en beheersbaar."
+  },
+  {
+    "vraag": "Wat is Azure Cost Management?",
+    "opties": [
+      "Een tool om cloudkosten te monitoren en te optimaliseren.",
+      "Een platform om applicaties te ontwikkelen.",
+      "Een dienst voor data backup.",
+      "Een netwerkcomponent voor verkeersbeheer."
+    ],
+    "correct": 0,
+    "uitleg": "Cost Management helpt uitgaven inzichtelijk te maken."
+  },
+  {
+    "vraag": "Wat is Azure Policy?",
+    "opties": [
+      "Een dienst om regels te definiëren en compliance te waarborgen.",
+      "Een tool voor het beheren van virtuele machines.",
+      "Een opslagoplossing voor ongestructureerde data.",
+      "Een dienst voor het beheren van gebruikersidentiteiten."
+    ],
+    "correct": 0,
+    "uitleg": "Policy helpt je governance binnen Azure af te dwingen."
+  },
+  {
+    "vraag": "Wat is Azure Monitor?",
+    "opties": [
+      "Een dienst voor het verzamelen en analyseren van telemetrie data.",
+      "Een tool om virtuele machines te creëren.",
+      "Een platform voor het beheren van opslagaccounts.",
+      "Een dienst voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "Monitor geeft inzicht in prestaties en gezondheid van resources."
+  },
+  {
+    "vraag": "Wat is Azure Front Door?",
+    "opties": [
+      "Een service voor wereldwijde load balancing en snelle content delivery.",
+      "Een opslagdienst voor blob data.",
+      "Een platform om virtuele netwerken te beheren.",
+      "Een dienst voor het schalen van databases."
+    ],
+    "correct": 0,
+    "uitleg": "Front Door verbetert beschikbaarheid en prestaties van applicaties."
+  },
+  {
+    "vraag": "Wat is Azure Data Lake Storage?",
+    "opties": [
+      "Een opslagoplossing voor big data en analytics workloads.",
+      "Een relationele database in de cloud.",
+      "Een dienst voor identity en toegangsbeheer.",
+      "Een tool voor netwerkmonitoring."
+    ],
+    "correct": 0,
+    "uitleg": "Data Lake is geoptimaliseerd voor grootschalige data analyse."
+  },
+  {
+    "vraag": "Wat is Azure Kubernetes Service (AKS)?",
+    "opties": [
+      "Een beheerde dienst voor het orkestreren van containerapplicaties.",
+      "Een tool voor het maken van virtuele netwerken.",
+      "Een opslagdienst voor ongestructureerde data.",
+      "Een platform voor het ontwikkelen van webapplicaties."
+    ],
+    "correct": 0,
+    "uitleg": "AKS vereenvoudigt de implementatie en het beheer van Kubernetes."
+  },
+  {
+    "vraag": "Wat is Azure Functions?",
+    "opties": [
+      "Een serverless compute service voor het draaien van event-gedreven code.",
+      "Een dienst voor data-analyse en rapportage.",
+      "Een tool voor identity management.",
+      "Een platform voor het hosten van databases."
+    ],
+    "correct": 0,
+    "uitleg": "Functions laat je kleine stukjes code uitvoeren zonder serverbeheer."
+  },
+  {
+    "vraag": "Wat is Azure Virtual Network (VNet)?",
+    "opties": [
+      "Een virtueel netwerk waarmee je resources veilig met elkaar verbindt.",
+      "Een opslagdienst voor relationele databases.",
+      "Een dienst voor het schalen van virtuele machines.",
+      "Een tool voor het monitoren van netwerkverkeer."
+    ],
+    "correct": 0,
+    "uitleg": "VNet biedt netwerkisolatie binnen Azure."
+  },
+  {
+    "vraag": "Wat is Azure Cognitive Services?",
+    "opties": [
+      "Een verzameling AI API’s voor beeld-, spraak- en tekstanalyse.",
+      "Een platform voor het beheren van databases.",
+      "Een dienst voor identity en toegangsbeheer.",
+      "Een tool voor het schalen van applicaties."
+    ],
+    "correct": 0,
+    "uitleg": "Cognitive Services maken AI toegankelijk voor ontwikkelaars."
+  },
+  {
+    "vraag": "Wat is Azure DevOps?",
+    "opties": [
+      "Een set tools voor het plannen, bouwen en deployen van software.",
+      "Een opslagoplossing voor ongestructureerde data.",
+      "Een netwerkservice voor het beveiligen van verbindingen.",
+      "Een platform voor het beheren van virtuele machines."
+    ],
+    "correct": 0,
+    "uitleg": "DevOps ondersteunt CI/CD en team samenwerking."
+  },
+  {
+    "vraag": "Wat is Azure Backup?",
+    "opties": [
+      "Een dienst voor het veiligstellen en herstellen van data en VM’s.",
+      "Een tool voor het analyseren van netwerkprestaties.",
+      "Een platform voor het hosten van applicaties.",
+      "Een dienst voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "Backup beschermt tegen dataverlies door automatische back-ups."
+  },
+  {
+    "vraag": "Wat is Azure Event Grid?",
+    "opties": [
+      "Een service voor het routeren van events tussen bronnen en handlers.",
+      "Een platform voor het maken van webapplicaties.",
+      "Een tool voor het beheren van virtuele netwerken.",
+      "Een opslagoplossing voor blob data."
+    ],
+    "correct": 0,
+    "uitleg": "Event Grid maakt eventgedreven architecturen mogelijk."
+  },
+  {
+    "vraag": "Wat is Azure SQL Database?",
+    "opties": [
+      "Een relationele database als managed service in Azure.",
+      "Een dienst voor het hosten van containers.",
+      "Een platform voor identity management.",
+      "Een tool voor het monitoren van applicaties."
+    ],
+    "correct": 0,
+    "uitleg": "SQL Database beheert relationele data zonder infrastructuurbeheer."
+  },
+  {
+    "vraag": "Wat is Azure Service Bus?",
+    "opties": [
+      "Een berichtendienst voor betrouwbare communicatie tussen applicaties.",
+      "Een opslagoplossing voor grote bestanden.",
+      "Een platform om virtuele machines te beheren.",
+      "Een tool voor data-analyse."
+    ],
+    "correct": 0,
+    "uitleg": "Service Bus ondersteunt gedecoupleerde en schaalbare apps."
+  },
+  {
+    "vraag": "Wat is Azure Traffic Manager?",
+    "opties": [
+      "Een DNS-gebaseerde load balancing dienst voor wereldwijde applicaties.",
+      "Een platform voor het hosten van databases.",
+      "Een tool voor identity en toegangsbeheer.",
+      "Een dienst voor het schalen van virtuele machines."
+    ],
+    "correct": 0,
+    "uitleg": "Traffic Manager optimaliseert de beschikbaarheid en prestaties."
+  },
+  {
+    "vraag": "Wat is Azure VM Scale Sets?",
+    "opties": [
+      "Een dienst om sets van identieke VM’s automatisch te schalen.",
+      "Een opslagdienst voor ongestructureerde data.",
+      "Een tool voor het beheren van netwerken.",
+      "Een platform voor applicatieontwikkeling."
+    ],
+    "correct": 0,
+    "uitleg": "Scale Sets helpen bij het dynamisch aanpassen van capaciteit."
+  },
+  {
+    "vraag": "Wat is Azure Blob Lifecycle Management?",
+    "opties": [
+      "Een mechanisme om data automatisch te archiveren of verwijderen.",
+      "Een dienst voor realtime data-analyse.",
+      "Een tool om VM’s te monitoren.",
+      "Een platform voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "Lifecycle Management vermindert opslagkosten door automatisering."
+  },
+  {
+    "vraag": "Wat is Azure ExpressRoute Direct?",
+    "opties": [
+      "Een extra veilige en snelle privéverbinding naar Azure.",
+      "Een cloudgebaseerde opslagdienst.",
+      "Een dienst voor het beheren van containers.",
+      "Een tool voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "ExpressRoute Direct biedt dedicated netwerkverbindingen."
+  },
+  {
+    "vraag": "Wat is Azure Cognitive Search?",
+    "opties": [
+      "Een zoekdienst met AI-mogelijkheden voor content indexing.",
+      "Een platform voor het hosten van webapplicaties.",
+      "Een tool voor netwerkmonitoring.",
+      "Een dienst voor het beheren van gebruikersidentiteiten."
+    ],
+    "correct": 0,
+    "uitleg": "Cognitive Search maakt zoeken en data-analyse mogelijk."
+  },
+  {
+    "vraag": "Wat is Azure Data Explorer?",
+    "opties": [
+      "Een service voor snelle en interactieve data-analyse.",
+      "Een platform voor het creëren van virtuele netwerken.",
+      "Een opslagoplossing voor relationele data.",
+      "Een tool voor identity en toegangsbeheer."
+    ],
+    "correct": 0,
+    "uitleg": "Data Explorer is geschikt voor grote hoeveelheden telemetry data."
+  },
+  {
+    "vraag": "Wat is Azure Managed Disks?",
+    "opties": [
+      "Een eenvoudige en schaalbare manier om schijven te beheren voor VM’s.",
+      "Een dienst voor het automatiseren van workflows.",
+      "Een tool voor het analyseren van applicatielogs.",
+      "Een platform om containers te orkestreren."
+    ],
+    "correct": 0,
+    "uitleg": "Managed Disks vereenvoudigen opslagbeheer voor VM’s."
+  },
+  {
+    "vraag": "Wat is Azure Dedicated Host?",
+    "opties": [
+      "Een fysieke server die exclusief aan één klant wordt toegewezen.",
+      "Een platform voor het hosten van databases.",
+      "Een dienst voor identity management.",
+      "Een tool voor het beheren van netwerkverkeer."
+    ],
+    "correct": 0,
+    "uitleg": "Dedicated Host biedt isolatie en compliance voordelen."
+  },
+  {
+    "vraag": "Wat is Azure SignalR Service?",
+    "opties": [
+      "Een service voor real-time webfunctionaliteit met schaalbaarheid.",
+      "Een opslagdienst voor blob data.",
+      "Een platform voor virtuele machines.",
+      "Een tool voor data-analyse."
+    ],
+    "correct": 0,
+    "uitleg": "SignalR maakt live updates en interactieve apps mogelijk."
+  },
+  {
+    "vraag": "Wat is Azure Logic Apps Connectors?",
+    "opties": [
+      "Kant-en-klare integraties met veel verschillende diensten en systemen.",
+      "Een dienst voor het beheren van virtuele netwerken.",
+      "Een tool voor het analyseren van netwerkprestaties.",
+      "Een platform voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "Connectors verbinden Logic Apps met externe systemen."
+  },
+  {
+    "vraag": "Wat is Azure Blob Soft Delete?",
+    "opties": [
+      "Een functie om verwijderde blobs tijdelijk te bewaren voor herstel.",
+      "Een mechanisme voor het automatisch archiveren van data.",
+      "Een tool om VM’s automatisch te schalen.",
+      "Een platform voor het hosten van databases."
+    ],
+    "correct": 0,
+    "uitleg": "Soft Delete voorkomt per ongeluk dataverlies."
+  },
+  {
+    "vraag": "Wat is Azure API Apps?",
+    "opties": [
+      "Een platform om API’s te bouwen, hosten en beheren.",
+      "Een dienst voor het analyseren van data.",
+      "Een tool voor identity en toegangsbeheer.",
+      "Een opslagoplossing voor ongestructureerde data."
+    ],
+    "correct": 0,
+    "uitleg": "API Apps versnellen de ontwikkeling van API-gestuurde apps."
+  },
+  {
+    "vraag": "Wat is Azure AD Domain Services?",
+    "opties": [
+      "Een dienst om managed domeindiensten te bieden zonder on-premises servers.",
+      "Een opslagdienst voor relationele databases.",
+      "Een platform voor het creëren van virtuele netwerken.",
+      "Een tool voor data-analyse."
+    ],
+    "correct": 0,
+    "uitleg": "Domain Services bieden LDAP, Kerberos en groepsbeleid in de cloud."
+  },
+  {
+    "vraag": "Wat is Azure Automation State Configuration?",
+    "opties": [
+      "Een dienst voor het declaratief beheren van configuraties op machines.",
+      "Een tool voor het monitoren van netwerkverkeer.",
+      "Een platform voor identity management.",
+      "Een dienst voor data backup."
+    ],
+    "correct": 0,
+    "uitleg": "State Configuration automatiseert het instellen van systeemconfiguraties."
+  },
+  {
+    "vraag": "Wat is Azure Private Link?",
+    "opties": [
+      "Een technologie om private endpoints voor Azure diensten te creëren.",
+      "Een platform voor het hosten van webapplicaties.",
+      "Een dienst voor het schalen van databases.",
+      "Een tool voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "Private Link zorgt voor veilige, private verbindingen zonder internet."
+  },
+  {
+    "vraag": "Wat is Azure Sentinel?",
+    "opties": [
+      "Een cloud-native SIEM-oplossing voor beveiligingsbeheer en threat detection.",
+      "Een platform voor het beheren van virtuele netwerken.",
+      "Een dienst voor het schalen van databases.",
+      "Een tool voor het hosten van webapplicaties."
+    ],
+    "correct": 0,
+    "uitleg": "Sentinel centraliseert beveiligingsdata en automatiseert incidentrespons."
+  },
+  {
+    "vraag": "Wat is Azure Data Factory?",
+    "opties": [
+      "Een dienst voor het bouwen en beheren van data pipelines.",
+      "Een tool voor identity en toegangsbeheer.",
+      "Een platform voor het hosten van databases.",
+      "Een opslagdienst voor blob data."
+    ],
+    "correct": 0,
+    "uitleg": "Data Factory automatiseert data integratie tussen systemen."
+  },
+  {
+    "vraag": "Wat is Azure Bastion?",
+    "opties": [
+      "Een dienst voor veilige RDP en SSH toegang via de Azure Portal.",
+      "Een platform voor het beheren van containers.",
+      "Een tool voor het monitoren van applicaties.",
+      "Een opslagoplossing voor grote bestanden."
+    ],
+    "correct": 0,
+    "uitleg": "Bastion elimineert de noodzaak voor publieke IP’s op VM’s."
+  },
+  {
+    "vraag": "Wat is Azure Content Delivery Network (CDN)?",
+    "opties": [
+      "Een netwerk voor het versnellen van contentdistributie wereldwijd.",
+      "Een dienst voor het beheren van databases.",
+      "Een tool voor identity management.",
+      "Een platform voor applicatieontwikkeling."
+    ],
+    "correct": 0,
+    "uitleg": "CDN vermindert latency door content dichter bij gebruikers te plaatsen."
+  },
+  {
+    "vraag": "Wat is Azure Policy?",
+    "opties": [
+      "Een dienst om naleving van regels en standaarden te automatiseren.",
+      "Een platform voor het beheren van virtuele machines.",
+      "Een tool voor data-analyse.",
+      "Een opslagdienst voor relationele data."
+    ],
+    "correct": 0,
+    "uitleg": "Policy helpt bij governance door automatische controle van resources."
+  },
+  {
+    "vraag": "Wat is Azure Key Vault?",
+    "opties": [
+      "Een veilige opslag voor geheimen, sleutels en certificaten.",
+      "Een platform voor identity en toegangsbeheer.",
+      "Een tool voor netwerkmonitoring.",
+      "Een dienst voor het hosten van webapplicaties."
+    ],
+    "correct": 0,
+    "uitleg": "Key Vault beschermt gevoelige data en beheert cryptografische sleutels."
+  },
+  {
+    "vraag": "Wat is Azure Monitor?",
+    "opties": [
+      "Een platform voor het verzamelen, analyseren en visualiseren van metrics.",
+      "Een tool voor het beheren van containers.",
+      "Een dienst voor het schalen van virtuele machines.",
+      "Een opslagoplossing voor blob data."
+    ],
+    "correct": 0,
+    "uitleg": "Monitor geeft inzicht in de prestaties van Azure resources."
+  },
+  {
+    "vraag": "Wat is Azure Cosmos DB?",
+    "opties": [
+      "Een wereldwijd gedistribueerde multi-model database service.",
+      "Een platform voor identity management.",
+      "Een tool voor data-analyse.",
+      "Een dienst voor het hosten van applicaties."
+    ],
+    "correct": 0,
+    "uitleg": "Cosmos DB biedt lage latency en automatische schaalbaarheid."
+  },
+  {
+    "vraag": "Wat is Azure Logic Apps?",
+    "opties": [
+      "Een dienst om workflows te automatiseren zonder code te schrijven.",
+      "Een platform voor het beheren van netwerken.",
+      "Een tool voor het monitoren van beveiliging.",
+      "Een opslagdienst voor relationele data."
+    ],
+    "correct": 0,
+    "uitleg": "Logic Apps verbinden verschillende services met kant-en-klare connectors."
+  },
+  {
+    "vraag": "Wat is Azure Application Gateway?",
+    "opties": [
+      "Een web traffic load balancer met application layer routing.",
+      "Een dienst voor het hosten van databases.",
+      "Een tool voor identity management.",
+      "Een platform voor het beheren van virtuele machines."
+    ],
+    "correct": 0,
+    "uitleg": "Application Gateway ondersteunt SSL-terminatie en web application firewall."
+  },
+  {
+    "vraag": "Wat is Azure Data Lake Storage?",
+    "opties": [
+      "Een schaalbare opslag voor big data analyse workloads.",
+      "Een tool voor het beheren van containers.",
+      "Een platform voor identity en toegangsbeheer.",
+      "Een dienst voor het schalen van databases."
+    ],
+    "correct": 0,
+    "uitleg": "Data Lake Storage is geoptimaliseerd voor analytics en data science."
+  },
+  {
+    "vraag": "Wat is Azure Synapse Analytics?",
+    "opties": [
+      "Een geïntegreerde analytics dienst voor data integratie en warehousing.",
+      "Een platform voor het hosten van webapplicaties.",
+      "Een tool voor netwerkmonitoring.",
+      "Een dienst voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "Synapse combineert big data en SQL data warehousing."
+  },
+  {
+    "vraag": "Wat is Azure Front Door?",
+    "opties": [
+      "Een global load balancer voor applicaties met SSL offloading.",
+      "Een opslagdienst voor blob data.",
+      "Een tool voor het beheren van virtuele netwerken.",
+      "Een platform voor identity management."
+    ],
+    "correct": 0,
+    "uitleg": "Front Door optimaliseert applicatieprestaties en beveiliging."
+  },
+  {
+    "vraag": "Wat is Azure Service Fabric?",
+    "opties": [
+      "Een platform voor het bouwen en beheren van microservices.",
+      "Een dienst voor het schalen van databases.",
+      "Een tool voor data-analyse.",
+      "Een opslagoplossing voor grote bestanden."
+    ],
+    "correct": 0,
+    "uitleg": "Service Fabric ondersteunt stateful en stateless services."
+  },
+  {
+    "vraag": "Wat is Azure Virtual WAN?",
+    "opties": [
+      "Een dienst voor het verbinden en beheren van wereldwijde netwerken.",
+      "Een platform voor identity management.",
+      "Een tool voor het hosten van applicaties.",
+      "Een opslagdienst voor relationele data."
+    ],
+    "correct": 0,
+    "uitleg": "Virtual WAN vereenvoudigt netwerkbeheer en verbindingen."
+  },
+  {
+    "vraag": "Wat is Azure Automation Runbooks?",
+    "opties": [
+      "Scripts die processen automatiseren binnen Azure.",
+      "Een platform voor het monitoren van netwerkverkeer.",
+      "Een tool voor identity en toegangsbeheer.",
+      "Een dienst voor het hosten van databases."
+    ],
+    "correct": 0,
+    "uitleg": "Runbooks helpen bij het automatiseren van routine taken."
+  },
+  {
+    "vraag": "Wat is Azure Managed Identities?",
+    "opties": [
+      "Automatisch beheerde identiteiten voor resources om toegang te krijgen tot services.",
+      "Een tool voor het beheren van containers.",
+      "Een platform voor data-analyse.",
+      "Een dienst voor het schalen van virtuele machines."
+    ],
+    "correct": 0,
+    "uitleg": "Managed Identities elimineren de noodzaak van handmatige credential beheer."
+  },
+  {
+    "vraag": "Wat is Azure Batch?",
+    "opties": [
+      "Een dienst voor het parallel verwerken van batch workloads in de cloud.",
+      "Een opslagoplossing voor ongestructureerde data.",
+      "Een platform voor identity management.",
+      "Een tool voor netwerkmonitoring."
+    ],
+    "correct": 0,
+    "uitleg": "Batch maakt grootschalige compute taken efficiënt uitvoerbaar."
+  },
+  {
+    "vraag": "Wat is Azure Time Series Insights?",
+    "opties": [
+      "Een platform voor het analyseren en visualiseren van tijdreeksen data.",
+      "Een dienst voor het beheren van virtuele netwerken.",
+      "Een tool voor het monitoren van beveiliging.",
+      "Een opslagdienst voor relationele data."
+    ],
+    "correct": 0,
+    "uitleg": "Time Series Insights helpt bij IoT en telemetry analyse."
+  },
+  {
+    "vraag": "Wat is Azure App Service Environment?",
+    "opties": [
+      "Een geïsoleerde en schaalbare hostingomgeving voor webapplicaties.",
+      "Een platform voor identity en toegangsbeheer.",
+      "Een tool voor data-analyse.",
+      "Een dienst voor het beheren van containers."
+    ],
+    "correct": 0,
+    "uitleg": "App Service Environment biedt meer beveiliging en schaalbaarheid."
+  },
+  {
+    "vraag": "Wat is Azure Advisor?",
+    "opties": [
+      "Een persoonlijke cloud consultant die aanbevelingen doet voor optimalisatie.",
+      "Een tool voor het monitoren van netwerkverkeer.",
+      "Een platform voor identity management.",
+      "Een opslagdienst voor blob data."
+    ],
+    "correct": 0,
+    "uitleg": "Advisor helpt kosten te besparen en beveiliging te verbeteren."
+  },
+  {
+    "vraag": "Wat is Azure Arc?",
+    "opties": [
+      "Een dienst om Azure management en services uit te breiden naar on-premises en multi-cloud.",
+      "Een platform voor het hosten van webapplicaties.",
+      "Een tool voor identity management.",
+      "Een dienst voor het schalen van databases."
+    ],
+    "correct": 0,
+    "uitleg": "Arc maakt hybride en multi-cloud management mogelijk."
+  },
+  {
+    "vraag": "Wat is Azure Lighthouse?",
+    "opties": [
+      "Een platform voor het beheren van meerdere klantenresources als serviceprovider.",
+      "Een tool voor data-analyse.",
+      "Een dienst voor identity en toegangsbeheer.",
+      "Een opslagoplossing voor big data."
+    ],
+    "correct": 0,
+    "uitleg": "Lighthouse vereenvoudigt beheer voor MSP's."
+  },
+  {
+    "vraag": "Wat is Azure Cognitive Services?",
+    "opties": [
+      "Een verzameling API’s voor AI-functionaliteiten zoals spraak en beeldherkenning.",
+      "Een platform voor identity management.",
+      "Een tool voor het beheren van containers.",
+      "Een dienst voor het hosten van databases."
+    ],
+    "correct": 0,
+    "uitleg": "Cognitive Services maken AI toegankelijk zonder deep learning kennis."
+  },
+  {
+    "vraag": "Wat is Azure DevTest Labs?",
+    "opties": [
+      "Een omgeving voor snelle ontwikkeling en testen van applicaties met kostenbeheer.",
+      "Een tool voor het monitoren van netwerkverkeer.",
+      "Een platform voor identity en toegangsbeheer.",
+      "Een opslagdienst voor blob data."
+    ],
+    "correct": 0,
+    "uitleg": "DevTest Labs versnelt ontwikkelcycli en voorkomt overschrijding van budget."
+  }
+]

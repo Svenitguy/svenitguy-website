@@ -1,0 +1,141 @@
+/* Algemene body en lettertypes */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Kopteksten */
+h1, h2, h3 {
+  color: #e6a743;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Intro, quiz, resultaat en review scherm styling */
+#intro-screen, #quiz-screen, #result-screen, #review-screen {
+  background-color: #292d2d;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Verborgen schermen */
+.hidden {
+  display: none;
+}
+
+/* Vragen */
+.question, .question-review {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.question-review p {
+  margin: 6px 0;
+}
+
+/* Aangepaste opties voor nette uitlijning */
+.options label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #ddd;
+  transition: color 0.2s ease;
+}
+
+.options label:hover {
+  color: #ffc34d;
+}
+
+.options input[type="radio"] {
+  margin-top: 4px; /* Zodat het bolletje mooi uitlijnt met eerste regel tekst */
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Knoppen */
+button {
+  background-color: #e6a743;
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 12px 30px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 1.5rem auto 0 auto;
+}
+
+button:hover:not(:disabled) {
+  background-color: #c9952f;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Resultaat tekst */
+#quiz-result {
+  font-weight: 600;
+  color: #e6a743;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Geslaagd / niet geslaagd kleuren */
+.pass {
+  color: #28a745; /* Groen */
+  font-weight: 700;
+}
+
+.fail {
+  color: #dc3545; /* Rood */
+  font-weight: 700;
+}
+
+/* Terug naar portfolio link */
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 600;
+  color: #e6a743;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ffc34d;
+  text-decoration: underline;
+}
+
+/* Review scherm */
+#review-screen {
+  background-color: #292d2d;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  max-height: 80vh;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+.question-review hr {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 15px 0;
+}

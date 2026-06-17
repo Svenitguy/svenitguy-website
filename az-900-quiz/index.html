@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AZ-900 Oefenquiz - Sven Velleman</title>
+
+  <!-- Externe stylesheets (CDN’s, Google Fonts, eigen CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="quiz-style.css" />
+  <link rel="stylesheet" href="../cookie-banner.css" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+  <div id="intro-screen">
+    <h1>AZ-900 Oefenquiz</h1>
+    <p>
+      Welkom bij de oefenquiz voor Microsoft Azure Fundamentals (AZ-900).
+      Je krijgt willekeurig 25 meerkeuzevragen uit een grote vragenpool. Kies telkens het juiste antwoord en klik op
+      <strong>Volgende</strong>.
+      Aan het einde zie je je score. Veel succes!
+    </p>
+    <button id="startBtn">Quiz starten</button>
+  </div>
+
+  <div id="quiz-screen" class="hidden">
+    <div id="quiz-container"></div>
+    <button id="nextBtn" disabled>Volgende</button>
+  </div>
+
+  <div id="result-screen" class="hidden">
+    <h2>Quiz Resultaat</h2>
+    <p id="quiz-result"></p>
+    <!-- Knop om terug naar portfolio -->
+    <a href="https://www.svenitguy.be#project" class="back-link">← Terug naar mijn portfolio</a>
+  </div>
+
+  <!-- Review scherm wordt dynamisch aangemaakt door script -->
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    Deze site gebruikt cookies om je ervaring te verbeteren.
+    <a href="privacy.html">Privacybeleid</a> en
+    <a href="voorwaarden.html">Gebruiksvoorwaarden</a>.
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="cookie-btn">Akkoord</button>
+      <button id="reject-cookies" class="cookie-btn secondary">Weiger</button>
+    </div>
+  </div>
+
+  <script src="quiz-script.js"></script>
+  <script src="../cookie-banner.js"></script>
+</body>
+
+</html>

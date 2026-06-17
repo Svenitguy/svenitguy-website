@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+main {
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+}
+
+h1 {
+  color: #e6a743;
+  text-align: center;
+}
+
+/* Speelbord */
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #333;
+  border-radius: 10px;
+  height: 140px;
+  font-size: 3.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(230, 167, 67, 0.7);
+}
+
+.card.revealed {
+  background-color: #e6a743;
+  color: #1e1e1e;
+  cursor: default;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(30, 30, 30, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.overlay-content {
+  background-color: #292d2d;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(230, 167, 67, 0.7);
+  text-align: center;
+}
+
+.overlay-content h2 {
+  margin-top: 1rem;
+  color: #e6a743;
+}
+
+.overlay-content p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: justify; /* of left als je justify te strak vindt */
+  padding: 0 1rem; /* iets ruimte aan de zijkanten */
+}
+
+
+#playerName {
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #e6a743;
+  border: none;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c9952f;
+}
+
+#turns {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Highscore tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+thead th {
+  border-bottom: 2px solid #e6a743;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+tbody td {
+  border-bottom: 1px solid #444;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Markeer je eigen score */
+.my-score {
+  background-color: #e6a743; /* goudkleur */
+  color: #1e1e1e;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    height: 100px;
+    font-size: 2.5rem;
+  }
+}
+.center-line {
+  display: block;
+  text-align: center;
+  font-weight: bold; /* optioneel */
+  margin: 0.3em 0;
+}
+
+#overlay-description {
+
+}
+
+
+
