@@ -162,7 +162,7 @@ async function sendScoreToServer(playerName, turns) {
   };
 
   try {
-    const response = await fetch('https://memorygamefunc-sven-e7abhug3gra6cnfs.westeurope-01.azurewebsites.net/api/saveScore?code=6em34xtq2z29cmicgEt9ltfpUCD99Tu2hOAr_W0e7kKnAzFu26VmHg==', {
+    const response = await fetch('https://memorygamefunc-sven-e7abhug3gra6cnfs.westeurope-01.azurewebsites.net/api/saveScore', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(scoreData)
