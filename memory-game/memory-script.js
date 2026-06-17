@@ -182,7 +182,7 @@ async function sendScoreToServer(playerName, turns) {
 
 async function fetchScoresFromServer() {
   try {
-    const response = await fetch('https://memorygamefunc-sven-e7abhug3gra6cnfs.westeurope-01.azurewebsites.net/api/getScores?code=YM_K4pwyacs7fw7xe21R4IJwRekNnIjmPcyzeAcCDEFkAzFu_0HXwQ==');
+    const response = await fetch('https://memorygamefunc-sven-e7abhug3gra6cnfs.westeurope-01.azurewebsites.net/api/getScores');
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const data = await response.json();
     return data; // verwacht array van scores [{id, playername, turns, date, ...}]
