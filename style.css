@@ -52,6 +52,19 @@ body.light-mode {
     --btn-secondary-text: #0f172a;
 }
 
+body.light-mode .open-to-work-badge {
+    background: rgba(214, 229, 5, 0.25);
+    border: 1px solid rgba(214, 229, 5, 0.6);
+    color: #7a6f00;
+}
+
+body.light-mode .hero-job-search {
+    background: rgba(214, 229, 5, 0.25);
+    border: 1px solid rgba(214, 229, 5, 0.6);
+    color: #7a6f00;
+    /* donker goud voor contrast */
+}
+
 /* ==========================================================================
    2. GLOBAL
    ========================================================================== */
@@ -274,6 +287,38 @@ a {
 .page-terms .section {
     display: flex;
     justify-content: center;
+}
+
+.open-to-work-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: rgba(214, 229, 5, 0.12);
+    border: 1px solid rgba(214, 229, 5, 0.4);
+
+    color: var(--accent-gold);
+
+    font-weight: 700;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+}
+
+.hero-job-search {
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-size: 1rem;
+
+    margin: 1rem 0;
+
+    display: inline-block;
+
+    padding: 0.5rem 1rem;
+
+    border: 1px solid rgba(214, 229, 5, 0.4);
+    border-radius: 999px;
+
+    background: rgba(214, 229, 5, 0.12);
 }
 
 /* CARD LAYOUT */
