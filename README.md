@@ -2,62 +2,70 @@
 
 Personal portfolio website hosted on Microsoft Azure.
 
-## Overview
+## 🌐 Live Website
 
-This project contains the source code for my personal portfolio website where I showcase IT projects, cloud experiments, infrastructure labs and technical skills.
+https://www.svenitguy.be (production domain with custom DNS configuration)
 
-The website is hosted on Azure Static Web Apps and automatically deployed through a CI/CD pipeline.
+## 📌 Overview
 
-## Architecture
+This project contains the source code for my personal portfolio website where I showcase IT projects, cloud experiments, infrastructure labs, and technical skills.
 
-Website Source Code
-→ GitHub Repository
-→ CI/CD Pipeline
+The website is hosted on Azure Static Web Apps and automatically deployed through a CI/CD pipeline connected to GitHub.
+
+## 🏗️ Architecture
+
+GitHub Repository (Source Code)
+→ CI/CD Pipeline (GitHub Actions)
 → Azure Static Web Apps
-→ Custom Domain (svenitguy.be)
+→ Custom Domain (svenitguy.be + www.svenitguy.be)
 
-## Technologies
+## 🧰 Technologies
 
 ### Frontend
+- HTML
+- CSS
+- JavaScript
 
-* HTML
-* CSS
-* JavaScript
-
-### Cloud
-
-* Azure Static Web Apps
-* Azure DNS
+### Cloud & Hosting
+- Azure Static Web Apps
+- Azure DNS
 
 ### DevOps
+- GitHub
+- GitHub Actions (CI/CD)
+- Infrastructure as Code (Terraform via separate repository)
 
-* GitHub
-* CI/CD Pipelines
+## 🚀 Features
 
-## Features
+- Personal IT portfolio
+- Project showcase
+- Responsive design
+- Dark / light mode
+- Automated deployments via CI/CD
+- Custom domain integration
 
-* Personal IT portfolio
-* Project showcase
-* Responsive design
-* Automated deployments
-* Custom domain integration
+## 🔗 Related Projects
 
-## Related Projects
+### Infrastructure Repository
+Terraform-based Azure infrastructure:
 
-This repository contains the website source code.
+https://github.com/Svenitguy/svenitguy-infra
 
-The Azure infrastructure is managed separately through the `svenitguy-infra` repository using Terraform.
+This repository manages:
+- Azure Static Web App provisioning
+- DNS configuration
+- Infrastructure as Code (IaC)
 
-## Purpose
+## 🎯 Purpose
 
-The goal of this project is to gain hands-on experience with:
+This project is part of my learning journey in:
 
-* Cloud hosting
-* CI/CD workflows
-* DNS management
-* Infrastructure automation
-* Modern deployment practices
+- Cloud engineering (Azure)
+- DevOps practices
+- CI/CD automation
+- Infrastructure as Code (Terraform)
+- Modern web deployment workflows
 
-## Author
+## 👤 Author
 
 Sven Velleman
